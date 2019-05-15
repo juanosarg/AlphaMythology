@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Alpha Animals</name>
+	<author>Sarg, AFriend, milon, Skullywag and kaptain_kavern</author>
+	<supportedVersions><li>1.0</li></supportedVersions>
+	<description>Adds multiple unique new animals to Rimworld.
+	
+&lt;size=24&gt;Features&lt;/size&gt;
+
+Adds 45 new, vanilla-friendly creatures to the diverse biomes of your Rimworlds. The philosophy of this mod is that every new creatures tries to bring some new mechanic into the game, whether it be walking tanks, living resource farm, indestructible plant monsters, night time stalkers, or plain speedy giant spiders. Some of the mechanics are simple, others much more complex.
+
+These animals will spawn in certain biomes, some others will only be available via traders. You'll have to explore to find them all!
+
+Bear in mind that spawn probabilities have been calculated with no other animal mods installed. If you have, for example, Animal Collab Project, less animals from this mod will appear, obviously.
+
+The mod will also add new insects in a new faction, the Black Hive. Raids from that faction can be disabled via Mod Options.
+
+&lt;size=24&gt;Issues&lt;/size&gt;
+
+There shouldn't be any. Balance is obviously always a concern, although it has been playtested. Feel free to tell me if you think something is too wacky.
+
+&lt;size=24&gt;Plans for the future&lt;/size&gt;
+
+Obviously, more animals!
+
+&lt;size=24&gt;Compatibility&lt;/size&gt;
+Compatible with A Dog Said...
+Compatible with the implants from Genetic Rim
+Compatible with cloth production in Vegetable Garden Project (VGP)
+Compatible with Nature's Pretty Sweet
+Compatible with Advanced Biomes
+Uses Harmony (no need to download)
+Uses ModCheck (no need to download)
+
+&lt;size=24&gt;Credit&lt;/size&gt;
+Original creature graphics: A_Friend, aka SentientLine
+Original implementation and programming: milon, Skullywag and kaptain_kavern 
+Using the AnimalVariation DLL from AnimalCollabProject
+Some sounds by Mike Koenig at http://soundbible.com
+Some sounds by Stephan Schutze at http://soundbible.com
+Fireball Graphic created by StarsteelGaming at OpenGameArt.org (2018)
+
+&lt;size=24&gt;Changelog&lt;/size&gt;
+
+v1.3: Added five new animals. Bugfixing and balance tweaks. Full changelog on GitHub (16/04/19)
+v1.2: Added four new animals. Added compatibility with Advanced Biomes Mod (06/04/19)
+v1.1: Added visual Giddy-Up! saddles to mosty rideable creatures. The Meadow Ave is not being rendered correctly so it will need a later update (02/04/19)
+v1.096: Bugfixing and balance tweaks. Full changelog on GitHub (06/03/19)
+v1.094: Small bugfix to re-balance Meadow Aves (05/02/19)
+v1.093: Bugfixing and balance tweaks. Full changelog on GitHub (31/01/19)
+v1.09: Four new animals added! Bugfixing and balance tweaks. Full changelog on GitHub (01/12/18)
+v1.08: Bugfixing and balance tweaks. Full changelog on GitHub (12/11/18)
+v1.07: Two new animals added! Bugfixing and balance tweaks. Full changelog on GitHub (04/11/18)
+v1.06: Bugfixing and balance tweaks. Full changelog on GitHub (31/10/18)
+v1.05: Bugfixing and balance tweaks. Full changelog on GitHub (29/10/18)
+v1.04: Bugfixing and balance tweaks. Full changelog on GitHub (24/10/18)
+v1.03: Five new animals added! Bugfixing and balance tweaks. Full changelog on GitHub (23/10/18)
+v1.02: Bugfixing and balance tweaks. Full changelog on GitHub (22/10/18)
+v1.0: Rimworld 1.0 version (17/10/18)
+v0.1: Prerelease
+
+	
+
+	</description>
+</ModMetaData>
