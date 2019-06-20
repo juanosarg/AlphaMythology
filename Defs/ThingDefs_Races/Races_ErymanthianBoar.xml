@@ -6,7 +6,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>MM_ErymanthianBoar</defName>
     <label>erymanthian boar</label>
-    <description>The Erymanthian Boar was a gargantuan, monstruous wild hog that inhabited the slopes of mount Erymanthus, laying waste to the farmers' fields. The boar's capture was the objective of the Fourth Labour of Heracles. To capture the boar, Heracles drove it into thick snow, considerably slowing its progress and advantage.\n\nErymanthian boars aren't naturally ocurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.</description>
+    <description>The Erymanthian Boar was a gargantuan, monstruous wild hog that inhabited the slopes of mount Erymanthus, ocassionally laying waste to the farmers' fields. The boar's capture was the objective of the Fourth Labour of Heracles. To capture the boar, Heracles drove it into thick snow, considerably slowing its progress and advantage.\n\nErymanthian boars aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.</description>
     <statBases>
       <MoveSpeed>4.75</MoveSpeed>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -91,9 +91,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
       <wildBiomes>
-        <Desert>0.1</Desert>
-        <ExtremeDesert>0.1</ExtremeDesert>
-        <AridShrubland>0.07</AridShrubland>
+        
       </wildBiomes>
 	
     </race>
@@ -103,27 +101,27 @@
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">
-    <defName>AA_SandLion</defName>
-    <label>sand lion</label>
-    <race>AA_SandLion</race>
+    <defName>MM_ErymanthianBoar</defName>
+    <label>erymanthian boar</label>
+    <race>MM_ErymanthianBoar</race>
     <combatPower>300</combatPower>
-    <ecoSystemWeight>0.5</ecoSystemWeight>
+    <ecoSystemWeight>1.5</ecoSystemWeight>
     <lifeStages>
       <li>
-        <label>sand lion cub</label>
+        
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/AA_SandLion/AA_SandLion</texPath>
+          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_ErymanthianBoar</texPath>
           <drawSize>1.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/AA_SandLion/AA_Dessicated_SandLion</texPath>
+          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_Dessicated_ErymanthianBoar</texPath>
           <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
-        <label>arctic lion juvenile</label>
+        
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/AA_SandLion/AA_SandLion</texPath>
+          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_ErymanthianBoar</texPath>
           <drawSize>1.85</drawSize>
           <shadowData>
             <volume>(0.3, 0.3, 0.3)</volume>
@@ -131,13 +129,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/AA_SandLion/AA_Dessicated_SandLion</texPath>
+          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_Dessicated_ErymanthianBoar</texPath>
           <drawSize>1.85</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/AA_SandLion/AA_SandLion</texPath>
+          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_ErymanthianBoar</texPath>
           <drawSize>2.5</drawSize>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
@@ -145,7 +143,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/AA_SandLion/AA_Dessicated_SandLion</texPath>
+          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_Dessicated_ErymanthianBoar</texPath>
           <drawSize>2.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>

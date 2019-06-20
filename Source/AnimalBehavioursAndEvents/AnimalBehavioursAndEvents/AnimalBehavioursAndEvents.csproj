@@ -33,6 +33,7 @@
     <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Assemblies\0Harmony.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
@@ -50,9 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlphaAnimals_Settings.cs" />
-    <Compile Include="Building_BlackHiveMound.cs" />
-    <Compile Include="Building_Overgrown_DropPod.cs" />
     <Compile Include="CompFertilizer.cs" />
     <Compile Include="CompGasProducer.cs" />
     <Compile Include="CompInitialHediff.cs" />
@@ -67,41 +65,16 @@
     <Compile Include="CompProperties_Regeneration.cs" />
     <Compile Include="CompProperties_HighlyFlammable.cs" />
     <Compile Include="CompHighlyFlammable.cs" />
-    <Compile Include="CompSkins.cs" />
     <Compile Include="CompDigWhenHungry.cs" />
     <Compile Include="CompNocturnal.cs" />
     <Compile Include="CompLightSustenance.cs" />
-    <Compile Include="CompProperties_Skins.cs" />
     <Compile Include="CompProperties_DigWhenHungry.cs" />
     <Compile Include="CompProperties_Nocturnal.cs" />
     <Compile Include="CompProperties_LightSustenance.cs" />
-    <Compile Include="DamageWorker_Siege.cs" />
-    <Compile Include="DeathActionWorker_MouseFission.cs" />
-    <Compile Include="Gas_Ocular.cs" />
-    <Compile Include="Hediff_AcidBuildup.cs" />
-    <Compile Include="Hediff_Crushing.cs" />
-    <Compile Include="Hediff_NocturnalAnimal.cs" />
-    <Compile Include="Hediff_Stalking.cs" />
-    <Compile Include="IncidentWorker_Asteroid.cs" />
-    <Compile Include="IncidentWorker_Bumbledrones.cs" />
-    <Compile Include="IncidentWorker_BlackHive.cs" />
-    <Compile Include="IncidentWorker_FeraliskClutchMother.cs" />
-    <Compile Include="IncidentWorker_DunealiskClutchMother.cs" />
-    <Compile Include="IncidentWorker_Gallatross.cs" />
-    <Compile Include="IncidentWorker_Aerofleets.cs" />
     <Compile Include="CompProperties_AsexualReproduction.cs" />
     <Compile Include="CompAsexualReproduction.cs" />
-    <Compile Include="IncidentWorker_BlizzariskClutchMother.cs" />
-    <Compile Include="IncidentWorker_StalkingArcticLion.cs" />
-    <Compile Include="IncidentWorker_CactipineDropPod.cs" />
-    <Compile Include="IncidentWorker_SummitCrab.cs" />
-    <Compile Include="InteractionWorker_PsionicNuzzle.cs" />
-    <Compile Include="JobDriver_PsionicNuzzle.cs" />
-    <Compile Include="JobGiver_Mine.cs" />
-    <Compile Include="JobGiver_PsionicNuzzle.cs" />
     <Compile Include="HarmonyPatchers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThingSetMaker_SpecialMeteorite.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -20,7 +20,7 @@ namespace AlphaBehavioursAndEvents
     {
         static Main()
         {
-            var harmony = HarmonyInstance.Create("com.alphaanimals");
+            var harmony = HarmonyInstance.Create("com.magicalmenagerie");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
 
@@ -28,36 +28,7 @@ namespace AlphaBehavioursAndEvents
     }
   
 
-    /*This Harmony Prefix makes the creature carry more weight
-    */
-    [HarmonyPatch(typeof(MassUtility))]
-    [HarmonyPatch("Capacity")]
-    public static class MassUtility_Capacity_Patch
-    {
-        [HarmonyPostfix]
-        public static void MakeGigantelopesCarryMore(Pawn p, ref float __result)
 
-        {
-            bool flagIsCreatureMine = p.Faction != null && p.Faction.IsPlayer;
-            bool flagDoesCreatureHaveTheHediffs = (p.TryGetComp<CompInitialHediff>() != null);
-            bool flagCanCreatureCarryMore = false;
-            if (flagDoesCreatureHaveTheHediffs)
-            {
-                flagCanCreatureCarryMore = (p.TryGetComp<CompInitialHediff>().Props.hediffname == "AA_CarryWeight");
-            }
-            
-
-            
-                               
-
-            if (flagIsCreatureMine && flagCanCreatureCarryMore)
-            {
-                int factor = p.TryGetComp<CompInitialHediff>().phase;
-                __result = p.BodySize * 35f + factor*factor;
-            }
-
-        }
-    }
 
     /*Buckle your belts or something, we are doing Transpilers!*/
 
