@@ -13,32 +13,65 @@
 	  <ComfyTemperatureMax>75</ComfyTemperatureMax>
       <MarketValue>600</MarketValue>
     </statBases>
-    <tools>
+   <tools>
       <li>
-        <label>tusk</label>
+        <label>left claw</label>
         <capacities>
           <li>Scratch</li>
-          <li>Stab</li>
         </capacities>
-        <power>19</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+        <power>11</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
       </li>
       <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+	   <label>beak</label>
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>20</power>
+        <power>16</power>
         <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.6</chanceFactor>
+        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
       </li>
       <li>
         <label>head</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>15</power>
+        <power>9</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -47,28 +80,30 @@
     </tools>
 	
 	
-   
+   <comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>MM_EggGriffinFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>20</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>
+          <min>1</min>
+          <max>1</max>
+        </eggCountRange>
+      </li>
+    </comps>
     <race>
-      <body>QuadrupedAnimalWithHoovesAndTusks</body>
+      <body>MM_QuadrupedAnimalWithBeakAndWings</body>
       <herdAnimal>false</herdAnimal>
-	  <baseBodySize>4</baseBodySize>
-      <baseHungerRate>0.5</baseHungerRate>
+	  <baseBodySize>3</baseBodySize>
+      <baseHungerRate>0.3</baseHungerRate>
       <baseHealthScale>2.5</baseHealthScale>
-	  <foodType>OmnivoreRoughAnimal</foodType>
-	  <wildness>0.90</wildness>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+	  <wildness>0.75</wildness>
 	  <trainability>Advanced</trainability>
-	  <useMeatFrom>Pig</useMeatFrom>
-      <leatherDef>Leather_Pig</leatherDef>
+      <leatherDef>Leather_Panthera</leatherDef>
 	  <gestationPeriodDays>30</gestationPeriodDays>
-	  <litterSizeCurve>
-        <points>
-          <li>(0.5, 0)</li>
-          <li>(1, 1)</li>
-          <li>(1.5, 1)</li>
-          <li>(2.0, 0)</li>
-        </points>
-      </litterSizeCurve>
-	  <lifeExpectancy>18</lifeExpectancy>
+	  <lifeExpectancy>25</lifeExpectancy>
 	  <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -96,32 +131,34 @@
 	
     </race>
     <tradeTags>
+	   <li>AnimalUncommon</li>
+
       <li>AnimalFighter</li>
     </tradeTags>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">
-    <defName>MM_ErymanthianBoar</defName>
-    <label>erymanthian boar</label>
-    <race>MM_ErymanthianBoar</race>
+    <defName>MM_Griffin</defName>
+    <label>griffin</label>
+    <race>MM_Griffin</race>
     <combatPower>300</combatPower>
-    <ecoSystemWeight>1.5</ecoSystemWeight>
+    <ecoSystemWeight>0.5</ecoSystemWeight>
     <lifeStages>
       <li>
         
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_ErymanthianBoar</texPath>
+          <texPath>Things/Pawn/Animal/MM_Griffin/MM_Griffin</texPath>
           <drawSize>1.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_Dessicated_ErymanthianBoar</texPath>
+          <texPath>Things/Pawn/Animal/MM_Griffin/MM_Dessicated_Griffin</texPath>
           <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_ErymanthianBoar</texPath>
+          <texPath>Things/Pawn/Animal/MM_Griffin/MM_Griffin</texPath>
           <drawSize>1.85</drawSize>
           <shadowData>
             <volume>(0.3, 0.3, 0.3)</volume>
@@ -129,13 +166,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_Dessicated_ErymanthianBoar</texPath>
+          <texPath>Things/Pawn/Animal/MM_Griffin/MM_Dessicated_Griffin</texPath>
           <drawSize>1.85</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_ErymanthianBoar</texPath>
+          <texPath>Things/Pawn/Animal/MM_Griffin/MM_Griffin</texPath>
           <drawSize>2.5</drawSize>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
@@ -143,7 +180,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_Dessicated_ErymanthianBoar</texPath>
+          <texPath>Things/Pawn/Animal/MM_Griffin/MM_Dessicated_Griffin</texPath>
           <drawSize>2.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
