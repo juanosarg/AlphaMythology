@@ -91,7 +91,7 @@
 	  <wildness>0.80</wildness>
 	  <trainability>Advanced</trainability>
 	  <useMeatFrom>Cougar</useMeatFrom>
-      <leatherDef>Leather_Panthera</leatherDef>
+      <leatherDef>MM_LightMagicalLeather</leatherDef>
 	  <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 	  <gestationPeriodDays>26</gestationPeriodDays>

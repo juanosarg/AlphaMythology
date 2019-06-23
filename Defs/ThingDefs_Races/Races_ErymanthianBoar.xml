@@ -58,7 +58,7 @@
 	  <wildness>0.90</wildness>
 	  <trainability>Advanced</trainability>
 	  <useMeatFrom>Pig</useMeatFrom>
-      <leatherDef>Leather_Pig</leatherDef>
+      <leatherDef>MM_LightMagicalLeather</leatherDef>
 	  <gestationPeriodDays>30</gestationPeriodDays>
 	  <litterSizeCurve>
         <points>

@@ -48,26 +48,20 @@
 	
    
     <race>
-      <body>QuadrupedAnimalWithHoovesAndTusks</body>
+      <body>MM_Hydra</body>
       <herdAnimal>false</herdAnimal>
-	  <baseBodySize>4</baseBodySize>
-      <baseHungerRate>0.5</baseHungerRate>
-      <baseHealthScale>2.5</baseHealthScale>
+	  <baseBodySize>8</baseBodySize>
+      <baseHungerRate>0.3</baseHungerRate>
+      <baseHealthScale>4</baseHealthScale>
 	  <foodType>OmnivoreRoughAnimal</foodType>
-	  <wildness>0.90</wildness>
+	  <wildness>0.975</wildness>
 	  <trainability>Advanced</trainability>
-	  <useMeatFrom>Pig</useMeatFrom>
-      <leatherDef>Leather_Pig</leatherDef>
-	  <gestationPeriodDays>30</gestationPeriodDays>
-	  <litterSizeCurve>
-        <points>
-          <li>(0.5, 0)</li>
-          <li>(1, 1)</li>
-          <li>(1.5, 1)</li>
-          <li>(2.0, 0)</li>
-        </points>
-      </litterSizeCurve>
-	  <lifeExpectancy>18</lifeExpectancy>
+	  <leatherDef>MM_HeavyMagicalLeather</leatherDef>
+	  <gestationPeriodDays>45</gestationPeriodDays>
+	  <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+	 
+	  <lifeExpectancy>50</lifeExpectancy>
 	  <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -75,15 +69,15 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.2</minAge>
+          <minAge>0.3</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.8</minAge>
-          <soundWounded>MM_ErymanthianBoar_Wounded</soundWounded>
-          <soundDeath>MM_ErymanthianBoar_Death</soundDeath>
-          <soundCall>Pawn_Wildboar_Call</soundCall>
-          <soundAngry>MM_ErymanthianBoar_Angry</soundAngry>
+          <minAge>1</minAge>
+          <soundWounded>Pawn_Rhinoceros_Wounded</soundWounded>
+          <soundDeath>Pawn_Rhinoceros_Death</soundDeath>
+          <soundCall>Pawn_Rhinoceros_Call</soundCall>
+          <soundAngry>Pawn_Rhinoceros_Angry</soundAngry>
         </li>
       </lifeStageAges>
 	   <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
@@ -95,54 +89,59 @@
 	
     </race>
     <tradeTags>
+      <li>AnimalUncommon</li>
       <li>AnimalFighter</li>
     </tradeTags>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">
-    <defName>MM_ErymanthianBoar</defName>
-    <label>erymanthian boar</label>
-    <race>MM_ErymanthianBoar</race>
+    <defName>MM_LernaeanHydra</defName>
+    <label>lernaean hydra</label>
+    <race>MM_LernaeanHydra</race>
     <combatPower>300</combatPower>
     <ecoSystemWeight>1.5</ecoSystemWeight>
     <lifeStages>
       <li>
         
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_ErymanthianBoar</texPath>
+          <texPath>Things/Pawn/Animal/MM_LernaeanHydra/MM_LernaeanHydra</texPath>
           <drawSize>1.2</drawSize>
+		   <shadowData>
+            <volume>(0.475, 0.2, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_Dessicated_ErymanthianBoar</texPath>
+          <texPath>Things/Pawn/Animal/MM_LernaeanHydra/MM_Dessicated_LernaeanHydra</texPath>
           <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_ErymanthianBoar</texPath>
+          <texPath>Things/Pawn/Animal/MM_LernaeanHydra/MM_LernaeanHydra</texPath>
           <drawSize>1.85</drawSize>
           <shadowData>
-            <volume>(0.3, 0.3, 0.3)</volume>
-            <offset>(0,0,-0.3)</offset>
+            <volume>(0.72, 0.3, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_Dessicated_ErymanthianBoar</texPath>
+          <texPath>Things/Pawn/Animal/MM_LernaeanHydra/MM_Dessicated_LernaeanHydra</texPath>
           <drawSize>1.85</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_ErymanthianBoar</texPath>
+          <texPath>Things/Pawn/Animal/MM_LernaeanHydra/MM_LernaeanHydra</texPath>
           <drawSize>2.5</drawSize>
           <shadowData>
-            <volume>(0.4, 0.4, 0.4)</volume>
-            <offset>(0,0,-0.1)</offset>
+            <volume>(0.95, 0.4, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_ErymanthianBoar/MM_Dessicated_ErymanthianBoar</texPath>
+          <texPath>Things/Pawn/Animal/MM_LernaeanHydra/MM_Dessicated_LernaeanHydra</texPath>
           <drawSize>2.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>

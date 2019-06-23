@@ -101,7 +101,7 @@
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <wildness>0.75</wildness>
 	  <trainability>Advanced</trainability>
-      <leatherDef>Leather_Panthera</leatherDef>
+      <leatherDef>MM_LightMagicalLeather</leatherDef>
 	  <gestationPeriodDays>30</gestationPeriodDays>
 	  <lifeExpectancy>25</lifeExpectancy>
 	  <lifeStageAges>

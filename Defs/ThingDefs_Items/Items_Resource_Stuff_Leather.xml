@@ -5,7 +5,7 @@
   <ThingDef ParentName="LeatherBase">
     <defName>MM_LightMagicalLeather</defName>
     <label>light magical leather</label>
-    <description>The strong furry leather of a bear. Compared to most leather, it is quite a bit tougher and a bit better at all kinds of temperature regulation.</description>
+    <description>This leather shines with a strange, ethereal light. Compared to most light leathers, it is quite a bit tougher and a bit better at all kinds of temperature regulation.</description>
     <graphicData>
       <color>(203,167,107)</color>
     </graphicData>
@@ -26,7 +26,7 @@
   <ThingDef ParentName="LeatherBase">
     <defName>MM_HeavyMagicalLeather</defName>
     <label>heavy magical leather</label>
-    <description>Tanned, dried, scraped rhinocerous skin. It is exceptionally durable in combat, but provides little protection from weather.</description>
+    <description>This heavy leather shines with a strange, ethereal light. Compared to most leather, it is quite a bit tougher and a bit better at all kinds of temperature regulation.</description>
     <graphicData>
       <color>(66,62,49)</color>
     </graphicData>
