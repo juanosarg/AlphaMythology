@@ -116,10 +116,10 @@
         <li>
           <def>AnimalAdult</def>
           <minAge>0.8</minAge>
-          <soundWounded>MM_ErymanthianBoar_Wounded</soundWounded>
-          <soundDeath>MM_ErymanthianBoar_Death</soundDeath>
-          <soundCall>Pawn_Wildboar_Call</soundCall>
-          <soundAngry>MM_ErymanthianBoar_Angry</soundAngry>
+          <soundWounded>MM_Griffin_Wounded</soundWounded>
+          <soundDeath>MM_Griffin_Death</soundDeath>
+          <soundCall>MM_Griffin_Call</soundCall>
+          <soundAngry>MM_Griffin_Angry</soundAngry>
         </li>
       </lifeStageAges>
 	   <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
