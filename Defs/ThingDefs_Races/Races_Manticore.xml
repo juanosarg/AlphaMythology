@@ -4,16 +4,16 @@
 <!-- ============================================================ -->
 
   <ThingDef ParentName="AnimalThingBase">
-    <defName>MM_Griffin</defName>
-    <label>griffin</label>
-    <description>The Griffin is a creature with the body, tail, and back legs of a lion; the head and wings of an eagle; and an eagle's talons as its front feet. Griffins are especially powerful and majestic creatures, known for guarding treasure and priceless possessions, and valued as trusted steeds.\n\nGriffins aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.</description>
+    <defName>MM_Manticore</defName>
+    <label>manticore</label>
+    <description>The Manticore is a monstruous legendary creature in Persian mythology. It has a hybrid leonine-humanoid head, the body of a lion and a scorpion tail of venomous spines similar to porcupine quills. This manticore has also been modified to have non-functional chiropteran wings, even though historical depictions of the creature didn't include them. The manticore is a fierce predator, capable of stalking its prey and attack from range.\n\nManticores aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.</description>
     <statBases>
-      <MoveSpeed>5</MoveSpeed>
-      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>75</ComfyTemperatureMax>
-      <MarketValue>600</MarketValue>
+      <MoveSpeed>6</MoveSpeed>
+      <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>100</ComfyTemperatureMax>
+      <MarketValue>1000</MarketValue>
     </statBases>
-   <tools>
+    <tools>
       <li>
         <label>left claw</label>
         <capacities>
@@ -49,19 +49,35 @@
         </surpriseAttack>
       </li>
       <li>
-	   <label>beak</label>
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>16</power>
+        <power>21</power>
         <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.7</chanceFactor>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
               <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+	  <li>
+        <capacities>
+          <li>MM_ToxicBite</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>MM_AttackTail</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>18</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
@@ -80,42 +96,36 @@
     </tools>
 	
 	
-   <comps>
-      <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>MM_EggGriffinFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>20</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>
-          <min>1</min>
-          <max>1</max>
-        </eggCountRange>
-      </li>
-    </comps>
+   
     <race>
-	<wildBiomes>
-        <BorealForest>0.05</BorealForest>
-        
-      
+	  <wildBiomes>
+        <BorealForest>0.001</BorealForest>
+        <IceSheet>0.001</IceSheet>
+        <Tundra>0.001</Tundra>
+        <ColdBog>0.001</ColdBog>
+        <SeaIce>0.001</SeaIce>
         <TemperateSwamp>0.01</TemperateSwamp>
         <TropicalSwamp>0.01</TropicalSwamp>
-        <TemperateForest>0.06</TemperateForest>
+        <TemperateForest>0.04</TemperateForest>
         <TropicalRainforest>0.06</TropicalRainforest>
-        <AridShrubland>0.01</AridShrubland>
-        <Desert>0.01</Desert>
-        <ExtremeDesert>0.01</ExtremeDesert>
+        <AridShrubland>0.07</AridShrubland>
+        <Desert>0.07</Desert>
+        <ExtremeDesert>0.1</ExtremeDesert>
       </wildBiomes>
-      <body>MM_QuadrupedAnimalWithBeakAndWings</body>
+      <body>MM_ManticoreBody</body>
       <herdAnimal>false</herdAnimal>
-	  <baseBodySize>3</baseBodySize>
+	  <baseBodySize>2.5</baseBodySize>
       <baseHungerRate>0.3</baseHungerRate>
-      <baseHealthScale>2.5</baseHealthScale>
+      <baseHealthScale>2</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-	  <wildness>0.75</wildness>
+	  <wildness>0.80</wildness>
 	  <trainability>Advanced</trainability>
-      <leatherDef>MM_LightMagicalLeather</leatherDef>
-	  <gestationPeriodDays>30</gestationPeriodDays>
-	  <lifeExpectancy>25</lifeExpectancy>
+	  <leatherDef>MM_HeavyMagicalLeather</leatherDef>
+	  <gestationPeriodDays>27</gestationPeriodDays>
+	  <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+	 
+	  <lifeExpectancy>17</lifeExpectancy>
 	  <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -123,56 +133,51 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.2</minAge>
+          <minAge>0.25</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.8</minAge>
-          <soundWounded>MM_Griffin_Wounded</soundWounded>
-          <soundDeath>MM_Griffin_Death</soundDeath>
-          <soundCall>MM_Griffin_Call</soundCall>
-          <soundAngry>MM_Griffin_Angry</soundAngry>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Cougar_Injured</soundWounded>
+          <soundDeath>Pawn_Cougar_Death</soundDeath>
+          <soundAngry>Pawn_Cougar_Angry</soundAngry>
         </li>
       </lifeStageAges>
 	   <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-     
+    
 	
     </race>
     <tradeTags>
-	   <li>AnimalUncommon</li>
-
+      <li>AnimalUncommon</li>
       <li>AnimalFighter</li>
     </tradeTags>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">
-    <defName>MM_Griffin</defName>
-    <label>griffin</label>
-    <race>MM_Griffin</race>
-    <combatPower>300</combatPower>
+    <defName>MM_Manticore</defName>
+    <label>manticore</label>
+    <race>MM_Manticore</race>
+    <combatPower>250</combatPower>
     <ecoSystemWeight>0.5</ecoSystemWeight>
-	<wildGroupSize>
-      <min>1</min>
-      <max>5</max>
-    </wildGroupSize>
     <lifeStages>
       <li>
         
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_Griffin/MM_Griffin</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>Things/Pawn/Animal/MM_Manticore/MM_Manticore</texPath>
+          <drawSize>1.8</drawSize>
+		   
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_Griffin/MM_Dessicated_Griffin</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>Things/Pawn/Animal/MM_Manticore/MM_Dessicated_Manticore</texPath>
+          <drawSize>1.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_Griffin/MM_Griffin</texPath>
+          <texPath>Things/Pawn/Animal/MM_Manticore/MM_Manticore</texPath>
           <drawSize>2.4</drawSize>
           <shadowData>
             <volume>(0.3, 0.3, 0.3)</volume>
@@ -180,22 +185,22 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_Griffin/MM_Dessicated_Griffin</texPath>
+          <texPath>Things/Pawn/Animal/MM_Manticore/MM_Dessicated_Manticore</texPath>
           <drawSize>2.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_Griffin/MM_Griffin</texPath>
-          <drawSize>3.5</drawSize>
+          <texPath>Things/Pawn/Animal/MM_Manticore/MM_Manticore</texPath>
+          <drawSize>3</drawSize>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
             <offset>(0,0,-0.1)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/MM_Griffin/MM_Dessicated_Griffin</texPath>
-          <drawSize>3.5</drawSize>
+          <texPath>Things/Pawn/Animal/MM_Manticore/MM_Dessicated_Manticore</texPath>
+          <drawSize>3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

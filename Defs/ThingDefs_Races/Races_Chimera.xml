@@ -14,6 +14,23 @@
       <MarketValue>500</MarketValue>
     </statBases>
    <tools>
+   <li>
+				<label>toxic bite</label>
+				<capacities>
+					<li>MM_ToxicBite</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>7</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
       <li>
         <label>left claw</label>
         <capacities>
@@ -81,6 +98,20 @@
 	
    
     <race>
+	  <wildBiomes>
+        <BorealForest>0.01</BorealForest>
+        <IceSheet>0.001</IceSheet>
+        <Tundra>0.001</Tundra>
+        <ColdBog>0.001</ColdBog>
+        <SeaIce>0.001</SeaIce>
+        <TemperateSwamp>0.01</TemperateSwamp>
+        <TropicalSwamp>0.01</TropicalSwamp>
+        <TemperateForest>0.04</TemperateForest>
+        <TropicalRainforest>0.06</TropicalRainforest>
+        <AridShrubland>0.07</AridShrubland>
+        <Desert>0.07</Desert>
+        <ExtremeDesert>0.1</ExtremeDesert>
+      </wildBiomes>
       <body>MM_Chimera_Body</body>
       <herdAnimal>false</herdAnimal>
 	  <predator>true</predator>
@@ -90,8 +121,7 @@
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 	  <wildness>0.80</wildness>
 	  <trainability>Advanced</trainability>
-	  <useMeatFrom>Cougar</useMeatFrom>
-      <leatherDef>MM_LightMagicalLeather</leatherDef>
+	  <leatherDef>MM_LightMagicalLeather</leatherDef>
 	  <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 	  <gestationPeriodDays>26</gestationPeriodDays>
@@ -116,9 +146,7 @@
 	   <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-      <wildBiomes>
-        
-      </wildBiomes>
+     
 	
     </race>
     <tradeTags>
@@ -133,6 +161,10 @@
     <race>MM_Chimera</race>
     <combatPower>300</combatPower>
     <ecoSystemWeight>0.5</ecoSystemWeight>
+	<wildGroupSize>
+      <min>1</min>
+      <max>2</max>
+    </wildGroupSize>
     <lifeStages>
       <li>
         
@@ -190,7 +222,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/MM_Chimera/MM_Chimera</texPath>
-          <drawSize>2.7</drawSize>
+          <drawSize>3.2</drawSize>
           <shadowData>
             <volume>(0.8, 0.6, 0.6)</volume>
             <offset>(0,0,-0.3)</offset>
@@ -198,7 +230,7 @@
         </bodyGraphicData>
         <femaleGraphicData>
           <texPath>Things/Pawn/Animal/MM_Chimera/MM_Chimera_female</texPath>
-          <drawSize>2.6</drawSize>
+          <drawSize>2.9</drawSize>
           <shadowData>
             <volume>(0.8, 0.6, 0.6)</volume>
             <offset>(0,0,-0.3)</offset>
@@ -206,11 +238,11 @@
         </femaleGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/MM_Chimera/MM_Dessicated_Chimera</texPath>
-          <drawSize>2.7</drawSize>
+          <drawSize>3.2</drawSize>
         </dessicatedBodyGraphicData>
         <femaleDessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/MM_Chimera/MM_Dessicated_Chimera_female</texPath>
-          <drawSize>2.6</drawSize>
+          <drawSize>2.9</drawSize>
         </femaleDessicatedBodyGraphicData>
       </li>
     </lifeStages>

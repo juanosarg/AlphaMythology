@@ -48,6 +48,18 @@
 	
    
     <race>
+	<wildBiomes>
+        <BorealForest>0.01</BorealForest>
+        <IceSheet>0.1</IceSheet>
+        <Tundra>0.06</Tundra>
+        <ColdBog>0.07</ColdBog>
+        <SeaIce>0.1</SeaIce>
+        <TemperateSwamp>0.07</TemperateSwamp>
+        
+        <TemperateForest>0.01</TemperateForest>
+       
+      
+      </wildBiomes>
       <body>MM_Hydra</body>
       <herdAnimal>false</herdAnimal>
 	  <baseBodySize>8</baseBodySize>
@@ -74,19 +86,16 @@
         <li>
           <def>AnimalAdult</def>
           <minAge>1</minAge>
-          <soundWounded>Pawn_Rhinoceros_Wounded</soundWounded>
-          <soundDeath>Pawn_Rhinoceros_Death</soundDeath>
-          <soundCall>Pawn_Rhinoceros_Call</soundCall>
-          <soundAngry>Pawn_Rhinoceros_Angry</soundAngry>
+          <soundWounded>Pawn_Cobra_Wounded</soundWounded>
+          <soundDeath>Pawn_Cobra_Death</soundDeath>
+          <soundCall>Pawn_Cobra_Call</soundCall>
+          <soundAngry>Pawn_Cobra_Angry</soundAngry>
         </li>
       </lifeStageAges>
 	   <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-      <wildBiomes>
-        
-      </wildBiomes>
-	
+    
     </race>
     <tradeTags>
       <li>AnimalUncommon</li>
@@ -105,7 +114,7 @@
         
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/MM_LernaeanHydra/MM_LernaeanHydra</texPath>
-          <drawSize>1.2</drawSize>
+          <drawSize>2.8</drawSize>
 		   <shadowData>
             <volume>(0.475, 0.2, 0.3)</volume>
             <offset>(0,0,-0.2)</offset>
@@ -113,14 +122,14 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/MM_LernaeanHydra/MM_Dessicated_LernaeanHydra</texPath>
-          <drawSize>1.2</drawSize>
+          <drawSize>2.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/MM_LernaeanHydra/MM_LernaeanHydra</texPath>
-          <drawSize>1.85</drawSize>
+          <drawSize>3.85</drawSize>
           <shadowData>
             <volume>(0.72, 0.3, 0.45)</volume>
             <offset>(0,0,-0.25)</offset>
@@ -128,13 +137,13 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/MM_LernaeanHydra/MM_Dessicated_LernaeanHydra</texPath>
-          <drawSize>1.85</drawSize>
+          <drawSize>3.85</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/MM_LernaeanHydra/MM_LernaeanHydra</texPath>
-          <drawSize>2.5</drawSize>
+          <drawSize>6.5</drawSize>
           <shadowData>
             <volume>(0.95, 0.4, 0.6)</volume>
             <offset>(0,0,-0.3)</offset>
@@ -142,7 +151,7 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/MM_LernaeanHydra/MM_Dessicated_LernaeanHydra</texPath>
-          <drawSize>2.5</drawSize>
+          <drawSize>6.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

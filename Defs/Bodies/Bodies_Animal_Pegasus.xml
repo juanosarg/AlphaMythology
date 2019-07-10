@@ -10,115 +10,30 @@
 <Defs>
 
 	<BodyDef>
-		<defName>MM_Chimera_Body</defName>
-		<label>chimera</label>
+		<defName>MM_PegasusBody</defName>
+		<label>quadruped animal with hooves and wings</label>
 		<corePart>
 			<def>Body</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
 			<parts>
 				<li>
-					<def>MM_ChimeraTail</def>
-					<coverage>0.07</coverage>
-					<parts>
-						<li>
-							<def>Head</def>
-							<coverage>0.75</coverage>
-						  
-							<parts>
-								<li>
-									<def>Skull</def>
-									<coverage>0.25</coverage>
-									<depth>Inside</depth>
-									<parts>
-										<li>
-											<def>Brain</def>
-											<coverage>0.7</coverage>
-											<depth>Inside</depth>
-										</li>
-									</parts>
-								</li>
-								<li>
-									<def>Eye</def>
-									<customLabel>left eye</customLabel>
-									<coverage>0.12</coverage>
-								</li>
-								<li>
-									<def>Eye</def>
-									<customLabel>right eye</customLabel>
-									<coverage>0.12</coverage>
-								</li>
-								
-								<li>
-									<def>Nose</def>
-									<coverage>0.1</coverage>
-								</li>
-								 <li>
-								  <def>SnakeMouth</def>
-								  <coverage>0.15</coverage>
-								  <groups>
-									<li>Mouth</li>
-								  </groups>
-								</li>
-							</parts>
-						</li>
-					</parts>
-				</li>
-				<li>
 					<def>Spine</def>
 					<coverage>0.03</coverage>
 					<depth>Inside</depth>
 				</li>
 				<li>
-							<def>MM_Goathead</def>
-							<coverage>0.75</coverage>
-             
-							<parts>
-								<li>
-									<def>Skull</def>
-									<coverage>0.25</coverage>
-									<depth>Inside</depth>
-									<parts>
-										<li>
-											<def>Brain</def>
-											<coverage>0.7</coverage>
-											<depth>Inside</depth>
-										</li>
-									</parts>
-								</li>
-								<li>
-									<def>Eye</def>
-									<customLabel>left eye</customLabel>
-									<coverage>0.12</coverage>
-								</li>
-								<li>
-									<def>Eye</def>
-									<customLabel>right eye</customLabel>
-									<coverage>0.12</coverage>
-								</li>
-								<li>
-									<def>Ear</def>
-									<customLabel>left ear</customLabel>
-									<coverage>0.08</coverage>
-								</li>
-								<li>
-									<def>Ear</def>
-									<customLabel>right ear</customLabel>
-									<coverage>0.08</coverage>
-								</li>
-								<li>
-									<def>Nose</def>
-									<coverage>0.1</coverage>
-								</li>
-								<li>
-									<def>AnimalJaw</def>
-									<coverage>0.1</coverage>
-									<groups>
-										<li>Teeth</li>
-									</groups>
-								</li>
-							</parts>
-						</li>
+					<def>MM_Wing</def>
+										<customLabel>left wing</customLabel>
+
+					<coverage>0.04</coverage>
+				</li>
+				<li>
+					<def>MM_Wing</def>
+										<customLabel>right wing</customLabel>
+
+					<coverage>0.04</coverage>
+				</li>
 				<li>
 					<def>Stomach</def>
 					<coverage>0.03</coverage>
@@ -160,15 +75,15 @@
 				</li>
 				<li>
 					<def>Neck</def>
-					<coverage>0.20</coverage>
+					<coverage>0.22</coverage>
 					<height>Top</height>
 					<parts>
 						<li>
 							<def>Head</def>
 							<coverage>0.75</coverage>
-              <groups>
-                <li>HeadAttackTool</li>
-              </groups>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
 							<parts>
 								<li>
 									<def>Skull</def>
@@ -209,9 +124,9 @@
 								<li>
 									<def>AnimalJaw</def>
 									<coverage>0.1</coverage>
-									<groups>
-										<li>Teeth</li>
-									</groups>
+                  <groups>
+                    <li>Teeth</li>
+                  </groups>
 								</li>
 							</parts>
 						</li>
@@ -222,14 +137,14 @@
 					<customLabel>front left leg</customLabel>
 					<coverage>0.07</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>FrontLeftLeg</li>
+					</groups>
 					<parts>
 						<li>
-							<def>Paw</def>
-							<customLabel>front left paw</customLabel>
+							<def>Hoof</def>
+							<customLabel>front left hoof</customLabel>
 							<coverage>0.15</coverage>
-							<groups>
-								<li>FrontLeftPaw</li>
-							</groups>
 						</li>
 					</parts>
 				</li>
@@ -238,14 +153,14 @@
 					<customLabel>front right leg</customLabel>
 					<coverage>0.07</coverage>
 					<height>Bottom</height>
+					<groups>
+						<li>FrontRightLeg</li>
+					</groups>
 					<parts>
 						<li>
-							<def>Paw</def>
-							<customLabel>front right paw</customLabel>
+							<def>Hoof</def>
+							<customLabel>front right hoof</customLabel>
 							<coverage>0.15</coverage>
-							<groups>
-								<li>FrontRightPaw</li>
-							</groups>
 						</li>
 					</parts>
 				</li>
@@ -256,8 +171,8 @@
 					<height>Bottom</height>
 					<parts>
 						<li>
-							<def>Paw</def>
-							<customLabel>rear left paw</customLabel>
+							<def>Hoof</def>
+							<customLabel>rear left hoof</customLabel>
 							<coverage>0.15</coverage>
 						</li>
 					</parts>
@@ -269,8 +184,8 @@
 					<height>Bottom</height>
 					<parts>
 						<li>
-							<def>Paw</def>
-							<customLabel>rear right paw</customLabel>
+							<def>Hoof</def>
+							<customLabel>rear right hoof</customLabel>
 							<coverage>0.15</coverage>
 						</li>
 					</parts>
@@ -278,5 +193,7 @@
 			</parts>
 		</corePart>
 	</BodyDef>
+
+ 
 
 </Defs>
