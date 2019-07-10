@@ -3,7 +3,7 @@
 
 
   
-      <ManeuverDef>
+   <ManeuverDef>
     <defName>MM_ToxicBite</defName>
     <requiredCapacity>MM_ToxicBite</requiredCapacity>
     <verb>
@@ -15,6 +15,20 @@
     <combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
     <combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
     <combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+   <ManeuverDef>
+    <defName>MM_Grapple</defName>
+    <requiredCapacity>MM_Grapple</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MM_Grapple</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
   </ManeuverDef>
   
       

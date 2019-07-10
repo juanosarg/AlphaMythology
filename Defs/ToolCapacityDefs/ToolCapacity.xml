@@ -9,6 +9,11 @@
 		<label>toxic bite</label>
 	</ToolCapacityDef>
 	
+	<ToolCapacityDef>
+		<defName>MM_Grapple</defName>
+		<label>grapple</label>
+	</ToolCapacityDef>
+	
 
 
 

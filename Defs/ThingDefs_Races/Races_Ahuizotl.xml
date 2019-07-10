@@ -17,19 +17,12 @@
 	<li>
         <label>grabbing hand</label>
         <capacities>
-          <li>Blunt</li>
+          <li>MM_Grapple</li>
         </capacities>
         <power>15</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Hands</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>18</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
+       
       </li>
       <li>
         <label>left claw</label>
