@@ -6,7 +6,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>MM_Ahuizotl</defName>
     <label>ahuizotl</label>
-    <description>The Ahuizotl is a legendary creature in Aztec myth. It is described as dog-like, its waterproof fur often clumping up to create spikes. The ahuizotl has hands capable of manipulation and an additional hand on its tail. The ahuizotl is feared due to its liking for human flesh, especially nails, eyes, and teeth. It is said to live in or near the water and to use the hand on the end of its tail to snatch its prey, dragging the person into the depths to drown them.\n\nAhuizotl aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.</description>
+    <description>The Ahuizotl is a legendary creature in Aztec myth. It is described as dog-like, its waterproof fur often clumping up to create spikes. The ahuizotl has hands capable of manipulation and an additional hand on its tail. The ahuizotl is feared due to its liking for human flesh, especially nails, eyes, and teeth. It is said to live in or near the water and to use the hand on the end of its tail to snatch its prey, dragging the person into the depths to drown them.\n\nAhuizotl aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial abilities: Ahuizotl are adept at using the hand at the end of their tail to grab their prey and claw at them with their paws, making a retreat quite difficult if engaged in close quarters.</description>
     <statBases>
       <MoveSpeed>5</MoveSpeed>
       <ComfyTemperatureMin>-40</ComfyTemperatureMin>
@@ -40,7 +40,7 @@
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
-        <chanceFactor>0.5</chanceFactor>
+        <chanceFactor>0.2</chanceFactor>
       </li>
       <li>
         <label>right claw</label>
@@ -58,7 +58,7 @@
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
-        <chanceFactor>0.5</chanceFactor>
+        <chanceFactor>0.2</chanceFactor>
       </li>
       <li>
         <capacities>
@@ -165,7 +165,7 @@
 	<labelPlural>ahuizotl</labelPlural>
 
     <race>MM_Ahuizotl</race>
-    <combatPower>120</combatPower>
+    <combatPower>170</combatPower>
     <ecoSystemWeight>0.5</ecoSystemWeight>
 	<wildGroupSize>
       <min>1</min>

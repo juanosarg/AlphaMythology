@@ -20,16 +20,27 @@
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
+
 	
-	<DamageDef ParentName="StunBase">
+		<DamageDef>
 		<defName>MM_Grapple</defName>
 		<label>grapple</label>
+		<workerClass>DamageWorker_Blunt</workerClass>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been grappled to death.</deathMessage>
-		<defaultDamage>20</defaultDamage>
-		<explosionCellMote>Mote_BlastDry</explosionCellMote>
-		<soundExplosion>Explosion_Stun</soundExplosion>
-		<combatLogRules>Damage_Stun</combatLogRules>
+		<hediff>Crush</hediff>
+		<hediffSkin>Shredded</hediffSkin>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<additionalHediffs>
+			<li>
+				<hediff>MM_Grabbed</hediff>
+				<severityPerDamageDealt>0.025</severityPerDamageDealt>
+				
+			</li>
+		</additionalHediffs>
 	</DamageDef>
 
 
