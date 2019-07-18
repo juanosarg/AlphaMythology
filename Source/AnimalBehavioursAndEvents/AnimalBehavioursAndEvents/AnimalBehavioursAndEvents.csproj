@@ -73,7 +73,7 @@
     <Compile Include="CompProperties_LightSustenance.cs" />
     <Compile Include="CompProperties_AsexualReproduction.cs" />
     <Compile Include="CompAsexualReproduction.cs" />
-    <Compile Include="HarmonyPatchers.cs" />
+    <Compile Include="Hediff_BleedingWound.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

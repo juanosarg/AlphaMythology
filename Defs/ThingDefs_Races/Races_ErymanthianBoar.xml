@@ -18,9 +18,9 @@
         <label>tusk</label>
         <capacities>
           <li>Scratch</li>
-          <li>Stab</li>
+          <li>MM_BleedingWound</li>
         </capacities>
-        <power>19</power>
+        <power>15</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
       </li>
@@ -28,17 +28,17 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>20</power>
+        <power>15</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.6</chanceFactor>
+        <chanceFactor>0.2</chanceFactor>
       </li>
       <li>
         <label>head</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>15</power>
+        <power>12</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>

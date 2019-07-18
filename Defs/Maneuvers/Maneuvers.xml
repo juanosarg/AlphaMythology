@@ -31,6 +31,20 @@
     <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
   </ManeuverDef>
   
+        <ManeuverDef>
+    <defName>MM_BleedingWound</defName>
+    <requiredCapacity>MM_BleedingWound</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MM_BleedingWound</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
       
 
   

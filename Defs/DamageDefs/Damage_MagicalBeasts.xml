@@ -22,7 +22,7 @@
 	</DamageDef>
 
 	
-		<DamageDef>
+	<DamageDef>
 		<defName>MM_Grapple</defName>
 		<label>grapple</label>
 		<workerClass>DamageWorker_Blunt</workerClass>
@@ -41,6 +41,37 @@
 				
 			</li>
 		</additionalHediffs>
+	</DamageDef>
+	
+	<DamageDef>
+		<defName>MM_BleedingWound</defName>
+		<label>bleeding wound</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has bled to death.</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<additionalHediffs>
+			<li>
+				<hediff>MM_BleedingWound</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+				
+			</li>
+		</additionalHediffs>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Sharp</armorCategory>
+	</DamageDef>
+	
+	<DamageDef>
+		<defName>MM_UncontrollableBleeding</defName>
+		<label>uncontrollable bleeding</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has bled to death.</deathMessage>
+		<hediff>MM_OpenWound</hediff>
+		
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
 
 

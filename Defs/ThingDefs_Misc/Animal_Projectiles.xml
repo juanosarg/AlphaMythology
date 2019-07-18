@@ -24,7 +24,7 @@
 
 	<ThingDef ParentName="MM_BaseAnimalProjectile">
 		<defName>MM_FlameBreath</defName>
-		<label>incendiary bolt</label>
+		<label>incendiary breath</label>
 		<graphicData>
 			<texPath>Things/Projectiles/MM_Firebreath</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

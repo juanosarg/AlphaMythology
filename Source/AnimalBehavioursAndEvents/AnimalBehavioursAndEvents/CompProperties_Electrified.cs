@@ -1,6 +1,6 @@
 ﻿using Verse;
 
-namespace AlphaBehavioursAndEvents
+namespace AnimalBehavioursAndEvents
 {
     public class CompProperties_Electrified : CompProperties
     {

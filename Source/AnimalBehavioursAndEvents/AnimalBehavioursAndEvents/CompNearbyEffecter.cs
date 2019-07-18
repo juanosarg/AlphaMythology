@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 
 
-namespace AlphaBehavioursAndEvents
+namespace AnimalBehavioursAndEvents
 {
     class CompNearbyEffecter : ThingComp
     {

@@ -4,7 +4,7 @@ using Verse;
 using System.Linq;
 
 
-namespace AlphaBehavioursAndEvents
+namespace AnimalBehavioursAndEvents
 {
     public class CompRegeneration : ThingComp
     {

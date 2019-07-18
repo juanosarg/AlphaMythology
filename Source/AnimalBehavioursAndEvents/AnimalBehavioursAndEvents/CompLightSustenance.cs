@@ -3,7 +3,7 @@ using RimWorld.Planet;
 using UnityEngine;
 using Verse;
 
-namespace AlphaBehavioursAndEvents
+namespace AnimalBehavioursAndEvents
 {
     public class CompLightSustenance : ThingComp
     {

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using RimWorld;
 
 
-namespace AlphaBehavioursAndEvents
+namespace AnimalBehavioursAndEvents
 {
     public class CompElectrified : ThingComp
     {

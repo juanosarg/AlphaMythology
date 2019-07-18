@@ -1,7 +1,7 @@
 ﻿using Verse;
 
 
-namespace AlphaBehavioursAndEvents
+namespace AnimalBehavioursAndEvents
 {
     class CompProperties_NearbyEffecter : CompProperties
     {

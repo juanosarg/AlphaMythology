@@ -3,7 +3,7 @@ using RimWorld;
 using Verse;
 
 
-namespace AlphaBehavioursAndEvents
+namespace AnimalBehavioursAndEvents
 {
     class CompGasProducer : ThingComp
     {

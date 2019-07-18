@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using Verse;
 
-namespace AlphaBehavioursAndEvents
+namespace AnimalBehavioursAndEvents
 {
     public class CompAsexualReproduction: ThingComp
     {

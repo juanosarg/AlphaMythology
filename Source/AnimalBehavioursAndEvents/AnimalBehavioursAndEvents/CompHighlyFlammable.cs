@@ -2,7 +2,7 @@
 using Verse;
 using RimWorld;
 
-namespace AlphaBehavioursAndEvents
+namespace AnimalBehavioursAndEvents
 {
     public class CompHighlyFlammable : ThingComp
     {
