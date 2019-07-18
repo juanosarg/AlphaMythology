@@ -6,7 +6,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>MM_ErymanthianBoar</defName>
     <label>erymanthian boar</label>
-    <description>The Erymanthian Boar was a gargantuan, monstruous wild hog that inhabited the slopes of mount Erymanthus, ocassionally laying waste to the farmers' fields. The boar's capture was the objective of the Fourth Labour of Heracles. To capture the boar, Heracles drove it into thick snow, considerably slowing its progress and advantage.\n\nErymanthian boars aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.</description>
+    <description>The Erymanthian Boar was a gargantuan, monstruous wild hog that inhabited the slopes of mount Erymanthus, ocassionally laying waste to the farmers' fields. The boar's capture was the objective of the Fourth Labour of Heracles. To capture the boar, Heracles drove it into thick snow, considerably slowing its progress and advantage.\n\nErymanthian boars aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: The tusks of the Erymanthian Boar can cause some serious wounds that keep bleeding and causing further injuries, making them VERY dangerous in close quarters.</description>
     <statBases>
       <MoveSpeed>4.75</MoveSpeed>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
