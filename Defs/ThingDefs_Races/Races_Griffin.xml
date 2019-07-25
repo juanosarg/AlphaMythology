@@ -6,7 +6,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>MM_Griffin</defName>
     <label>griffin</label>
-    <description>The Griffin is a creature with the body, tail, and back legs of a lion; the head and wings of an eagle; and an eagle's talons as its front feet. Griffins are especially powerful and majestic creatures, known for guarding treasure and priceless possessions, and valued as trusted steeds.\n\nGriffins aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.</description>
+    <description>The Griffin is a creature with the body, tail, and back legs of a lion; the head and wings of an eagle; and an eagle's talons as its front feet. Griffins are especially powerful and majestic creatures, known for guarding treasure and priceless possessions, and valued as trusted steeds.\n\nGriffins aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Griffins are excellent mounts, receiving bonuses to speed and armour when mounted (this needs the Giddy-up! Battle Mounts mod).</description>
     <statBases>
       <MoveSpeed>5</MoveSpeed>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>

@@ -13,28 +13,28 @@
 			
 			
 			<li Class="PatchOperationAddModExtension">
-				<xpath>/Defs/ThingDef[defName = "AA_MammothWorm"]</xpath> 
+				<xpath>/Defs/ThingDef[defName = "MM_Griffin"]</xpath> 
 				<value>
 					<li Class="GiddyUpCore.CustomStatsPatch">
 						<!--Speed factor.  -->
 						<speedModifier>1.25</speedModifier>
 						<!--Armor factor.  -->
-						<armorModifier>1.5</armorModifier>
+						<armorModifier>1.25</armorModifier>
 						<!--Setting useMetalArmor to true, makes the animal's skin have the metal bounce of effect when hit when used as mount --> 
-						<useMetalArmor>true</useMetalArmor>
+						<useMetalArmor>false</useMetalArmor>
 					</li>
 				</value>
 			</li>
 			
 						<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "AA_MammothWorm"]/comps</xpath> 
+				<xpath>/Defs/ThingDef[defName = "MM_Griffin"]/comps</xpath> 
 				<value>
 					<li Class="GiddyUpCore.CompProperties_Overlay">
 						<overlaySide> 
 							<graphicDataDefault>
-								<texPath>Things/Pawn/Animal/Saddles/AA_Saddle10_east</texPath>
+								<texPath>Things/Pawn/Animal/MM_Griffin/MM_Saddle_Griffin_east</texPath>
 								<graphicClass>Graphic_Single</graphicClass>
-								<drawSize>4.1</drawSize>
+								<drawSize>3.5</drawSize>
 								<drawRotated>false</drawRotated>
 								
 							</graphicDataDefault>					
@@ -42,9 +42,9 @@
 						</overlaySide>
 						<overlayFront> 
 							<graphicDataDefault>
-								<texPath>Things/Pawn/Animal/Saddles/AA_Saddle10_south</texPath>
+								<texPath>Things/Pawn/Animal/MM_Griffin/MM_Saddle_Griffin_south</texPath>
 								<graphicClass>Graphic_Single</graphicClass>
-								<drawSize>4.1</drawSize>
+								<drawSize>3.5</drawSize>
 								<drawRotated>false</drawRotated>
 								
 							</graphicDataDefault>					
@@ -52,9 +52,9 @@
 						</overlayFront>
 						<overlayBack> 
 							<graphicDataDefault>
-								<texPath>Things/Pawn/Animal/Saddles/AA_Saddle10_north</texPath>
+								<texPath>Things/Pawn/Animal/MM_Griffin/MM_Saddle_Griffin_north</texPath>
 								<graphicClass>Graphic_Single</graphicClass>
-								<drawSize>4.1</drawSize>
+								<drawSize>3.5</drawSize>
 								<drawRotated>false</drawRotated>
 								
 							</graphicDataDefault>					

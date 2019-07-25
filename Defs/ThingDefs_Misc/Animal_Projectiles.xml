@@ -41,6 +41,25 @@
 
 		</projectile>
 	</ThingDef>
+	
+	<ThingDef ParentName="MM_BaseAnimalProjectile">
+		<defName>MM_PoisonBreath</defName>
+		<label>poison breath</label>
+		<graphicData>
+			<texPath>Things/Projectiles/MM_PoisonBreath</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>AlphaAnimalRangeAttack.AnimalProjectile</thingClass>
+		<projectile>
+			<speed>20</speed>
+			<damageDef>MM_ToxicBreath</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<flyOverhead>false</flyOverhead>
+
+
+		</projectile>
+	</ThingDef>
 
 
 

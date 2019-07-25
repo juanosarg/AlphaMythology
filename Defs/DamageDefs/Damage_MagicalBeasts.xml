@@ -73,6 +73,28 @@
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
+	
+	<DamageDef>
+		<defName>MM_ToxicBreath</defName>
+		<label>toxic breath</label>
+		<workerClass>DamageWorker_AddGlobal</workerClass>
+		<externalViolence>true</externalViolence>
+		<hediff>MM_AffectedByPoisonBreath</hediff>
+		<defaultDamage>10</defaultDamage>
+
+		<deathMessage>{0} has been poisoned to death.</deathMessage>
+		<additionalHediffs>
+			<li>
+				<hediff>MM_ToxicBite</hediff>
+				<severityPerDamageDealt>100</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+			</li>
+		</additionalHediffs>
+		
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		
+		<armorCategory>Heat</armorCategory>
+	</DamageDef>
 
 
 

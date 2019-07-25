@@ -19,14 +19,14 @@
 				<capacities>
 					<li>MM_ToxicBite</li>
 				</capacities>
-				<power>7</power>
-				<cooldownTime>0.3</cooldownTime>
+				<power>8</power>
+				<cooldownTime>0.6</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>7</amount>
+							<amount>15</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -37,15 +37,37 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>1</power>
-				<cooldownTime>0.65</cooldownTime>
+				<power>5</power>
+				<cooldownTime>0.3</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
 
 			</li>
 		</tools>
 	
-	
+	<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>0.5</accuracyMedium>
+				<accuracyLong>0.5</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>MM_PoisonBreath</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+
+				<burstShotCount>120</burstShotCount>
+				<minRange>1</minRange>
+				<range>20</range>
+				<soundCast>MM_PoisonBreathSound</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<!--Commanility determines how frequent this range verb is chosen.-->
+				<commonality>1</commonality>
+			</li>
+
+
+	</verbs>
    
     <race>
 	<wildBiomes>

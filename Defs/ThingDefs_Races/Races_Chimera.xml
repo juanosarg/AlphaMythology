@@ -104,8 +104,9 @@
 				<accuracyLong>0.8</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>MM_FlameBreath</defaultProjectile>
-				<warmupTime>0.3</warmupTime>
+				<warmupTime>2.5</warmupTime>
 				<burstShotCount>2</burstShotCount>
+				        
 				<minRange>2</minRange>
 				<range>15</range>
 				<forcedMissRadius>2</forcedMissRadius>
