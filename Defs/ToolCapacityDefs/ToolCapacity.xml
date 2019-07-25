@@ -2,7 +2,10 @@
 
 <Defs>
 
-
+	<ToolCapacityDef>
+		<defName>MM_ToxicSting</defName>
+		<label>toxic sting</label>
+	</ToolCapacityDef>
 
 	<ToolCapacityDef>
 		<defName>MM_ToxicBite</defName>

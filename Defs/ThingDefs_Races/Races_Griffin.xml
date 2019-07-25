@@ -94,9 +94,7 @@
     </comps>
     <race>
 	<wildBiomes>
-        <BorealForest>0.05</BorealForest>
-        
-      
+        <BorealForest>0.05</BorealForest>     
         <TemperateSwamp>0.01</TemperateSwamp>
         <TropicalSwamp>0.01</TropicalSwamp>
         <TemperateForest>0.06</TemperateForest>

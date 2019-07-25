@@ -19,7 +19,21 @@
 	</ThingDef>
 
 
-
+	<ThingDef ParentName="MM_BaseAnimalProjectile">
+		<defName>MM_Quill</defName>
+		<label>quill</label>
+		<thingClass>AlphaAnimalRangeAttack.AnimalProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/MM_Quill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>MM_ToxicSting</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<speed>20</speed>
+		</projectile>
+	</ThingDef>
 
 
 	<ThingDef ParentName="MM_BaseAnimalProjectile">
@@ -41,7 +55,7 @@
 
 		</projectile>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="MM_BaseAnimalProjectile">
 		<defName>MM_PoisonBreath</defName>
 		<label>poison breath</label>
@@ -54,7 +68,7 @@
 		<projectile>
 			<speed>20</speed>
 			<damageDef>MM_ToxicBreath</damageDef>
-			<damageAmountBase>20</damageAmountBase>
+			<damageAmountBase>2</damageAmountBase>
 			<flyOverhead>false</flyOverhead>
 
 

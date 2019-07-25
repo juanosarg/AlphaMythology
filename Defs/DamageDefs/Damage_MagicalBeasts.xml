@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<DamageDef Name="Sting">
+	<DamageDef>
 		<defName>MM_ToxicBite</defName>
 		<label>toxic bite</label>
 		<workerClass>DamageWorker_Stab</workerClass>
@@ -13,6 +13,26 @@
 			<li>
 				<hediff>MM_ToxicBite</hediff>
 				<severityPerDamageDealt>0.004</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+			</li>
+		</additionalHediffs>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+	</DamageDef>
+	
+	<DamageDef>
+		<defName>MM_ToxicSting</defName>
+		<label>toxic sting</label>
+		<workerClass>DamageWorker_Stab</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been stung to death.</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<additionalHediffs>
+			<li>
+				<hediff>MM_ToxicBite</hediff>
+				<severityPerDamageDealt>0.04</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
 			</li>
 		</additionalHediffs>
@@ -77,16 +97,16 @@
 	<DamageDef>
 		<defName>MM_ToxicBreath</defName>
 		<label>toxic breath</label>
-		<workerClass>DamageWorker_AddGlobal</workerClass>
+		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
-		<hediff>MM_AffectedByPoisonBreath</hediff>
-		<defaultDamage>10</defaultDamage>
+		<hediff>MM_AcidicBurn</hediff>
+		<defaultDamage>1</defaultDamage>
 
 		<deathMessage>{0} has been poisoned to death.</deathMessage>
 		<additionalHediffs>
 			<li>
 				<hediff>MM_ToxicBite</hediff>
-				<severityPerDamageDealt>100</severityPerDamageDealt>
+				<severityPerDamageDealt>0.02</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
 			</li>
 		</additionalHediffs>
