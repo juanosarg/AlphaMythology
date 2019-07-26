@@ -34,6 +34,22 @@
 			<speed>20</speed>
 		</projectile>
 	</ThingDef>
+	
+	<ThingDef ParentName="MM_BaseAnimalProjectile">
+		<defName>MM_Tremor</defName>
+		<label>tremor</label>
+		<thingClass>AlphaAnimalRangeAttack.AnimalProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/MM_Tremor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<speed>5</speed>
+		</projectile>
+	</ThingDef>
 
 
 	<ThingDef ParentName="MM_BaseAnimalProjectile">

@@ -20,7 +20,30 @@
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
-	
+
+	<DamageDef >
+		<defName>MM_FlamingBite</defName>
+		<workerClass>DamageWorker_Flame</workerClass>
+		<label>flaming bite</label>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<canInterruptJobs>false</canInterruptJobs>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has burned to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<armorCategory>Heat</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>10</defaultDamage>
+		<defaultArmorPenetration>0</defaultArmorPenetration>
+		<explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+		<explosionCellMote>Mote_BlastFlame</explosionCellMote>
+		<explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
+		<explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+		<soundExplosion>Explosion_Flame</soundExplosion>
+		<combatLogRules>Damage_Flame</combatLogRules>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+	</DamageDef>
+
 	<DamageDef>
 		<defName>MM_ToxicSting</defName>
 		<label>toxic sting</label>
@@ -32,7 +55,7 @@
 		<additionalHediffs>
 			<li>
 				<hediff>MM_ToxicBite</hediff>
-				<severityPerDamageDealt>0.04</severityPerDamageDealt>
+				<severityPerDamageDealt>0.02</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
 			</li>
 		</additionalHediffs>
@@ -41,7 +64,7 @@
 		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
 
-	
+
 	<DamageDef>
 		<defName>MM_Grapple</defName>
 		<label>grapple</label>
@@ -58,11 +81,11 @@
 			<li>
 				<hediff>MM_Grabbed</hediff>
 				<severityPerDamageDealt>0.025</severityPerDamageDealt>
-				
+
 			</li>
 		</additionalHediffs>
 	</DamageDef>
-	
+
 	<DamageDef>
 		<defName>MM_BleedingWound</defName>
 		<label>bleeding wound</label>
@@ -75,13 +98,13 @@
 			<li>
 				<hediff>MM_BleedingWound</hediff>
 				<severityPerDamageDealt>0.01</severityPerDamageDealt>
-				
+
 			</li>
 		</additionalHediffs>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
-	
+
 	<DamageDef>
 		<defName>MM_UncontrollableBleeding</defName>
 		<label>uncontrollable bleeding</label>
@@ -89,11 +112,11 @@
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has bled to death.</deathMessage>
 		<hediff>MM_OpenWound</hediff>
-		
+
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
-	
+
 	<DamageDef>
 		<defName>MM_ToxicBreath</defName>
 		<label>toxic breath</label>
@@ -110,9 +133,9 @@
 				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
 			</li>
 		</additionalHediffs>
-		
+
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-		
+
 		<armorCategory>Heat</armorCategory>
 	</DamageDef>
 

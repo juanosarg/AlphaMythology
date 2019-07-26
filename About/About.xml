@@ -7,15 +7,41 @@
 	
 &lt;size=24&gt;Features&lt;/size&gt;
 
+Adds 11 new creatures to the diverse biomes of your Rimworlds, all of them based on mythological and magical creatures from different ancient cultures and sources. Similar to Alpha Animals, the philosophy of this mod is that every new creature tries to bring some new mechanic into the game, whether it be fire breathing cattle, acid and poison spewing behemoth, or faster than average steed. Some of the mechanics are simple, others much more complex.
+
+Animals will spawn with different rates in different biomes, and should appear at the same rate as vanilla animals (wolves have been taken as a benchmark, not rats).
+
+Bear in mind that spawn probabilities have been calculated with no other animal mods installed. If you have, for example, Animal Collab Project, less animals from this mod will appear, obviously.
+
+&lt;size=24&gt;Issues&lt;/size&gt;
+
+There shouldn't be any. Balance is obviously always a concern, although it has been playtested. Feel free to tell me if you think something is too wacky.
+
+&lt;size=24&gt;Plans for the future&lt;/size&gt;
+
+Obviously, more animals!
+
+&lt;size=24&gt;Compatibility&lt;/size&gt;
+Compatible with A Dog Said...
+Compatible with the implants from Genetic Rim and gene extraction 
+Compatible with Nature's Pretty Sweet
+Compatible with Advanced Biomes
+Compatible with Lords of the Rims - Elves (mallorn biome)
+Compatible with A RimWorld of Magic (animals drop Raw Magicyte)
+Uses Harmony (no need to download)
+Uses ModCheck (no need to download)
+
+&lt;size=24&gt;Credit&lt;/size&gt;
 Some sounds by Mike Koenig at http://soundbible.com
 Some sounds by Stephan Schutze at http://soundbible.com
 Fire sound by JaBa at http://soundbible.com/1902-Fire-Burning.html
 https://www.freesoundeffects.com/
 Horse sounds by soundslikewillem https://freesound.org/people/soundslikewillem/sounds/418428/
 "Horse Whinny, Close, A.wav" by InspectorJ (www.jshaw.co.uk) of Freesound.org
+
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
-
+v1.0: Release version (27/07/19)
 v0.1: Prerelease
 
 	

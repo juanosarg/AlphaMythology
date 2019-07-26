@@ -22,6 +22,11 @@
 		<label>bleeding wound</label>
 	</ToolCapacityDef>
 	
+	<ToolCapacityDef>
+		<defName>MM_FlamingBite</defName>
+		<label>flaming bite</label>
+	</ToolCapacityDef>
+	
 
 
 

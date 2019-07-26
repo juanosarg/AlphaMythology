@@ -6,7 +6,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>MM_Qilin</defName>
     <label>qilin</label>
-    <description>The Qilin is a mythical hooved chimerical creature known in Chinese and other East Asian cultures, said to appear with the imminent arrival or passing of a sage or illustrious ruler. Qilins' bodies are partially scaled and shaped like a deer, and they sport a pair of impressive antlers on their heads.\n\nQilin aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.</description>
+    <description>The Qilin is a mythical hooved chimerical creature known in Chinese and other East Asian cultures, said to appear with the imminent arrival or passing of a sage or illustrious ruler. Qilins' bodies are partially scaled and shaped like a deer, and they sport a pair of impressive antlers on their heads.\n\nQilin aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nThough Qilin are usually peaceful creatures, they have a nasty tendence to set their enemies on fire when provoked.</description>
     <statBases>
       <MoveSpeed>5.5</MoveSpeed>
       <ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -47,7 +47,7 @@
       <li>
         <label>teeth</label>
         <capacities>
-          <li>Bite</li>
+          <li>MM_FlamingBite</li>
         </capacities>
         <power>15</power>
         <cooldownTime>2</cooldownTime>

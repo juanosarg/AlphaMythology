@@ -6,7 +6,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>MM_Chimera</defName>
     <label>chimera</label>
-    <description>The chimera  was a monstrous fire-breathing hybrid creature of Lycia in Asia Minor, composed of the parts of a lion, with the head of a goat protruding from its back, and a tail that ends with a snake's head.\n\nChimeras aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Chimeras are both slightly venomous and fire breathing, making them quite dangerous, and not only to their enemies! Chimeras just LOVE wooden colonies.</description>
+    <description>The chimera  was a monstrous fire-breathing hybrid creature of Lycia in Asia Minor, composed of the parts of a lion, with the head of a goat protruding from its back, and a tail that ends with a snake's head.\n\nChimeras aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Chimeras are both slightly venomous and fire breathing, making them quite dangerous, and not only to their enemies! Chimeras just LOVE wooden colonies. Oh, they can also be milked...</description>
     <statBases>
       <MoveSpeed>5</MoveSpeed>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -118,6 +118,13 @@
 
 
 	</verbs>
+	<comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Milk</milkDef>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>12</milkAmount>
+      </li>
+    </comps>
    
     <race>
 	  <wildBiomes>
