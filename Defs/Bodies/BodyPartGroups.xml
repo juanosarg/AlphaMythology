@@ -6,5 +6,10 @@
     <defName>MM_AttackTail</defName>
     <label>scorpion tail</label>
   </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>MM_Pseudopods</defName>
+    <label>pseudopods</label>
+  </BodyPartGroupDef>
 
 </Defs>

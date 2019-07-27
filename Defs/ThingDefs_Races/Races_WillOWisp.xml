@@ -5,32 +5,30 @@
 
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>MM_WillOWisp</defName>
-		<label>wild o wisp</label>
-		<description>In Greek mythology, the Minotaur is a mythical creature portrayed in Classical times with the head and tail of a bull and the body of a man. He dwelt at the center of the Labyrinth, which was an elaborate maze-like construction designed by the architect Daedalus and his son Icarus, on the command of King Minos of Crete. The Minotaur was eventually killed by the Athenian hero Theseus. The mythological Minotaur was often portrayed as a cunning beast, whereas this creature possesses a very basic, instinctual intelligence.\n\nMinotaurs aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Wild Minotaurs can pound the ground with their hooves, producing ground tremors.</description>
+		<label>will-o'-wisp</label>
+		<description>The Will-O'-Wisp is a creature from English folklore consisting of an atmospheric ghost light seen by travelers at night, especially over bogs, swamps or marshes. It is said to mislead travelers by resembling a flickering lamp or lantern.\n\nWill-O'-Wisps aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Will-O'-Wisps can barely be considered living creatures, resembling really strange bacteria more than anything else. They reproduce by asexual fission, need almost no substenance, and are inmune to temperature extremes, toxic environments, fire and psychic attacks. If threatened, which isn't often, they can breathe a cloud of multicoloured particles that seems to be harmful to living creatures.</description>
 		<statBases>
-			<MoveSpeed>4</MoveSpeed>
-			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
-			<ComfyTemperatureMax>50</ComfyTemperatureMax>
-			<MarketValue>350</MarketValue>
+			<MoveSpeed>2.5</MoveSpeed>
+			<ComfyTemperatureMin>-250</ComfyTemperatureMin>
+			<ComfyTemperatureMax>750</ComfyTemperatureMax>
+			<MarketValue>150</MarketValue>
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ToxicSensitivity>0</ToxicSensitivity>
+			<Flammability>0</Flammability>
+
 		</statBases>
 		<tools>
+			
 			<li>
-				<label>horns</label>
-				<capacities>
-					<li>Scratch</li>
-				</capacities>
-				<power>21</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>left fist</label>
+				<label>pseudopod</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
 				<power>8.2</power>
 				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>MM_Pseudopods</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
@@ -40,60 +38,34 @@
 					</extraMeleeDamages>
 				</surpriseAttack>
 			</li>
-			<li>
-				<label>right fist</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>8.2</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>14</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
-			</li>
-			<li>
-				<label>teeth</label>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<power>8.2</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<chanceFactor>0.07</chanceFactor>
-			</li>
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>5</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
+			
 		</tools>
+		<comps>
 
+			<li Class="AnimalBehavioursAndEvents.CompProperties_AsexualReproduction">
+
+				<reproductionIntervalDays>22</reproductionIntervalDays>
+				<customString>Asexual fission in: </customString>
+
+			</li>
+
+		</comps>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
-				<accuracyTouch>1</accuracyTouch>
-				<accuracyShort>1</accuracyShort>
-				<accuracyMedium>0.75</accuracyMedium>
-				<accuracyLong>0.5</accuracyLong>
+				<accuracyTouch>0.15</accuracyTouch>
+				<accuracyShort>0.25</accuracyShort>
+				<accuracyMedium>0.15</accuracyMedium>
+				<accuracyLong>0.1</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>MM_Tremor</defaultProjectile>
-				<warmupTime>1</warmupTime>				
-				<burstShotCount>1</burstShotCount>
+				<defaultProjectile>MM_WispProjectile</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+
+				<burstShotCount>50</burstShotCount>
 				<minRange>1</minRange>
 				<range>15</range>
-				<soundCast>MM_Tremor</soundCast>
+				<soundCast>MM_PoisonBreathSound</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<!--Commanility determines how frequent this range verb is chosen.-->
 				<commonality>1</commonality>
@@ -104,56 +76,42 @@
 
 		<race>
 			<wildBiomes>
-				<BorealForest>0.06</BorealForest>
+				<BorealForest>0.01</BorealForest>
 				<IceSheet>0.001</IceSheet>
-				<Tundra>0.001</Tundra>
-				<ColdBog>0.001</ColdBog>
+				<Tundra>0.01</Tundra>
+				<ColdBog>0.07</ColdBog>
 				<SeaIce>0.001</SeaIce>
-				<TemperateSwamp>0.06</TemperateSwamp>
-				<TropicalSwamp>0.06</TropicalSwamp>
-				<TemperateForest>0.07</TemperateForest>
-				<TropicalRainforest>0.06</TropicalRainforest>
-				<AridShrubland>0.07</AridShrubland>
-				<Desert>0.1</Desert>
-				<ExtremeDesert>0.1</ExtremeDesert>
+				<TemperateSwamp>0.07</TemperateSwamp>
+				<TropicalSwamp>0.07</TropicalSwamp>
+				<TemperateForest>0.03</TemperateForest>
+				<TropicalRainforest>0.07</TropicalRainforest>
+				<AridShrubland>0.01</AridShrubland>
+				<Desert>0.001</Desert>
+				<ExtremeDesert>0.001</ExtremeDesert>
 			</wildBiomes>
-			<body>MM_MinotaurBody</body>
-			<herdAnimal>false</herdAnimal>
-			<baseBodySize>3</baseBodySize>
-			<baseHungerRate>0.85</baseHungerRate>
-			<baseHealthScale>2.5</baseHealthScale>
+			<useMeatFrom>Pig</useMeatFrom>
+			<useLeatherFrom>Pig</useLeatherFrom>
+			<hasGenders>false</hasGenders>
+			<body>MM_Wisp</body>
+			<herdAnimal>true</herdAnimal>
+			<baseBodySize>0.79</baseBodySize>
+			<baseHungerRate>0.001</baseHungerRate>
+			<baseHealthScale>3</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>0.95</wildness>
-			<trainability>Advanced</trainability>
-			<leatherDef>MM_HeavyMagicalLeather</leatherDef>
-			<gestationPeriodDays>20</gestationPeriodDays>
-			<manhunterOnDamageChance>0.1</manhunterOnDamageChance>
-			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(1.01, 0.02)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>85</lifeExpectancy>
+			<wildness>0.975</wildness>
+			<trainability>Simple</trainability>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<mateMtbHours>10000</mateMtbHours>
+			<gestationPeriodDays>10000</gestationPeriodDays>
+			<lifeExpectancy>450</lifeExpectancy>
 			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.2</minAge>
-				</li>
+				
 				<li>
 					<def>AnimalAdult</def>
-					<minAge>0.45</minAge>
-					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
-					<soundDeath>Pawn_Muffalo_Death</soundDeath>
-					<soundCall>Pawn_Muffalo_Call</soundCall>
-					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
+					<minAge>0</minAge>
+					<soundWounded>MM_Wisp_Wounded</soundWounded>
+					<soundDeath>MM_Wisp_Death</soundDeath>
+					<soundAngry>MM_Wisp_Angry</soundAngry>
 
 				</li>
 			</lifeStageAges>
@@ -161,10 +119,7 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 
-			<hediffGiverSets>
-				<li>OrganicStandard</li>
-				<li>Human</li>
-			</hediffGiverSets>
+			
 		</race>
 		<tradeTags>
 			<li>AnimalUncommon</li>
@@ -173,54 +128,28 @@
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>MM_WillOWisp</defName>
-		<label>wild o wisp</label>
+		<label>will-o'-wisp</label>
 		<race>MM_WillOWisp</race>
-		<combatPower>175</combatPower>
-		<ecoSystemWeight>1.1</ecoSystemWeight>
-
+		<combatPower>100</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<wildGroupSize>
+			<min>2</min>
+			<max>5</max>
+		</wildGroupSize>
 		<lifeStages>
-			<li>
-
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MM_WillOWisp/MM_WillOWisp</texPath>
-					<drawSize>1.3</drawSize>
-					<shadowData>
-						<volume>(0.4, 0.3, 0.3)</volume>
-						<offset>(0,0,-0.2)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MM_WildMinotaur/MM_Dessicated_WildMinotaur</texPath>
-					<drawSize>1.3</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/MM_WillOWisp/MM_WillOWisp</texPath>
-					<drawSize>1.8</drawSize>
-					<shadowData>
-						<volume>(0.6, 0.45, 0.45)</volume>
-						<offset>(0,0,-0.25)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MM_WildMinotaur/MM_Dessicated_WildMinotaur</texPath>
-					<drawSize>1.8</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
+		
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/MM_WillOWisp/MM_WillOWisp</texPath>
-					<drawSize>2.1</drawSize>
+					<drawSize>1.6</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/MM_WildMinotaur/MM_Dessicated_WildMinotaur</texPath>
-					<drawSize>2.1</drawSize>
+					<texPath>Things/Pawn/Animal/MM_WillOWisp/MM_Dessicated_WillOWisp</texPath>
+					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

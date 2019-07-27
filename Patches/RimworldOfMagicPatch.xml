@@ -96,6 +96,14 @@
 					</butcherProducts>
 				</value>
 			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_WillOWisp"]</xpath>
+				<value>
+					<butcherProducts>
+						<RawMagicyte>15</RawMagicyte>
+					</butcherProducts>
+				</value>
+			</li>
 
 			
 		
