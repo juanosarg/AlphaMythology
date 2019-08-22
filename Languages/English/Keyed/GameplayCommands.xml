@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData>
-
-	<!-- Squad attack (equipment) -->
-	<CommandSquadEquipmentAttack>Attack with Equipment</CommandSquadEquipmentAttack>
-	<CommandSquadEquipmentAttackDesc>Order selected colonists to attack designated target with their equipment.</CommandSquadEquipmentAttackDesc>
-  
-</LanguageData>
