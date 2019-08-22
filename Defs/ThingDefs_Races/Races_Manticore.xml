@@ -104,10 +104,10 @@
 				<accuracyLong>1</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>MM_Quill</defaultProjectile>
-				<warmupTime>0.3</warmupTime>
+				<warmupTime>1.5</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<minRange>2</minRange>
-				<range>25</range>
+				<range>18</range>
 				<soundCast>MM_QuillSound</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<!--Commanility determines how frequent this range verb is chosen.-->
@@ -132,6 +132,8 @@
 				<Desert>0.07</Desert>
 				<ExtremeDesert>0.1</ExtremeDesert>
 			</wildBiomes>
+			<predator>true</predator>
+			<maxPreyBodySize>1.0</maxPreyBodySize>
 			<body>MM_ManticoreBody</body>
 			<herdAnimal>false</herdAnimal>
 			<baseBodySize>2.5</baseBodySize>

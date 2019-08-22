@@ -19,10 +19,10 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="MM_BaseAnimalProjectile">
+	<ThingDef ParentName="BaseBullet">
 		<defName>MM_Quill</defName>
 		<label>quill</label>
-		<thingClass>AlphaAnimalRangeAttack.AnimalProjectile</thingClass>
+		
 		<graphicData>
 			<texPath>Things/Projectiles/MM_Quill</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -35,10 +35,10 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="MM_BaseAnimalProjectile">
+	<ThingDef ParentName="BaseBullet">
 		<defName>MM_Tremor</defName>
 		<label>tremor</label>
-		<thingClass>AlphaAnimalRangeAttack.AnimalProjectile</thingClass>
+		
 		<graphicData>
 			<texPath>Things/Projectiles/MM_Tremor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -51,10 +51,10 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="MM_BaseAnimalProjectile">
+	<ThingDef ParentName="BaseBullet">
 		<defName>MM_WispProjectile</defName>
 		<label>wisp breath</label>
-		<thingClass>AlphaAnimalRangeAttack.AnimalProjectile</thingClass>
+		
 		<graphicData>
 			<texPath>Things/Projectiles/MM_WispProjectile</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -68,7 +68,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="MM_BaseAnimalProjectile">
+	<ThingDef ParentName="BaseBullet">
 		<defName>MM_FlameBreath</defName>
 		<label>incendiary breath</label>
 		<graphicData>
@@ -88,7 +88,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="MM_BaseAnimalProjectile">
+	<ThingDef ParentName="BaseBullet">
 		<defName>MM_PoisonBreath</defName>
 		<label>poison breath</label>
 		<graphicData>
@@ -96,7 +96,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
-		<thingClass>AlphaAnimalRangeAttack.AnimalProjectile</thingClass>
+		
 		<projectile>
 			<speed>20</speed>
 			<damageDef>MM_ToxicBreath</damageDef>

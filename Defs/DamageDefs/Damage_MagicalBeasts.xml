@@ -55,7 +55,7 @@
 		<additionalHediffs>
 			<li>
 				<hediff>MM_ToxicBite</hediff>
-				<severityPerDamageDealt>0.02</severityPerDamageDealt>
+				<severityPerDamageDealt>0.005</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
 			</li>
 		</additionalHediffs>
