@@ -30,7 +30,7 @@ Compatible with Lords of the Rims - Elves (mallorn biome)
 Compatible with A RimWorld of Magic (animals drop Raw Magicyte)
 Uses Harmony (no need to download)
 Uses ModCheck (no need to download)
-Uses Verb Expansion Framework (no need to download)
+Uses Verb Expansion Framework (Listed as dependancy)
 
 &lt;size=24&gt;Credit&lt;/size&gt;
 Some sounds by Mike Koenig at http://soundbible.com
@@ -42,6 +42,7 @@ Horse sounds by soundslikewillem https://freesound.org/people/soundslikewillem/s
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
+v1.02: Adding Verb Expansion Framework as mod dependancy (22/08/19)
 v1.01: Swapping to Verb Expansion Framework. Bugfixing and balancing (22/08/19)
 v1.0: Release version (27/07/19)
 v0.1: Prerelease
