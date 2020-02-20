@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<ToolCapacityDef>
+		<defName>MM_ToxicSting</defName>
+		<label>toxic sting</label>
+	</ToolCapacityDef>
+
+	<ToolCapacityDef>
+		<defName>MM_ToxicBite</defName>
+		<label>toxic bite</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>MM_Grapple</defName>
+		<label>grapple</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>MM_BleedingWound</defName>
+		<label>bleeding wound</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>MM_FlamingBite</defName>
+		<label>flaming bite</label>
+	</ToolCapacityDef>
+	
+
+
+
+</Defs>

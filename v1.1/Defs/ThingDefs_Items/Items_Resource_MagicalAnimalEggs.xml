@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  <!-- AlphaChicken Egg -->
+
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>MM_EggGriffinFertilized</defName>
+    <label>griffin egg (fert.)</label>
+    <description>Fertilized griffin egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a griffin.</description>
+	<tradeability>None</tradeability>
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+   	         <Nutrition>.25</Nutrition>
+
+    </statBases>
+	 <graphicData>
+	  <texPath>Things/Item/MM_EggGriffin</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>10</hatcherDaystoHatch>
+        <hatcherPawn>MM_Griffin</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+   
+</Defs>
