@@ -78,6 +78,18 @@
 					</li>
 				</value>
 			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThingDef[defName = "MM_Pegasus"]</xpath> 
+				<value>
+					<li Class="GiddyUpCore.DrawingOffsetPatch">
+						<eastOffsetCSV>0,0,-0.8</eastOffsetCSV>
+						<westOffsetCSV>0,0,-0.8</westOffsetCSV>
+						<northOffsetCSV>0,0,-0.8</northOffsetCSV>
+						<southOffsetCSV>0,0,-0.8</southOffsetCSV>
+					</li>				
+				</value>
+			</li>
 
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "MM_Pegasus"]</xpath> 

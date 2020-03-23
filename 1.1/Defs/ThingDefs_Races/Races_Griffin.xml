@@ -132,6 +132,7 @@
           <soundAngry>MM_Griffin_Angry</soundAngry>
         </li>
       </lifeStageAges>
+	  <soundCallIntervalRange>6000~12000</soundCallIntervalRange>
 	   <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
