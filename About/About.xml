@@ -5,6 +5,7 @@
 	<supportedVersions>
       <li>1.0</li>
       <li>1.1</li>
+	  <li>1.2</li>
    </supportedVersions>
 	<modDependencies>
 		<li>
@@ -53,7 +54,7 @@ Horse sounds by soundslikewillem https://freesound.org/people/soundslikewillem/s
 "Horse Whinny, Close, A.wav" by InspectorJ (www.jshaw.co.uk) of Freesound.org
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
-
+v2.2: Updated for RimWorld 1.2 (11/08/20)
 v2.1: Retextured whole mod with vector graphics. Reduced Griffin chirping. Added leather beauty values (23/03/20)
 v2.0: Updated for RimWorld 1.1 (20/02/20)
 v1.02: Rolling down Verb Expansion Framework for the time being (22/08/19)
