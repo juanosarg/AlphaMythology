@@ -11,13 +11,18 @@
 
 
 	<BodyDef>
-		<defName>MM_QilinBody</defName>
-		<label>quadruped animal with hooves and antlers</label>
+		<defName>MM_ThreeHeadedDog</defName>
+		<label>three headed dog</label>
 		<corePart>
 			<def>Body</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
 			<parts>
+				<li>
+					<def>Tail</def>
+					<coverage>0.07</coverage>
+
+				</li>
 				<li>
 					<def>Spine</def>
 					<coverage>0.03</coverage>
@@ -64,19 +69,19 @@
 				</li>
 				<li>
 					<def>Neck</def>
-					<coverage>0.28</coverage>
+					<coverage>0.20</coverage>
 					<height>Top</height>
 					<parts>
 						<li>
 							<def>Head</def>
-							<coverage>0.75</coverage>
+							<coverage>0.25</coverage>
 							<groups>
 								<li>HeadAttackTool</li>
 							</groups>
 							<parts>
 								<li>
 									<def>Skull</def>
-									<coverage>0.15</coverage>
+									<coverage>0.25</coverage>
 									<depth>Inside</depth>
 									<parts>
 										<li>
@@ -86,39 +91,133 @@
 										</li>
 									</parts>
 								</li>
-
-								<li>
-									<def>MM_Antlers</def>
-									<coverage>0.1</coverage>
-									<groups>
-										<li>HornAttackTool</li>
-									</groups>
-								</li>
-
 								<li>
 									<def>Eye</def>
 									<customLabel>left eye</customLabel>
-									<coverage>0.09</coverage>
+									<coverage>0.12</coverage>
 								</li>
 								<li>
 									<def>Eye</def>
 									<customLabel>right eye</customLabel>
-									<coverage>0.09</coverage>
+									<coverage>0.12</coverage>
 								</li>
 								<li>
 									<def>Ear</def>
 									<customLabel>left ear</customLabel>
-									<coverage>0.06</coverage>
+									<coverage>0.08</coverage>
 								</li>
 								<li>
 									<def>Ear</def>
 									<customLabel>right ear</customLabel>
-									<coverage>0.06</coverage>
+									<coverage>0.08</coverage>
 								</li>
 								<li>
 									<def>Nose</def>
-									<coverage>0.3</coverage>
-
+									<coverage>0.1</coverage>
+								</li>
+								<li>
+									<def>AnimalJaw</def>
+									<coverage>0.1</coverage>
+									<groups>
+										<li>Teeth</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+						<li>
+							<def>Head</def>
+							<coverage>0.25</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>Skull</def>
+									<coverage>0.25</coverage>
+									<depth>Inside</depth>
+									<parts>
+										<li>
+											<def>Brain</def>
+											<coverage>0.7</coverage>
+											<depth>Inside</depth>
+										</li>
+									</parts>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>left eye</customLabel>
+									<coverage>0.12</coverage>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>right eye</customLabel>
+									<coverage>0.12</coverage>
+								</li>
+								<li>
+									<def>Ear</def>
+									<customLabel>left ear</customLabel>
+									<coverage>0.08</coverage>
+								</li>
+								<li>
+									<def>Ear</def>
+									<customLabel>right ear</customLabel>
+									<coverage>0.08</coverage>
+								</li>
+								<li>
+									<def>Nose</def>
+									<coverage>0.1</coverage>
+								</li>
+								<li>
+									<def>AnimalJaw</def>
+									<coverage>0.1</coverage>
+									<groups>
+										<li>Teeth</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+						<li>
+							<def>Head</def>
+							<coverage>0.25</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>Skull</def>
+									<coverage>0.25</coverage>
+									<depth>Inside</depth>
+									<parts>
+										<li>
+											<def>Brain</def>
+											<coverage>0.7</coverage>
+											<depth>Inside</depth>
+										</li>
+									</parts>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>left eye</customLabel>
+									<coverage>0.12</coverage>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>right eye</customLabel>
+									<coverage>0.12</coverage>
+								</li>
+								<li>
+									<def>Ear</def>
+									<customLabel>left ear</customLabel>
+									<coverage>0.08</coverage>
+								</li>
+								<li>
+									<def>Ear</def>
+									<customLabel>right ear</customLabel>
+									<coverage>0.08</coverage>
+								</li>
+								<li>
+									<def>Nose</def>
+									<coverage>0.1</coverage>
 								</li>
 								<li>
 									<def>AnimalJaw</def>
@@ -134,44 +233,44 @@
 				<li>
 					<def>Leg</def>
 					<customLabel>front left leg</customLabel>
-					<coverage>0.065</coverage>
+					<coverage>0.07</coverage>
 					<height>Bottom</height>
-					<groups>
-						<li>FrontLeftLeg</li>
-					</groups>
 					<parts>
 						<li>
-							<def>Hoof</def>
-							<customLabel>front left hoof</customLabel>
+							<def>Paw</def>
+							<customLabel>front left paw</customLabel>
 							<coverage>0.15</coverage>
+							<groups>
+								<li>FrontLeftPaw</li>
+							</groups>
 						</li>
 					</parts>
 				</li>
 				<li>
 					<def>Leg</def>
 					<customLabel>front right leg</customLabel>
-					<coverage>0.065</coverage>
+					<coverage>0.07</coverage>
 					<height>Bottom</height>
-					<groups>
-						<li>FrontRightLeg</li>
-					</groups>
 					<parts>
 						<li>
-							<def>Hoof</def>
-							<customLabel>front right hoof</customLabel>
+							<def>Paw</def>
+							<customLabel>front right paw</customLabel>
 							<coverage>0.15</coverage>
+							<groups>
+								<li>FrontRightPaw</li>
+							</groups>
 						</li>
 					</parts>
 				</li>
 				<li>
 					<def>Leg</def>
 					<customLabel>rear left leg</customLabel>
-					<coverage>0.065</coverage>
+					<coverage>0.07</coverage>
 					<height>Bottom</height>
 					<parts>
 						<li>
-							<def>Hoof</def>
-							<customLabel>rear left hoof</customLabel>
+							<def>Paw</def>
+							<customLabel>rear left paw</customLabel>
 							<coverage>0.15</coverage>
 						</li>
 					</parts>
@@ -179,12 +278,12 @@
 				<li>
 					<def>Leg</def>
 					<customLabel>rear right leg</customLabel>
-					<coverage>0.065</coverage>
+					<coverage>0.07</coverage>
 					<height>Bottom</height>
 					<parts>
 						<li>
-							<def>Hoof</def>
-							<customLabel>rear right hoof</customLabel>
+							<def>Paw</def>
+							<customLabel>rear right paw</customLabel>
 							<coverage>0.15</coverage>
 						</li>
 					</parts>

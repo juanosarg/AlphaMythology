@@ -108,7 +108,30 @@
 					</butcherProducts>
 				</value>
 			</li>
-
+<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_Catoblepas"]</xpath>
+				<value>
+					<butcherProducts>
+						<RawMagicyte>10</RawMagicyte>
+					</butcherProducts>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_CeryneianHind"]</xpath>
+				<value>
+					<butcherProducts>
+						<RawMagicyte>5</RawMagicyte>
+					</butcherProducts>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_Cerberus"]</xpath>
+				<value>
+					<butcherProducts>
+						<RawMagicyte>10</RawMagicyte>
+					</butcherProducts>
+				</value>
+			</li>
 			
 		
 

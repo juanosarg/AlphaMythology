@@ -10,7 +10,28 @@
 			<operations>
 
 
+				<li Class="PatchOperationAdd">
 
+					<xpath>/Defs/RecipeDef[@Name = "OldWoundsAnimal"]/recipeUsers</xpath>
+					<value>
+
+						<li>MM_Ahuizotl</li>
+						<li>MM_Chimera</li>
+						<li>MM_ErymanthianBoar</li>
+						<li>MM_Griffin</li>
+						<li>MM_Kitsune</li>
+						<li>MM_LernaeanHydra</li>
+						<li>MM_Manticore</li>
+						<li>MM_Pegasus</li>
+						<li>MM_Qilin</li>
+						<li>MM_Unicorn</li>
+						<li>MM_WildMinotaur</li>
+						<li>MM_Catoblepas</li>
+						<li>MM_Cerberus</li>
+						<li>MM_CeryneianHind</li>
+
+					</value>
+				</li>
 
 				<!-- Organ installing recipes == should be most animals -->
 				<li Class="PatchOperationAdd">
@@ -29,6 +50,9 @@
 						<li>MM_Qilin</li>
 						<li>MM_Unicorn</li>
 						<li>MM_WildMinotaur</li>
+						<li>MM_Catoblepas</li>
+						<li>MM_Cerberus</li>
+						<li>MM_CeryneianHind</li>
 
 					</value>
 				</li>
@@ -48,7 +72,9 @@
 						<li>MM_Qilin</li>
 						<li>MM_Unicorn</li>
 						<li>MM_WildMinotaur</li>
-
+						<li>MM_Catoblepas</li>
+						<li>MM_Cerberus</li>
+						<li>MM_CeryneianHind</li>
 					</value>
 				</li>
 
@@ -67,7 +93,9 @@
 						<li>MM_Qilin</li>
 						<li>MM_Unicorn</li>
 						<li>MM_WildMinotaur</li>
-
+						<li>MM_Catoblepas</li>
+						<li>MM_Cerberus</li>
+						<li>MM_CeryneianHind</li>
 					</value>
 				</li>
 
@@ -86,7 +114,9 @@
 						<li>MM_Qilin</li>
 						<li>MM_Unicorn</li>
 						<li>MM_WildMinotaur</li>
-
+						<li>MM_Catoblepas</li>
+						<li>MM_Cerberus</li>
+						<li>MM_CeryneianHind</li>
 					</value>
 				</li>
 
@@ -105,6 +135,9 @@
 						<li>MM_Qilin</li>
 						<li>MM_Unicorn</li>
 						<li>MM_WildMinotaur</li>
+						<li>MM_Catoblepas</li>
+						<li>MM_Cerberus</li>
+						<li>MM_CeryneianHind</li>
 					</value>
 				</li>
 
@@ -124,7 +157,9 @@
 						<li>MM_Qilin</li>
 						<li>MM_Unicorn</li>
 						<li>MM_WildMinotaur</li>
-
+						<li>MM_Catoblepas</li>
+						<li>MM_Cerberus</li>
+						<li>MM_CeryneianHind</li>
 					</value>
 				</li>
 
@@ -144,7 +179,9 @@
 						<li>MM_Qilin</li>
 						<li>MM_Unicorn</li>
 						<li>MM_WildMinotaur</li>
-
+						<li>MM_Catoblepas</li>
+						<li>MM_Cerberus</li>
+						<li>MM_CeryneianHind</li>
 
 					</value>
 				</li>
@@ -166,6 +203,9 @@
 						<li>MM_Qilin</li>
 						<li>MM_Unicorn</li>
 						<li>MM_WildMinotaur</li>
+						<li>MM_Catoblepas</li>
+						<li>MM_Cerberus</li>
+						<li>MM_CeryneianHind</li>
 					</value>
 				</li>
 
@@ -188,6 +228,9 @@
 						<li>MM_Qilin</li>
 						<li>MM_Unicorn</li>
 						<li>MM_WildMinotaur</li>
+						<li>MM_Catoblepas</li>
+						<li>MM_Cerberus</li>
+						<li>MM_CeryneianHind</li>
 					</value>
 				</li>
 
@@ -206,6 +249,9 @@
 						<li>MM_Qilin</li>
 						<li>MM_Unicorn</li>
 						<li>MM_WildMinotaur</li>
+						<li>MM_Catoblepas</li>
+						<li>MM_Cerberus</li>
+						<li>MM_CeryneianHind</li>
 					</value>
 				</li>
 
@@ -225,6 +271,9 @@
 						<li>MM_Qilin</li>
 						<li>MM_Unicorn</li>
 						<li>MM_WildMinotaur</li>
+						<li>MM_Catoblepas</li>
+						<li>MM_Cerberus</li>
+						<li>MM_CeryneianHind</li>
 					</value>
 				</li>
 
@@ -248,7 +297,9 @@
 						<li>MM_Qilin</li>
 						<li>MM_Unicorn</li>
 						<li>MM_WildMinotaur</li>
-
+						<li>MM_Catoblepas</li>
+						<li>MM_Cerberus</li>
+						<li>MM_CeryneianHind</li>
 
 					</value>
 				</li>
@@ -271,6 +322,8 @@
 						<li>MM_Kitsune</li>
 
 						<li>MM_Manticore</li>
+
+						<li>MM_Cerberus</li>
 
 
 

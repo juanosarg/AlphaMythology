@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-<Operation Class="PatchOperationFindMod">
+	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Nature's Pretty Sweet</li>
 		</mods>
@@ -10,139 +10,167 @@
 
 
 
-	
 
 
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="MM_Ahuizotl"]/race/wildBiomes</xpath>
-				<value>
 
-					<TKKN_Oasis>0.01</TKKN_Oasis>
-					<TKKN_RedwoodForest>0.04</TKKN_RedwoodForest>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Ahuizotl"]/race/wildBiomes</xpath>
+					<value>
 
-					<TKKN_Grasslands>0.01</TKKN_Grasslands>
+						<TKKN_Oasis>0.01</TKKN_Oasis>
+						<TKKN_RedwoodForest>0.04</TKKN_RedwoodForest>
 
-				</value>
-			</li>
+						<TKKN_Grasslands>0.01</TKKN_Grasslands>
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="MM_Chimera"]/race/wildBiomes</xpath>
-				<value>					
-					<TKKN_Desert>0.01</TKKN_Desert>
-					<TKKN_Oasis>0.01</TKKN_Oasis>
-					<TKKN_RedwoodForest>0.05</TKKN_RedwoodForest>
-					<TKKN_VolcanicFlow>0.001</TKKN_VolcanicFlow>
-					<TKKN_Grasslands>0.04</TKKN_Grasslands>
-					<TKKN_Savanna>0.07</TKKN_Savanna>
-				</value>
-			</li>
+					</value>
+				</li>
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="MM_ErymanthianBoar"]/race/wildBiomes</xpath>
-				<value>	
-					<TKKN_Desert>0.01</TKKN_Desert>
-					<TKKN_Oasis>0.01</TKKN_Oasis>
-					<TKKN_RedwoodForest>0.07</TKKN_RedwoodForest>
-					<TKKN_VolcanicFlow>0.01</TKKN_VolcanicFlow>
-					<TKKN_Grasslands>0.07</TKKN_Grasslands>
-					<TKKN_Savanna>0.07</TKKN_Savanna>				
-				</value>
-			</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Chimera"]/race/wildBiomes</xpath>
+					<value>					
+						<TKKN_Desert>0.01</TKKN_Desert>
+						<TKKN_Oasis>0.01</TKKN_Oasis>
+						<TKKN_RedwoodForest>0.05</TKKN_RedwoodForest>
+						<TKKN_VolcanicFlow>0.001</TKKN_VolcanicFlow>
+						<TKKN_Grasslands>0.04</TKKN_Grasslands>
+						<TKKN_Savanna>0.07</TKKN_Savanna>
+					</value>
+				</li>
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="MM_Griffin"]/race/wildBiomes</xpath>
-				<value>
-					<TKKN_Desert>0.01</TKKN_Desert>
-					
-					<TKKN_RedwoodForest>0.06</TKKN_RedwoodForest>
-					
-					<TKKN_Grasslands>0.07</TKKN_Grasslands>
-					<TKKN_Savanna>0.07</TKKN_Savanna>				
-				</value>
-			</li>	
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="MM_Kitsune"]/race/wildBiomes</xpath>
-				<value>					
-					<TKKN_Desert>0.001</TKKN_Desert>
-					<TKKN_Oasis>0.001</TKKN_Oasis>
-					<TKKN_RedwoodForest>0.05</TKKN_RedwoodForest>
-					<TKKN_VolcanicFlow>0.001</TKKN_VolcanicFlow>
-					<TKKN_Grasslands>0.04</TKKN_Grasslands>
-					<TKKN_Savanna>0.07</TKKN_Savanna>
-				</value>
-			</li>		
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="MM_LernaeanHydra"]/race/wildBiomes</xpath>
-				<value>
-					
-					<TKKN_RedwoodForest>0.01</TKKN_RedwoodForest>
-					<TKKN_VolcanicFlow>0.07</TKKN_VolcanicFlow>
-					
-				</value>
-			</li>			
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="MM_Manticore"]/race/wildBiomes</xpath>
-				<value>
-					<TKKN_Desert>0.07</TKKN_Desert>
-					<TKKN_Oasis>0.07</TKKN_Oasis>
-					<TKKN_RedwoodForest>0.001</TKKN_RedwoodForest>
-					<TKKN_VolcanicFlow>0.1</TKKN_VolcanicFlow>
-					<TKKN_Savanna>0.07</TKKN_Savanna>
-				</value>
-			</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_ErymanthianBoar"]/race/wildBiomes</xpath>
+					<value>	
+						<TKKN_Desert>0.01</TKKN_Desert>
+						<TKKN_Oasis>0.01</TKKN_Oasis>
+						<TKKN_RedwoodForest>0.07</TKKN_RedwoodForest>
+						<TKKN_VolcanicFlow>0.01</TKKN_VolcanicFlow>
+						<TKKN_Grasslands>0.07</TKKN_Grasslands>
+						<TKKN_Savanna>0.07</TKKN_Savanna>				
+					</value>
+				</li>	
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="MM_Pegasus"]/race/wildBiomes</xpath>
-				<value>
-					<TKKN_Desert>0.01</TKKN_Desert>
-					<TKKN_Oasis>0.01</TKKN_Oasis>
-					<TKKN_RedwoodForest>0.07</TKKN_RedwoodForest>
-					
-					<TKKN_Grasslands>0.1</TKKN_Grasslands>
-					<TKKN_Savanna>0.07</TKKN_Savanna>				
-				</value>
-			</li>			
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="MM_Unicorn"]/race/wildBiomes</xpath>
-				<value>
-					<TKKN_Desert>0.01</TKKN_Desert>
-					<TKKN_Oasis>0.01</TKKN_Oasis>
-					<TKKN_RedwoodForest>0.07</TKKN_RedwoodForest>
-					
-					<TKKN_Grasslands>0.1</TKKN_Grasslands>
-					<TKKN_Savanna>0.07</TKKN_Savanna>					
-				</value>
-			</li>	
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="MM_Qilin"]/race/wildBiomes</xpath>
-				<value>					
-					
-					<TKKN_RedwoodForest>0.1</TKKN_RedwoodForest>
-					
-					<TKKN_Grasslands>0.02</TKKN_Grasslands>
-					<TKKN_Savanna>0.02</TKKN_Savanna>
-				</value>
-			</li>				
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="MM_WildMinotaur"]/race/wildBiomes</xpath>
-				<value>
-									<TKKN_RedwoodForest>0.1</TKKN_RedwoodForest>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Griffin"]/race/wildBiomes</xpath>
+					<value>
+						<TKKN_Desert>0.01</TKKN_Desert>
 
-					<TKKN_Grasslands>0.07</TKKN_Grasslands>
-					<TKKN_Savanna>0.07</TKKN_Savanna>
-				</value>
-			</li>	
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="MM_WillOWisp"]/race/wildBiomes</xpath>
-				<value>
-					
-					<TKKN_Oasis>0.01</TKKN_Oasis>
-								
-				</value>
-			</li>	
+						<TKKN_RedwoodForest>0.06</TKKN_RedwoodForest>
 
-		</operations>
+						<TKKN_Grasslands>0.07</TKKN_Grasslands>
+						<TKKN_Savanna>0.07</TKKN_Savanna>				
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Kitsune"]/race/wildBiomes</xpath>
+					<value>					
+						<TKKN_Desert>0.001</TKKN_Desert>
+						<TKKN_Oasis>0.001</TKKN_Oasis>
+						<TKKN_RedwoodForest>0.05</TKKN_RedwoodForest>
+						<TKKN_VolcanicFlow>0.001</TKKN_VolcanicFlow>
+						<TKKN_Grasslands>0.04</TKKN_Grasslands>
+						<TKKN_Savanna>0.07</TKKN_Savanna>
+					</value>
+				</li>		
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_LernaeanHydra"]/race/wildBiomes</xpath>
+					<value>
+
+						<TKKN_RedwoodForest>0.01</TKKN_RedwoodForest>
+						<TKKN_VolcanicFlow>0.07</TKKN_VolcanicFlow>
+
+					</value>
+				</li>			
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Manticore"]/race/wildBiomes</xpath>
+					<value>
+						<TKKN_Desert>0.07</TKKN_Desert>
+						<TKKN_Oasis>0.07</TKKN_Oasis>
+						<TKKN_RedwoodForest>0.001</TKKN_RedwoodForest>
+						<TKKN_VolcanicFlow>0.1</TKKN_VolcanicFlow>
+						<TKKN_Savanna>0.07</TKKN_Savanna>
+					</value>
+				</li>	
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Pegasus"]/race/wildBiomes</xpath>
+					<value>
+						<TKKN_Desert>0.01</TKKN_Desert>
+						<TKKN_Oasis>0.01</TKKN_Oasis>
+						<TKKN_RedwoodForest>0.07</TKKN_RedwoodForest>
+
+						<TKKN_Grasslands>0.1</TKKN_Grasslands>
+						<TKKN_Savanna>0.07</TKKN_Savanna>				
+					</value>
+				</li>			
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Unicorn"]/race/wildBiomes</xpath>
+					<value>
+						<TKKN_Desert>0.01</TKKN_Desert>
+						<TKKN_Oasis>0.01</TKKN_Oasis>
+						<TKKN_RedwoodForest>0.07</TKKN_RedwoodForest>
+
+						<TKKN_Grasslands>0.1</TKKN_Grasslands>
+						<TKKN_Savanna>0.07</TKKN_Savanna>					
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Qilin"]/race/wildBiomes</xpath>
+					<value>					
+
+						<TKKN_RedwoodForest>0.1</TKKN_RedwoodForest>
+
+						<TKKN_Grasslands>0.02</TKKN_Grasslands>
+						<TKKN_Savanna>0.02</TKKN_Savanna>
+					</value>
+				</li>				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_WildMinotaur"]/race/wildBiomes</xpath>
+					<value>
+						<TKKN_RedwoodForest>0.1</TKKN_RedwoodForest>
+
+						<TKKN_Grasslands>0.07</TKKN_Grasslands>
+						<TKKN_Savanna>0.07</TKKN_Savanna>
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_WillOWisp"]/race/wildBiomes</xpath>
+					<value>
+
+						<TKKN_Oasis>0.01</TKKN_Oasis>
+
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Catoblepas"]/race/wildBiomes</xpath>
+					<value>
+						<TKKN_RedwoodForest>0.1</TKKN_RedwoodForest>
+
+						<TKKN_Grasslands>0.07</TKKN_Grasslands>
+						<TKKN_Savanna>0.07</TKKN_Savanna>
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_CeryneianHind"]/race/wildBiomes</xpath>
+					<value>
+						<TKKN_Desert>0.01</TKKN_Desert>
+						<TKKN_Oasis>0.01</TKKN_Oasis>
+						<TKKN_RedwoodForest>0.07</TKKN_RedwoodForest>
+
+						<TKKN_Grasslands>0.1</TKKN_Grasslands>
+						<TKKN_Savanna>0.07</TKKN_Savanna>					
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Cerberus"]/race/wildBiomes</xpath>
+					<value>
+
+						<TKKN_RedwoodForest>0.01</TKKN_RedwoodForest>
+						<TKKN_VolcanicFlow>0.07</TKKN_VolcanicFlow>
+
+					</value>
+				</li>	
+			</operations>
 		</match>
 	</Operation>
 

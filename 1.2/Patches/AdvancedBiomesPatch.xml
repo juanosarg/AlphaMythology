@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Advanced Biomes</li>
+			<li>Advanced Biomes (Continued)</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -105,8 +105,28 @@
 					<Wetland>0.07</Wetland>	
 				</value>
 			</li>
-			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="MM_Catoblepas"]/race/wildBiomes</xpath>
+				<value>
+					<Savanna>0.07</Savanna>
+					<Wetland>0.07</Wetland>	
+				</value>
+			</li>	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="MM_CeryneianHind"]/race/wildBiomes</xpath>
+				<value>
 
+					<Savanna>0.07</Savanna>
+
+				</value>
+			</li>	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="MM_Cerberus"]/race/wildBiomes</xpath>
+				<value>
+					<Savanna>0.07</Savanna>
+					<Wetland>0.07</Wetland>	
+				</value>
+			</li>			
 		</operations>
 		</match>
 	</Operation>

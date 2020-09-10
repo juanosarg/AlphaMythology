@@ -88,6 +88,12 @@
 					<LotRE_MallornForest>0.1</LotRE_MallornForest>
 				</value>
 			</li>	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="MM_CeryneianHind"]/race/wildBiomes</xpath>
+				<value>
+					<LotRE_MallornForest>0.2</LotRE_MallornForest>
+				</value>
+			</li>	
 			
 			
 		</operations>
