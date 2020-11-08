@@ -33,9 +33,12 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=2.0.0.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lib.Harmony.2.0.0.4\lib\net472\0Harmony.dll</HintPath>
+    <Reference Include="0Harmony, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.0.4\lib\net472\0Harmony.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="AchievementsExpanded, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AchievementsExpanded.1.0.3\lib\net472\AchievementsExpanded.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
@@ -298,29 +301,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompFertilizer.cs" />
-    <Compile Include="CompGasProducer.cs" />
-    <Compile Include="CompInitialHediff.cs" />
-    <Compile Include="CompNearbyEffecter.cs" />
-    <Compile Include="CompProperties_Electrified.cs" />
-    <Compile Include="CompElectrified.cs" />
-    <Compile Include="CompProperties_Fertilizer.cs" />
-    <Compile Include="CompProperties_GasProducer.cs" />
-    <Compile Include="CompProperties_InitialHediff.cs" />
-    <Compile Include="CompProperties_NearbyEffecter.cs" />
-    <Compile Include="CompRegeneration.cs" />
-    <Compile Include="CompProperties_Regeneration.cs" />
-    <Compile Include="CompProperties_HighlyFlammable.cs" />
-    <Compile Include="CompHighlyFlammable.cs" />
-    <Compile Include="CompDigWhenHungry.cs" />
-    <Compile Include="CompNocturnal.cs" />
-    <Compile Include="CompLightSustenance.cs" />
-    <Compile Include="CompProperties_DigWhenHungry.cs" />
-    <Compile Include="CompProperties_Nocturnal.cs" />
-    <Compile Include="CompProperties_LightSustenance.cs" />
-    <Compile Include="CompProperties_AsexualReproduction.cs" />
-    <Compile Include="CompAsexualReproduction.cs" />
-    <Compile Include="Hediff_BleedingWound.cs" />
+    <Compile Include="Achievements\ItemCraftTrackerWithIngredients.cs" />
+    <Compile Include="Achievements\KillTrackerWithOr.cs" />
+    <Compile Include="Comps\CompFertilizer.cs" />
+    <Compile Include="Comps\CompGasProducer.cs" />
+    <Compile Include="Comps\CompInitialHediff.cs" />
+    <Compile Include="Comps\CompNearbyEffecter.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_Electrified.cs" />
+    <Compile Include="Comps\CompElectrified.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_Fertilizer.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_GasProducer.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_InitialHediff.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_NearbyEffecter.cs" />
+    <Compile Include="Comps\CompRegeneration.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_Regeneration.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_HighlyFlammable.cs" />
+    <Compile Include="Comps\CompHighlyFlammable.cs" />
+    <Compile Include="Comps\CompDigWhenHungry.cs" />
+    <Compile Include="Comps\CompNocturnal.cs" />
+    <Compile Include="Comps\CompLightSustenance.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_DigWhenHungry.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_Nocturnal.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_LightSustenance.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_AsexualReproduction.cs" />
+    <Compile Include="Comps\CompAsexualReproduction.cs" />
+    <Compile Include="Harmony\QuestManager_Notify_ThingsProduced_Patch.cs" />
+    <Compile Include="Hediffs\Hediff_BleedingWound.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
