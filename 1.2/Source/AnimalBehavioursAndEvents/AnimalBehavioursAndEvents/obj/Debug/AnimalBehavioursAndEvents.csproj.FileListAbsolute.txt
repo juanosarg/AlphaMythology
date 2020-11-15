@@ -17,3 +17,8 @@ E:\SteamLibrary\steamapps\common\RimWorld\Mods\MagicalMenagerie\1.2\Source\Anima
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\MagicalMenagerie\1.2\Source\AnimalBehavioursAndEvents\AnimalBehavioursAndEvents\obj\Debug\AnimalBehavioursAndEvents.csproj.CoreCompileInputs.cache
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\MagicalMenagerie\1.2\Source\AnimalBehavioursAndEvents\AnimalBehavioursAndEvents\obj\Debug\AnimalBehavioursAndEvents.csproj.CopyComplete
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\MagicalMenagerie\1.2\Source\AnimalBehavioursAndEvents\AnimalBehavioursAndEvents\obj\Debug\MagicalAnimalBehavioursAndEvents.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MagicalMenagerie\1.2\Assemblies\MagicalAnimalBehavioursAndEvents.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MagicalMenagerie\1.2\Source\AnimalBehavioursAndEvents\AnimalBehavioursAndEvents\obj\Debug\AnimalBehavioursAndEvents.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MagicalMenagerie\1.2\Source\AnimalBehavioursAndEvents\AnimalBehavioursAndEvents\obj\Debug\AnimalBehavioursAndEvents.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MagicalMenagerie\1.2\Source\AnimalBehavioursAndEvents\AnimalBehavioursAndEvents\obj\Debug\AnimalBehavioursAndEvents.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MagicalMenagerie\1.2\Source\AnimalBehavioursAndEvents\AnimalBehavioursAndEvents\obj\Debug\MagicalAnimalBehavioursAndEvents.dll
