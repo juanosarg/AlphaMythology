@@ -184,7 +184,7 @@
 							<label>Forbidden Poultry</label>
 							<description>Use a Fertilized griffin egg to create a Lavish Meal</description>
 							
-							<tracker Class="AchievementsExpanded.ItemCraftTrackerWithIngredients">
+							<tracker Class="AchievementsExpanded.ItemCraftTrackerWithIngredientsMagicalMenagerie">
 								<def>MealLavish</def>
 								<includeingredient>MM_EggGriffinFertilized</includeingredient>
 								<count>1</count>
@@ -192,7 +192,7 @@
 
 							<texPath>Achievements/MM_AchievementForbiddenPoultry</texPath>
 							<points>10</points>
-						</AchievementsExpanded.AchievementDef>	
+						</AchievementsExpanded.AchievementDef>
 
 						
 					</value>

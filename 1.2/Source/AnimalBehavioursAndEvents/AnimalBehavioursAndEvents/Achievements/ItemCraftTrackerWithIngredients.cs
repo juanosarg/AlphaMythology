@@ -6,24 +6,24 @@ using RimWorld;
 
 namespace AchievementsExpanded
 {
-    public class ItemCraftTrackerWithIngredients : Tracker<Thing>
+    public class ItemCraftTrackerWithIngredientsMagicalMenagerie : Tracker<Thing>
     {
 
-        public override string Key => "ItemCraftTrackerWithIngredients";
+        public override string Key => "ItemCraftTrackerWithIngredientsMagicalMenagerie";
 
         public override MethodInfo MethodHook => AccessTools.Method(typeof(QuestManager), nameof(QuestManager.Notify_ThingsProduced));
-        public override MethodInfo PatchMethod => AccessTools.Method(typeof(QuestManager_Notify_ThingsProduced_Patch), nameof(QuestManager_Notify_ThingsProduced_Patch.CheckItemCraftedIngredients));
+        public override MethodInfo PatchMethod => AccessTools.Method(typeof(MagicalMenagerie_QuestManager_Notify_ThingsProduced_Patch), nameof(MagicalMenagerie_QuestManager_Notify_ThingsProduced_Patch.CheckItemCraftedIngredients));
         protected override string[] DebugText => new string[] { $"Def: {def?.defName ?? "None"}",
                                                                 $"MadeFrom: {madeFrom?.defName ?? "Any"}",
                                                                 $"Quality: {quality}",
                                                                 $"Count: {count}",
                                                                 $"Current: {triggeredCount}" };
 
-        public ItemCraftTrackerWithIngredients()
+        public ItemCraftTrackerWithIngredientsMagicalMenagerie()
         {
         }
         public override (float percent, string text) PercentComplete => count > 1 ? ((float)triggeredCount / count, $"{triggeredCount} / {count}") : base.PercentComplete;
-        public ItemCraftTrackerWithIngredients(ItemCraftTrackerWithIngredients reference) : base(reference)
+        public ItemCraftTrackerWithIngredientsMagicalMenagerie(ItemCraftTrackerWithIngredientsMagicalMenagerie reference) : base(reference)
         {
             def = reference.def;
             madeFrom = reference.madeFrom;
@@ -49,15 +49,21 @@ namespace AchievementsExpanded
         public override bool Trigger(Thing thing)
         {
             base.Trigger(thing);
-            if ((def is null || thing.def == def) && (madeFrom is null || madeFrom == thing.Stuff)
-                && (includeingredient is null || (thing.TryGetComp<CompIngredients>().ingredients.Contains(includeingredient)))
-                )
+            if ((def is null || thing.def == def) && (madeFrom is null || madeFrom == thing.Stuff))
             {
-                if (quality is null || (thing.TryGetQuality(out var qc) && qc >= quality))
-                {
-                    triggeredCount = triggeredCount + thing.stackCount;
 
+                CompIngredients comping = thing.TryGetComp<CompIngredients>();
+
+                if (includeingredient is null || (comping != null && comping.ingredients.Contains(includeingredient)))
+                {
+                    if (quality is null || (thing.TryGetQuality(out var qc) && qc >= quality))
+                    {
+                        triggeredCount = triggeredCount + thing.stackCount;
+
+                    }
                 }
+
+
             }
             return triggeredCount >= count;
         }
