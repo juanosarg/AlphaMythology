@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+
+
+	<!-- Misc -->
+	
+	<MM_DestroyEggsLabel>Smash Egg</MM_DestroyEggsLabel>
+	<MM_DestroyEggsDesc>Queue a work order to smash this egg as soon as possible</MM_DestroyEggsDesc>
+	<MM_CancelDestroyEggsLabel>Cancel Smashing Egg</MM_CancelDestroyEggsLabel>
+	<MM_CancelDestroyEggsDesc>Cancel a work order to smash this egg as soon as possible</MM_CancelDestroyEggsDesc>
+
+	
+
+
+	<!-- Mod Settings, animal toggles -->
+	
+	<MM_DisableAnimal>Disable {0}</MM_DisableAnimal>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LanguageData>

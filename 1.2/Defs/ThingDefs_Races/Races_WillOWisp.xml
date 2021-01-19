@@ -42,7 +42,7 @@
 		</tools>
 		<comps>
 
-			<li Class="AnimalBehavioursAndEvents.CompProperties_AsexualReproduction">
+			<li Class="AnimalBehaviours.CompProperties_AsexualReproduction">
 
 				<reproductionIntervalDays>22</reproductionIntervalDays>
 				<customString>Asexual fission in: </customString>

@@ -303,34 +303,19 @@
   <ItemGroup>
     <Compile Include="Achievements\ItemCraftTrackerWithIngredients.cs" />
     <Compile Include="Achievements\KillTrackerWithOr.cs" />
-    <Compile Include="Comps\CompFertilizer.cs" />
-    <Compile Include="Comps\CompGasProducer.cs" />
-    <Compile Include="Comps\CompInitialHediff.cs" />
-    <Compile Include="Comps\CompNearbyEffecter.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_Electrified.cs" />
-    <Compile Include="Comps\CompElectrified.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_Fertilizer.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_GasProducer.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_InitialHediff.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_NearbyEffecter.cs" />
-    <Compile Include="Comps\CompRegeneration.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_Regeneration.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_HighlyFlammable.cs" />
-    <Compile Include="Comps\CompHighlyFlammable.cs" />
-    <Compile Include="Comps\CompDigWhenHungry.cs" />
-    <Compile Include="Comps\CompNocturnal.cs" />
-    <Compile Include="Comps\CompLightSustenance.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_DigWhenHungry.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_Nocturnal.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_LightSustenance.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_AsexualReproduction.cs" />
-    <Compile Include="Comps\CompAsexualReproduction.cs" />
+    <Compile Include="Comps\CompDestroyThisItem.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_DestroyThisItem.cs" />
+    <Compile Include="DeathActionWorkers\DeathActionWorker_ExplodeAndSpawnEggs.cs" />
     <Compile Include="Harmony\QuestManager_Notify_ThingsProduced_Patch.cs" />
     <Compile Include="Hediffs\Hediff_BleedingWound.cs" />
+    <Compile Include="Jobs\JobDrivers\JobDriver_DestroyItem.cs" />
+    <Compile Include="MapComponents\DestroyableObjects_MapComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Jobs\WorkGivers\WorkGiver_DestroyItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

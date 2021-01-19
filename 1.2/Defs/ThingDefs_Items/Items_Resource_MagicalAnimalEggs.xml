@@ -1,31 +1,104 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- 
-  <!-- AlphaChicken Egg -->
+
+	<!-- =============== Griffin Egg =============== -->
 
 
-  <ThingDef ParentName="EggFertBase">
-    <defName>MM_EggGriffinFertilized</defName>
-    <label>griffin egg (fert.)</label>
-    <description>Fertilized griffin egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a griffin.</description>
-	<tradeability>None</tradeability>
-    <statBases>
-      <MarketValue>9.0</MarketValue>
-   	         <Nutrition>.25</Nutrition>
+	<ThingDef ParentName="EggFertBase">
+		<defName>MM_EggGriffinFertilized</defName>
+		<label>griffin egg (fert.)</label>
+		<description>Fertilized griffin egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a griffin.</description>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+			<Nutrition>.25</Nutrition>
 
-    </statBases>
-	 <graphicData>
-	  <texPath>Things/Item/MM_EggGriffin</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-    <comps>
-      <li Class="CompProperties_Hatcher">
-        <hatcherDaystoHatch>10</hatcherDaystoHatch>
-        <hatcherPawn>MM_Griffin</hatcherPawn>
-      </li>
-    </comps>
-  </ThingDef>
-  
-   
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/MM_EggGriffin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>MM_Griffin</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- =============== Phoenix Egg =============== -->
+
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>MM_EggPhoenixFertilized</defName>
+		<label>phoenix egg (fert.)</label>
+		<description>Fertilized phoenix egg. If all goes well, it should hatch into a phoenix chick. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/MM_PhoenixEgg</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.0</MarketValue>
+			<Flammability>0</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>1</hatcherDaystoHatch>
+				<hatcherPawn>MM_Phoenix</hatcherPawn>
+			</li>
+			<li Class="AnimalBehavioursAndEvents.CompProperties_DestroyThisItem">
+				<buttonLabel>MM_DestroyEggsLabel</buttonLabel>
+				<buttonDesc>MM_DestroyEggsDesc</buttonDesc>
+				<buttonIcon>UI/MM_DestroyPhoenixEgg</buttonIcon>
+				<buttonCancelLabel>MM_CancelDestroyEggsLabel</buttonCancelLabel>
+				<buttonCancelDesc>MM_CancelDestroyEggsDesc</buttonCancelDesc>
+				<buttonCancelIcon>UI/MM_CancelDestroyPhoenixEgg</buttonCancelIcon>
+
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!-- =============== Salamander Egg =============== -->
+
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>MM_EggSalamanderFertilized</defName>
+		<label>salamander egg (fert.)</label>
+		<description>Fertilized salamander egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a salamander.</description>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+			<Nutrition>.25</Nutrition>
+
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/MM_SalamanderEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>MM_Salamander</hatcherPawn>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusher</compClass>
+				<heatPerSecond>30</heatPerSecond>
+				<heatPushMaxTemperature>100</heatPushMaxTemperature>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_ExplodingHatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>MM_Salamander</hatcherPawn>
+				<range>3</range>
+				<damageDef>Flame</damageDef>
+				<damage>20</damage>
+				<soundDef>Explosion_Bomb</soundDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+
 </Defs>

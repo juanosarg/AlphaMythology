@@ -3,10 +3,10 @@
 	<name>Magical Menagerie</name>
 	<author>Sarg</author>
 	<supportedVersions>
-      <li>1.0</li>
-      <li>1.1</li>
-	  <li>1.2</li>
-   </supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+		<li>1.2</li>
+	</supportedVersions>
 	<modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
@@ -14,22 +14,30 @@
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 		</li>
+		 <li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
+		</li>
 	</modDependencies>
-	
-		<packageId>sarg.magicalmenagerie</packageId>
-		<loadAfter>
-	   <li>vanillaexpanded.achievements</li>
-     
-    </loadAfter>
+
+	<packageId>sarg.magicalmenagerie</packageId>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>brrainz.harmony</li>
+        <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>vanillaexpanded.achievements</li>
+	</loadAfter>
 	<description>Adds multiple unique new animals to Rimworld.
-	
+
 &lt;size=24&gt;Features&lt;/size&gt;
 
-Adds 15 new creatures to the diverse biomes of your Rimworlds, all of them based on mythological and magical creatures from different ancient cultures and sources. Similar to Alpha Animals, the philosophy of this mod is that every new creature tries to bring some new mechanic into the game, whether it be fire breathing cattle, acid and poison spewing behemoth, or faster than average steed. Some of the mechanics are simple, others much more complex.
+Adds 24 new creatures to the diverse biomes of your Rimworlds, all of them based on mythological and magical creatures from different ancient cultures and sources. Similar to Alpha Animals, the philosophy of this mod is that every new creature tries to bring some new mechanic into the game, whether it be fire breathing cattle, acid and poison spewing behemoth, or faster than average steed. Some of the mechanics are simple, others much more complex.
 
 Animals will spawn with different rates in different biomes, and should appear at the same rate as vanilla animals (wolves have been taken as a benchmark, not rats).
 
-Bear in mind that spawn probabilities have been calculated with no other animal mods installed. If you have, for example, Animal Collab Project, less animals from this mod will appear, obviously.
+Bear in mind that spawn probabilities have been calculated with no other animal mods installed. If you have, for example, Vanilla Animals Expanded, less animals from this mod will appear, obviously.
 
 &lt;size=24&gt;Issues&lt;/size&gt;
 
@@ -68,7 +76,7 @@ v1.01: Swapping to Verb Expansion Framework. Bugfixing and balancing (22/08/19)
 v1.0: Release version (27/07/19)
 v0.1: Prerelease
 
-	
+
 
 	</description>
 </ModMetaData>
