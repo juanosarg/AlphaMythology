@@ -116,9 +116,9 @@
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
-	
-	
-	
+
+
+
 	<DamageDef>
 		<defName>MM_PetrifyingGaze</defName>
 		<label>petrifying gaze</label>
@@ -160,6 +160,22 @@
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 
 		<armorCategory>Heat</armorCategory>
+	</DamageDef>
+
+
+
+	<DamageDef>
+		<defName>MM_ExtraDamageToPiratesHorn</defName>
+		<label>horn of justice</label>
+		<workerClass>AnimalBehaviours.DamageWorker_ExtraDamagePirates</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been stabbed to death.</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
 	</DamageDef>
 
 

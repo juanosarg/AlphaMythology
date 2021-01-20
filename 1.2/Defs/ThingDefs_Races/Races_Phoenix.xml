@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>MM_Phoenix</defName>
 		<label>phoenix</label>
-		<description>In ancient Egyptian and later Greek and Roman mythology, a phoenix is a long-lived bird that cyclically regenerates or is otherwise born again, usually in a massive conflagration that lays waste to anything else around it. Symbolically, the Phoenix has always been associated with concepts of rebirth, renewal and perseverance.\n\nPhoenixes  aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Attacks from a Phoenix can set their targets on fire. When the Phoenix dies, it will explode and create a fire resistant egg (or sometimes two). After a while, a new Phoenix will hatch from this egg.</description>
+		<description>In ancient Egyptian and later Greek and Roman mythology, a phoenix is a long-lived bird that cyclically regenerates or is otherwise born again, usually in a massive conflagration that lays waste to anything else around it. Symbolically, the Phoenix has always been associated with concepts of rebirth, renewal and perseverance.\n\nPhoenixes aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Attacks from a Phoenix can set their targets on fire. When the Phoenix dies, it will explode and create a fire resistant egg (or sometimes two). After a while, a new Phoenix will hatch from this egg.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>			
@@ -40,7 +40,7 @@
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<trainability>Simple</trainability>
 			<useMeatFrom>Cassowary</useMeatFrom>
-			<leatherDef>Leather_Bird</leatherDef>
+			<leatherDef>MM_LightMagicalLeather</leatherDef>
 			<mateMtbHours>10000</mateMtbHours>
 			<gestationPeriodDays>10000</gestationPeriodDays>			
 			<lifeExpectancy>25</lifeExpectancy>

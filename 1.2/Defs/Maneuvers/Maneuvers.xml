@@ -46,6 +46,20 @@
   </ManeuverDef>
   
    <ManeuverDef>
+    <defName>MM_ExtraDamageToPiratesHorn</defName>
+    <requiredCapacity>MM_ExtraDamageToPiratesHorn</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>MM_ExtraDamageToPiratesHorn</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+   <ManeuverDef>
     <defName>MM_Grapple</defName>
     <requiredCapacity>MM_Grapple</requiredCapacity>
     <verb>

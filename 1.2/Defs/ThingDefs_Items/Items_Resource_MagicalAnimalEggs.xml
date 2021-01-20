@@ -47,7 +47,7 @@
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
 				<hatcherPawn>MM_Phoenix</hatcherPawn>
 			</li>
-			<li Class="AnimalBehavioursAndEvents.CompProperties_DestroyThisItem">
+			<li Class="AnimalBehaviours.CompProperties_DestroyThisItem">
 				<buttonLabel>MM_DestroyEggsLabel</buttonLabel>
 				<buttonDesc>MM_DestroyEggsDesc</buttonDesc>
 				<buttonIcon>UI/MM_DestroyPhoenixEgg</buttonIcon>
@@ -77,7 +77,7 @@
 		</statBases>
 		<graphicData>
 			<texPath>Things/Item/MM_SalamanderEgg</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<comps>
 			<li Class="CompProperties_Hatcher">
@@ -96,6 +96,30 @@
 				<damageDef>Flame</damageDef>
 				<damage>20</damage>
 				<soundDef>Explosion_Bomb</soundDef>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- =============== Fenghuang Egg =============== -->
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>MM_EggFenghuangFertilized</defName>
+		<label>fenghuang egg (fert.)</label>
+		<description>Fertilized fenghuang egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a fenghuang.</description>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+			<Nutrition>.25</Nutrition>
+
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/MM_FenghuangEgg</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>MM_Fenghuang</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

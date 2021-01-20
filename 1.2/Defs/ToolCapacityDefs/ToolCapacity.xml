@@ -13,6 +13,11 @@
 	</ToolCapacityDef>
 	
 	<ToolCapacityDef>
+		<defName>MM_ExtraDamageToPiratesHorn</defName>
+		<label>horn of justice</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
 		<defName>MM_Grapple</defName>
 		<label>grapple</label>
 	</ToolCapacityDef>

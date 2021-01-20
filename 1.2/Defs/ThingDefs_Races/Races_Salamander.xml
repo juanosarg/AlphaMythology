@@ -57,19 +57,33 @@
 			</li>
 		</comps>
 		<race>
+			<wildBiomes>
+				<BorealForest>0.04</BorealForest>
+				<IceSheet>0.01</IceSheet>
+				<Tundra>0.01</Tundra>
+				<ColdBog>0.01</ColdBog>
+				<SeaIce>0.01</SeaIce>
+				<TemperateSwamp>0.01</TemperateSwamp>
+				<TropicalSwamp>0.01</TropicalSwamp>
+				<TemperateForest>0.04</TemperateForest>
+				<TropicalRainforest>0.06</TropicalRainforest>
+				<AridShrubland>0.07</AridShrubland>
+				<Desert>0.07</Desert>
+				<ExtremeDesert>0.1</ExtremeDesert>
+			</wildBiomes>
 			<body>Snake</body>
 			<predator>false</predator>			
 			<baseBodySize>0.5</baseBodySize>
 			<baseHungerRate>0.4</baseHungerRate>
 			<baseHealthScale>2</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<leatherDef>Leather_Lizard</leatherDef>
+			<leatherDef>MM_LightMagicalLeather</leatherDef>
 			<useMeatFrom>Cobra</useMeatFrom>
 			<wildness>0.75</wildness>
 			<petness>0.05</petness>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
-			
+
 			<lifeExpectancy>20</lifeExpectancy>
 			<lifeStageAges>
 				<li>
