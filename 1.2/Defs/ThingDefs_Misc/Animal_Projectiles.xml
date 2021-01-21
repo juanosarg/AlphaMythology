@@ -107,7 +107,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="MM_BaseAnimalProjectile">
+	<!--<ThingDef ParentName="MM_BaseAnimalProjectile">
 		<defName>MM_GazeAttack</defName>
 		<label>petrifying gaze</label>
 		<thingClass>MagicalAnimalRangeUnlocker.AnimalProjectile</thingClass>
@@ -121,7 +121,67 @@
 			<damageAmountBase>1</damageAmountBase>
 			<speed>35</speed>
 		</projectile>
-	</ThingDef>
+	</ThingDef>-->
+	
+	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>MM_GazeAttack</defName>
+		<label>gaze attack</label>
+		<thingClass>VFECore.ExpandableProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/Proj_BlueBeam</texPath>
+			<texPathFadeOut>Things/Projectiles/Proj_BlueBeamFadeOut</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>50</lifeTimeDuration>
+		<widthScaleFactor>0.65</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -2)</startingPositionOffset>
+		<totalSizeScale>2</totalSizeScale>
+		<tickFrameRate>4</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>2</minDistanceToAffect>
+		<projectile>
+			<damageDef>MM_PetrifyingGaze</damageDef>		
+			<flyOverhead>false</flyOverhead>
+			<damageAmountBase>3</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			
+			<speed>20</speed>
+		</projectile>
+	</VFECore.ExpandableProjectileDef>
+	
+	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>MM_GreenStreamBreath</defName>
+		<label>poison breath</label>
+		<thingClass>VFECore.ExpandableProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/Proj_GreenStream</texPath>
+			<texPathFadeOut>Things/Projectiles/Proj_GreenStreamFadeOut</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>50</lifeTimeDuration>
+		<widthScaleFactor>0.65</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, 0)</startingPositionOffset>
+		<totalSizeScale>2</totalSizeScale>
+		<tickFrameRate>4</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>2</minDistanceToAffect>
+		<projectile>
+			<damageDef>MM_ToxicBreath</damageDef>		
+			<flyOverhead>false</flyOverhead>
+			<damageAmountBase>15</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			
+			<speed>20</speed>
+		</projectile>
+	</VFECore.ExpandableProjectileDef>
 
 
 
