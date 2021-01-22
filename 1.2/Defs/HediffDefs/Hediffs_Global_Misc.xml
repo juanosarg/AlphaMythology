@@ -363,6 +363,12 @@
 					</li>
 				</capMods>
 			</li>
+			<li>
+				<label>turned to stone</label>
+				<minSeverity>0.99</minSeverity>
+
+				
+			</li>
 		</stages>
 	</HediffDef>
 	

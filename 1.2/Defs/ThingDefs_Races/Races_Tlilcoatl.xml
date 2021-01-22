@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>MM_Tlilcoatl</defName>
 		<label>tlilcoatl</label>
-		<description>The tlilcoatl ("black snake" in nahuatl) is a predatory reptile in Mexican folklore. Tlilcoatls have glossy black scales, and grow to a considerable size.\n\nTlilcoatls aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: </description>
+		<description>The tlilcoatl ("black snake" in nahuatl) is a predatory reptile in Mexican folklore. Tlilcoatls have glossy black scales, a bifurcated tail and grow to a considerable size. They can breathe a dangerous poisonous gas that quickly suffocates their victims.\n\nTlilcoatls aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Tlilcoatls are virulently venomous, with a dangerous bite and a very nasty breath attack. They will however only attacks humans defensively.</description>
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
 			<MarketValue>450</MarketValue>
@@ -18,7 +18,7 @@
 				<capacities>
 					<li>MM_ToxicBite</li>
 				</capacities>
-				<power>18</power>
+				<power>25</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -30,17 +30,7 @@
 					</extraMeleeDamages>
 				</surpriseAttack>
 			</li>
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>3</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
+
 		</tools>
 		<verbs>
 			<li>
@@ -83,7 +73,9 @@
 			<baseBodySize>0.5</baseBodySize>
 			<baseHungerRate>0.4</baseHungerRate>
 			<baseHealthScale>2</baseHealthScale>
-			<foodType>VegetarianRoughAnimal</foodType>
+			<predator>true</predator>
+			<maxPreyBodySize>0.75</maxPreyBodySize>
+			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>MM_LightMagicalLeather</leatherDef>
 			<useMeatFrom>Cobra</useMeatFrom>
 			<wildness>0.75</wildness>

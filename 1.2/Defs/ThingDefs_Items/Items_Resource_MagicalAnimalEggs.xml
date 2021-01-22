@@ -123,6 +123,30 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<!-- =============== Ieltxu Egg =============== -->
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>MM_EggIeltxuFertilized</defName>
+		<label>ieltxu egg (fert.)</label>
+		<description>Fertilized ieltxu egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into an ieltxu.</description>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+			<Nutrition>.25</Nutrition>
+
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/MM_IeltxuEgg</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>MM_Ieltxu</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 
 
 </Defs>
