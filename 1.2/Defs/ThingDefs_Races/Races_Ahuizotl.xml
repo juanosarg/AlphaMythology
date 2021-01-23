@@ -155,6 +155,24 @@
 			<li>AnimalUncommon</li>
 			<li>AnimalFighter</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					<li>MM_ShockTroop</li>
+					<li>MM_No</li>					
+				</statValues>
+				<statDescriptions>
+					<li>MM_ParalyzingShockTroopDesc</li>
+					<li>MM_NoRanged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

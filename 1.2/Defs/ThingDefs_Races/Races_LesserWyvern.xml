@@ -135,16 +135,16 @@
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
 				<statToAdd>
-					<li>My ass</li>
-					<li>Lick</li>
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
 				</statToAdd>
 				<statValues>
-					<li>Is big</li>
-					<li>My</li>
+					<li>MM_Tank</li>
+					<li>MM_No</li>					
 				</statValues>
 				<statDescriptions>
-					<li>Yeah</li>
-					<li>Balls</li>
+					<li>MM_VenomousTankDesc</li>
+					<li>MM_NoRanged</li>
 				</statDescriptions>
 			</li>
 		</modExtensions>

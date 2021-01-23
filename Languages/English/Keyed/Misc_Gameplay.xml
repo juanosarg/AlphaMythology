@@ -21,7 +21,27 @@
 	<!-- Mod Settings, animal toggles -->
 	
 	<MM_DisableAnimal>Disable {0}</MM_DisableAnimal>
+	
+	<!-- Animal Stats -->
+	
+	<MM_PrimaryRole>Primary Role</MM_PrimaryRole>
+	<MM_RangedAttacks>Ranged Attacks</MM_RangedAttacks>
+	<MM_Yes>Yes</MM_Yes>
+	<MM_No>No</MM_No>
+	<MM_NoRanged>This animal doesn't have ranged attacks. To order it to attack, it needs to be trained in Guard and Attack, then it needs to be assigned to follow a master when drafted and/or working. The "release" button on the master's commands bar will make the animal attack in melee.</MM_NoRanged>
+	<MM_Ranged>This animal uses ranged attacks, and will only use melee attacks if the enemy gets into melee range. To order it to attack, it needs to be trained in Guard and Attack, then it needs to be assigned to follow a master when drafted and/or working. The "release" button on the master's commands bar will make the animal search for appropiate cover and use its ranged attack.</MM_Ranged>
+	
+	<!-- Roles -->
 
+	<MM_Tank>Tank</MM_Tank>
+	<MM_ShockTroop>Shock Troop</MM_ShockTroop>
+	<MM_ParalizingRanged>Paralyzing Ranged</MM_ParalizingRanged>
+	
+	<!-- Roles Descriptions -->
+	
+	<MM_VenomousTankDesc>"Tank" animals are specialized in melee combat. These animals have high attack damage, good resistance, high health, or other abilities that allow them to survive in the front lines.\n\nThis animal also has powerful venomous attacks.</MM_VenomousTankDesc>
+	<MM_ParalyzingShockTroopDesc>"Shock Troop" animals are specialized in high speed, and some ability that adds utility to melee combat. They may not be very resistant, or have high health, but if properly used they can have devastating effects.\n\nThis animal also has attacks that can be used to immobilize attackers.</MM_ParalyzingShockTroopDesc>
+	<MM_ParalyzingRangedDesc>"Paralyzing Ranged" animals use ranged attacks to immobilize attackers. Having them in melee might not be the best use for them.</MM_ParalyzingRangedDesc>
 
 
 
