@@ -147,6 +147,30 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<!-- =============== Basilisk Egg =============== -->
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>MM_EggBasiliskFertilized</defName>
+		<label>basilisk egg (fert.)</label>
+		<description>Fertilized basilisk egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a basilisk.</description>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+			<Nutrition>.25</Nutrition>
+
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/MM_BasiliskEgg</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>MM_Basilisk</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 
 
 </Defs>

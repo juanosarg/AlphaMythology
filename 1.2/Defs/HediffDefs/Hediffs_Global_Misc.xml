@@ -211,7 +211,7 @@
 
 	<HediffDef>
 		<defName>MM_BleedingWound</defName>
-		<hediffClass>AnimalBehavioursAndEvents.Hediff_BleedingWound</hediffClass>
+		<hediffClass>AnimalBehaviours.Hediff_BleedingWound</hediffClass>
 		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
 		<description>A bleeding wound that continues to cause blood loss for quite some time after the initial attack.</description>
 		<label>bleeding wounds</label>
@@ -403,6 +403,25 @@
 						<offset>0.1</offset>
 					</li>
 				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>MM_NoPain</defName>
+		<description>This creature has a reduced pain sensitivity, and it takes longer to be downed due to pain.</description>
+
+		<label>no pain sensitivity</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+
+		<stages>
+			<li>
+				<painFactor>0.01</painFactor>
+				<statOffsets>
+					<PainShockThreshold>1</PainShockThreshold>
+				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>

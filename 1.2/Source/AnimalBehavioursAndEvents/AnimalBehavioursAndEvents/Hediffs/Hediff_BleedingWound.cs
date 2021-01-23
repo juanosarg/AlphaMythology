@@ -6,7 +6,7 @@ using System.Text;
 using UnityEngine;
 using Verse;
 
-namespace AnimalBehavioursAndEvents
+namespace AnimalBehaviours
 {
     public class Hediff_BleedingWound : HediffWithComps
     {

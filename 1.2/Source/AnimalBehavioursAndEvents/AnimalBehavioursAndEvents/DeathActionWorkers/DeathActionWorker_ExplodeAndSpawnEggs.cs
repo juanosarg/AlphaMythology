@@ -3,7 +3,7 @@ using RimWorld;
 using Verse;
 using System.Collections.Generic;
 
-namespace AnimalBehavioursAndEvents
+namespace AnimalBehaviours
 {
     public class DeathActionWorker_ExplodeAndSpawnEggs : DeathActionWorker
     {

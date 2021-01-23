@@ -10,6 +10,7 @@
 			<MarketValue>450</MarketValue>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>250</ComfyTemperatureMax>
+			<Flammability>0</Flammability>
 		</statBases>
 		<uiIconScale>1.1</uiIconScale>
 		<tools>

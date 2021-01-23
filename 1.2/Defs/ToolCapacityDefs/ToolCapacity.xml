@@ -13,6 +13,11 @@
 	</ToolCapacityDef>
 	
 	<ToolCapacityDef>
+		<defName>MM_VeryToxicBite</defName>
+		<label>virulent toxic bite</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
 		<defName>MM_ExtraDamageToPiratesHorn</defName>
 		<label>horn of justice</label>
 	</ToolCapacityDef>

@@ -69,7 +69,7 @@
 				<ExtremeDesert>0.1</ExtremeDesert>
 			</wildBiomes>
 			<body>Snake</body>
-			<predator>false</predator>			
+				
 			<baseBodySize>0.5</baseBodySize>
 			<baseHungerRate>0.4</baseHungerRate>
 			<baseHealthScale>2</baseHealthScale>

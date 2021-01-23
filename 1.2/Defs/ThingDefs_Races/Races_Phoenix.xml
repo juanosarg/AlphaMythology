@@ -12,7 +12,7 @@
 		</statBases>
 
 		<race>
-			<deathActionWorkerClass>AnimalBehavioursAndEvents.DeathActionWorker_ExplodeAndSpawnEggs</deathActionWorkerClass>
+			<deathActionWorkerClass>AnimalBehaviours.DeathActionWorker_ExplodeAndSpawnEggs</deathActionWorkerClass>
 
 			<wildBiomes>
 				<BorealForest>0.01</BorealForest>

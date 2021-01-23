@@ -1,4 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MagicalMenagerie\1.1\Assemblies\MagicalAnimalRangeUnlocker.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MagicalMenagerie\1.1\Source\AnimalRangedVerbsUnlocker\obj\Debug\MagicalAnimalRangeUnlocker.csprojAssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MagicalMenagerie\1.1\Source\AnimalRangedVerbsUnlocker\obj\Debug\MagicalAnimalRangeUnlocker.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MagicalMenagerie\1.1\Source\AnimalRangedVerbsUnlocker\obj\Debug\MagicalAnimalRangeUnlocker.dll
