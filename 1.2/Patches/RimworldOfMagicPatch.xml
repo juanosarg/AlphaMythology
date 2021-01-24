@@ -132,7 +132,81 @@
 					</butcherProducts>
 				</value>
 			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_Phoenix"]</xpath>
+				<value>
+					<butcherProducts>
+						<RawMagicyte>10</RawMagicyte>
+					</butcherProducts>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_Salamander"]</xpath>
+				<value>
+					<butcherProducts>
+						<RawMagicyte>10</RawMagicyte>
+					</butcherProducts>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_Kappa"]</xpath>
+				<value>
+					<butcherProducts>
+						<RawMagicyte>5</RawMagicyte>
+					</butcherProducts>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_Xiezhi"]</xpath>
+				<value>
+					<butcherProducts>
+						<RawMagicyte>15</RawMagicyte>
+					</butcherProducts>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_Fenghuang"]</xpath>
+				<value>
+					<butcherProducts>
+						<RawMagicyte>4</RawMagicyte>
+					</butcherProducts>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_Basilisk"]</xpath>
+				<value>
+					<butcherProducts>
+						<RawMagicyte>4</RawMagicyte>
+					</butcherProducts>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_Ieltxu"]</xpath>
+				<value>
+					<butcherProducts>
+						<RawMagicyte>3</RawMagicyte>
+					</butcherProducts>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_LesserWyvern"]</xpath>
+				<value>
+					<butcherProducts>
+						<RawMagicyte>15</RawMagicyte>
+					</butcherProducts>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_Tlilcoatl"]</xpath>
+				<value>
+					<butcherProducts>
+						<RawMagicyte>8</RawMagicyte>
+					</butcherProducts>
+				</value>
+			</li>
 			
+			
+					
 		
 
 

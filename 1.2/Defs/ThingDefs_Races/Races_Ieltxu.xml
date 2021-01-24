@@ -33,6 +33,11 @@
 
 		</verbs>
 		<race>
+		<wildBiomes>
+				<BorealForest>0.01</BorealForest>					
+				<TemperateForest>0.01</TemperateForest>
+				<TropicalRainforest>0.01</TropicalRainforest>				
+			</wildBiomes>
 			<body>Bird</body>
 			<leatherDef>MM_LightMagicalLeather</leatherDef>
 			<useMeatFrom>Turkey</useMeatFrom>

@@ -89,6 +89,42 @@
 										<key>MM_CeryneianHind</key>
 										<value>1</value>
 									</li>
+									<li>
+										<key>MM_Phoenix</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MM_Salamander</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MM_Kappa</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MM_Xiezhi</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MM_Fenghuang</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MM_Basilisk</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MM_Ieltxu</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MM_LesserWyvern</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MM_Tlilcoatl</key>
+										<value>1</value>
+									</li>
 
 								</kindDefList>
 								

@@ -38,6 +38,7 @@
 					<li>Corpse_MM_Chimera</li>
 					<li>Corpse_MM_Griffin</li>
 					<li>Corpse_MM_Manticore</li>
+					<li>Corpse_MM_Xiezhi</li>
 
 					
 				</value>
@@ -49,7 +50,7 @@
 					<li>Corpse_MM_Chimera</li>
 					<li>Corpse_MM_Griffin</li>
 					<li>Corpse_MM_Manticore</li>
-					
+					<li>Corpse_MM_Xiezhi</li>
 				</value>
 			</li>
 			
@@ -58,8 +59,10 @@
 				<value>
 					<li>Corpse_MM_Chimera</li>
 					<li>Corpse_MM_LernaeanHydra</li>
-				
-
+					<li>Corpse_MM_Basilisk</li>
+					<li>Corpse_MM_LesserWyvern</li>
+					<li>Corpse_MM_Salamander</li>
+					<li>Corpse_MM_Tlilcoatl</li>
 				</value>
 			</li>
 
@@ -68,7 +71,10 @@
 				<value>
 					<li>Corpse_MM_Chimera</li>
 					<li>Corpse_MM_LernaeanHydra</li>
-
+					<li>Corpse_MM_Basilisk</li>
+					<li>Corpse_MM_LesserWyvern</li>
+					<li>Corpse_MM_Salamander</li>
+					<li>Corpse_MM_Tlilcoatl</li>
 					
 				</value>
 			</li>	
@@ -77,6 +83,9 @@
 				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesChicken"]/ingredients/li/filter/thingDefs</xpath>
 				<value>
 					<li>Corpse_MM_Griffin</li>
+					<li>Corpse_MM_Fenghuang</li>
+					<li>Corpse_MM_Ieltxu</li>
+					<li>Corpse_MM_Phoenix</li>
 					
 
 				</value>
@@ -86,8 +95,9 @@
 				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesChicken"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>Corpse_MM_Griffin</li>
-					
-
+					<li>Corpse_MM_Fenghuang</li>
+					<li>Corpse_MM_Ieltxu</li>
+					<li>Corpse_MM_Phoenix</li>
 				</value>
 			</li>
 
