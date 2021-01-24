@@ -61,13 +61,12 @@
 				<defaultProjectile>MM_WispProjectile</defaultProjectile>
 				<warmupTime>2</warmupTime>
 				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-
 				<burstShotCount>50</burstShotCount>
 				<minRange>1</minRange>
 				<range>15</range>
 				<soundCast>MM_PoisonBreathSound</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
-				<!--Commanility determines how frequent this range verb is chosen.-->
+				<label>wisp breath</label>
 				<commonality>1</commonality>
 			</li>
 
@@ -76,18 +75,18 @@
 
 		<race>
 			<wildBiomes>
-				<BorealForest>0.01</BorealForest>
-				<IceSheet>0.001</IceSheet>
-				<Tundra>0.01</Tundra>
-				<ColdBog>0.07</ColdBog>
-				<SeaIce>0.001</SeaIce>
-				<TemperateSwamp>0.07</TemperateSwamp>
-				<TropicalSwamp>0.07</TropicalSwamp>
-				<TemperateForest>0.03</TemperateForest>
-				<TropicalRainforest>0.07</TropicalRainforest>
-				<AridShrubland>0.01</AridShrubland>
-				<Desert>0.001</Desert>
-				<ExtremeDesert>0.001</ExtremeDesert>
+				<BorealForest>0.005</BorealForest>
+				<IceSheet>0.0005</IceSheet>
+				<Tundra>0.005</Tundra>
+				<ColdBog>0.035</ColdBog>
+				<SeaIce>0.0005</SeaIce>
+				<TemperateSwamp>0.035</TemperateSwamp>
+				<TropicalSwamp>0.035</TropicalSwamp>
+				<TemperateForest>0.015</TemperateForest>
+				<TropicalRainforest>0.035</TropicalRainforest>
+				<AridShrubland>0.005</AridShrubland>
+				<Desert>0.0005</Desert>
+				<ExtremeDesert>0.0005</ExtremeDesert>
 			</wildBiomes>
 			<useMeatFrom>Pig</useMeatFrom>
 			<useLeatherFrom>Pig</useLeatherFrom>
@@ -124,6 +123,27 @@
 		<tradeTags>
 			<li>AnimalUncommon</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					
+					<li>MM_DamageRanged</li>
+					<li>MM_Yes</li>					
+				</statValues>
+				<statDescriptions>
+					
+					<li>MM_DamageRangedDesc</li>
+					<li>MM_Ranged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

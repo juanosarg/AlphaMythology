@@ -57,14 +57,13 @@
 				<defaultProjectile>MM_PoisonBreath</defaultProjectile>
 				<warmupTime>0.3</warmupTime>
 				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-
+				<label>poison breath</label>
 				<burstShotCount>120</burstShotCount>
 				<minRange>1</minRange>
 				<range>15</range>
 				<soundCast>MM_PoisonBreathSound</soundCast>
-				<muzzleFlashScale>0</muzzleFlashScale>
-				<!--Commanility determines how frequent this range verb is chosen.-->
-				<commonality>1</commonality>
+				<muzzleFlashScale>0</muzzleFlashScale>				
+				<commonality>0.8</commonality>
 			</li>
 
 
@@ -79,14 +78,14 @@
 		</comps>
 		<race>
 			<wildBiomes>
-				<BorealForest>0.01</BorealForest>
-				<IceSheet>0.1</IceSheet>
-				<Tundra>0.06</Tundra>
-				<ColdBog>0.07</ColdBog>
-				<SeaIce>0.1</SeaIce>
-				<TemperateSwamp>0.07</TemperateSwamp>
-				<AridShrubland>0.01</AridShrubland>
-				<TemperateForest>0.01</TemperateForest>
+				<BorealForest>0.005</BorealForest>
+				<IceSheet>0.05</IceSheet>
+				<Tundra>0.03</Tundra>
+				<ColdBog>0.035</ColdBog>
+				<SeaIce>0.05</SeaIce>
+				<TemperateSwamp>0.035</TemperateSwamp>
+				<AridShrubland>0.005</AridShrubland>
+				<TemperateForest>0.005</TemperateForest>
 			</wildBiomes>
 			<maxPreyBodySize>0.95</maxPreyBodySize>
 
@@ -131,6 +130,27 @@
 			<li>AnimalUncommon</li>
 			<li>AnimalFighter</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>MM_SecondaryRole</li>
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					<li>MM_Tank</li>
+					<li>MM_DamageRanged</li>
+					<li>MM_Yes</li>					
+				</statValues>
+				<statDescriptions>
+					<li>MM_VenomousTankDesc</li>
+					<li>MM_DamageRangedDOTDesc</li>
+					<li>MM_Ranged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

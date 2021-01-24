@@ -94,14 +94,14 @@
     </comps>
     <race>
 	<wildBiomes>
-        <BorealForest>0.05</BorealForest>     
-        <TemperateSwamp>0.01</TemperateSwamp>
-        <TropicalSwamp>0.01</TropicalSwamp>
-        <TemperateForest>0.06</TemperateForest>
-        <TropicalRainforest>0.06</TropicalRainforest>
-        <AridShrubland>0.01</AridShrubland>
-        <Desert>0.01</Desert>
-        <ExtremeDesert>0.01</ExtremeDesert>
+        <BorealForest>0.025</BorealForest>     
+        <TemperateSwamp>0.005</TemperateSwamp>
+        <TropicalSwamp>0.005</TropicalSwamp>
+        <TemperateForest>0.03</TemperateForest>
+        <TropicalRainforest>0.03</TropicalRainforest>
+        <AridShrubland>0.005</AridShrubland>
+        <Desert>0.005</Desert>
+        <ExtremeDesert>0.005</ExtremeDesert>
       </wildBiomes>
       <body>MM_QuadrupedAnimalWithBeakAndWings</body>
       <herdAnimal>false</herdAnimal>
@@ -144,6 +144,27 @@
 
       <li>AnimalFighter</li>
     </tradeTags>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					
+					<li>MM_MountFastArmoured</li>
+					<li>MM_No</li>					
+				</statValues>
+				<statDescriptions>
+					
+					<li>MM_MountFastArmouredDesc</li>
+					<li>MM_NoRanged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">

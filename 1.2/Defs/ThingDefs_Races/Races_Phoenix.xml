@@ -117,6 +117,27 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>MM_SecondaryRole</li>
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					<li>MM_Boomer</li>
+					<li>MM_ShockTroop</li>
+					<li>MM_No</li>					
+				</statValues>
+				<statDescriptions>
+					<li>MM_BoomerDesc</li>
+					<li>MM_FireyShockTroopDesc</li>
+					<li>MM_NoRanged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

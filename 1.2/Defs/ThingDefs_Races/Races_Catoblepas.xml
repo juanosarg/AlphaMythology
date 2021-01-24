@@ -71,9 +71,8 @@
 				<burstShotCount>1</burstShotCount>
 				<minRange>1</minRange>
 				<range>20</range>
-				
-				<muzzleFlashScale>0</muzzleFlashScale>
-				<!--Commanility determines how frequent this range verb is chosen.-->
+				<label>petrifying gaze</label>	
+				<muzzleFlashScale>0</muzzleFlashScale>				
 				<commonality>1</commonality>
 			</li>
 
@@ -82,13 +81,13 @@
 
 		<race>
 			<wildBiomes>				
-				<TemperateSwamp>0.07</TemperateSwamp>
-				<TropicalSwamp>0.07</TropicalSwamp>
-				<TemperateForest>0.07</TemperateForest>
-				<TropicalRainforest>0.07</TropicalRainforest>
-				<AridShrubland>0.1</AridShrubland>
-				<Desert>0.01</Desert>
-				<ExtremeDesert>0.005</ExtremeDesert>
+				<TemperateSwamp>0.035</TemperateSwamp>
+				<TropicalSwamp>0.035</TropicalSwamp>
+				<TemperateForest>0.035</TemperateForest>
+				<TropicalRainforest>0.035</TropicalRainforest>
+				<AridShrubland>0.05</AridShrubland>
+				<Desert>0.005</Desert>
+				<ExtremeDesert>0.0025</ExtremeDesert>
 			</wildBiomes>
 
 			<body>QuadrupedAnimalWithHoovesAndTusks</body>
@@ -133,6 +132,24 @@
 		<tradeTags>
 			<li>AnimalFarm</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					<li>MM_ParalizingRanged</li>
+					<li>MM_Yes</li>					
+				</statValues>
+				<statDescriptions>
+					<li>MM_ParalyzingRangedDesc</li>
+					<li>MM_Ranged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

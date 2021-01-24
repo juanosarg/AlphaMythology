@@ -112,6 +112,27 @@
 			<li>AnimalUncommon</li>
 			<li>AnimalFighter</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>MM_SecondaryRole</li>
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					<li>MM_Utility</li>
+					<li>MM_FireyShockTroopDesc</li>
+					<li>MM_No</li>					
+				</statValues>
+				<statDescriptions>
+					<li>MM_UtilityTemperatureDesc</li>
+					<li>MM_DamageRangedDOTDesc</li>
+					<li>MM_NoRanged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

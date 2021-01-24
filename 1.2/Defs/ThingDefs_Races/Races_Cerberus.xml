@@ -57,13 +57,13 @@
 
 		<race>
 			<wildBiomes>
-				<Desert>0.07</Desert>
-				<ExtremeDesert>0.07</ExtremeDesert>
-				<AridShrubland>0.07</AridShrubland>
-				<TemperateSwamp>0.06</TemperateSwamp>
-				<TropicalSwamp>0.07</TropicalSwamp>
-				<TemperateForest>0.01</TemperateForest>
-				<TropicalRainforest>0.01</TropicalRainforest>
+				<Desert>0.035</Desert>
+				<ExtremeDesert>0.035</ExtremeDesert>
+				<AridShrubland>0.035</AridShrubland>
+				<TemperateSwamp>0.03</TemperateSwamp>
+				<TropicalSwamp>0.035</TropicalSwamp>
+				<TemperateForest>0.005</TemperateForest>
+				<TropicalRainforest>0.005</TropicalRainforest>
 			</wildBiomes>
 			<maxPreyBodySize>2</maxPreyBodySize>
 			<body>MM_ThreeHeadedDog</body>
@@ -118,6 +118,24 @@
 			<li>AnimalUncommon</li>
 			<li>AnimalFighter</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					<li>MM_ShockTroop</li>
+					<li>MM_No</li>					
+				</statValues>
+				<statDescriptions>
+					<li>MM_ShockTroopDesc</li>
+					<li>MM_NoRanged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

@@ -67,18 +67,18 @@
    
     <race>
 	<wildBiomes>
-        <BorealForest>0.01</BorealForest>
-        <IceSheet>0.001</IceSheet>
-        <Tundra>0.001</Tundra>
-        <ColdBog>0.001</ColdBog>
-        <SeaIce>0.001</SeaIce>
-        <TemperateSwamp>0.01</TemperateSwamp>
-        <TropicalSwamp>0.01</TropicalSwamp>
-        <TemperateForest>0.02</TemperateForest>
-        <TropicalRainforest>0.02</TropicalRainforest>
-        <AridShrubland>0.01</AridShrubland>
-        <Desert>0.01</Desert>
-        <ExtremeDesert>0.01</ExtremeDesert>
+        <BorealForest>0.005</BorealForest>
+        <IceSheet>0.0005</IceSheet>
+        <Tundra>0.0005</Tundra>
+        <ColdBog>0.0005</ColdBog>
+        <SeaIce>0.0005</SeaIce>
+        <TemperateSwamp>0.005</TemperateSwamp>
+        <TropicalSwamp>0.005</TropicalSwamp>
+        <TemperateForest>0.01</TemperateForest>
+        <TropicalRainforest>0.01</TropicalRainforest>
+        <AridShrubland>0.005</AridShrubland>
+        <Desert>0.005</Desert>
+        <ExtremeDesert>0.005</ExtremeDesert>
       </wildBiomes>
       <body>QuadrupedAnimalWithHoovesAndHorn</body>
       <herdAnimal>true</herdAnimal>
@@ -121,6 +121,27 @@
     <tradeTags>
       <li>AnimalUncommon</li>
     </tradeTags>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+				
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					
+					<li>MM_MountFast</li>
+					<li>MM_No</li>					
+				</statValues>
+				<statDescriptions>
+					
+					<li>MM_MountFastDesc</li>
+					<li>MM_NoRanged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">

@@ -106,14 +106,13 @@
 				<defaultProjectile>MM_FlameBreath</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
 				<burstShotCount>2</burstShotCount>
-				        
+				<label>fire breath</label>	       
 				<minRange>2</minRange>
 				<range>15</range>
 				<forcedMissRadius>2</forcedMissRadius>
 				<soundCast>MM_FireBreathSound</soundCast>
-				<muzzleFlashScale>0</muzzleFlashScale>
-				<!--Commanility determines how frequent this range verb is chosen.-->
-				<commonality>1</commonality>
+				<muzzleFlashScale>0</muzzleFlashScale>			
+				<commonality>0.8</commonality>
 			</li>
 
 
@@ -128,18 +127,18 @@
    
     <race>
 	  <wildBiomes>
-        <BorealForest>0.01</BorealForest>
-        <IceSheet>0.001</IceSheet>
-        <Tundra>0.001</Tundra>
-        <ColdBog>0.001</ColdBog>
-        <SeaIce>0.001</SeaIce>
-        <TemperateSwamp>0.01</TemperateSwamp>
-        <TropicalSwamp>0.01</TropicalSwamp>
-        <TemperateForest>0.04</TemperateForest>
-        <TropicalRainforest>0.06</TropicalRainforest>
-        <AridShrubland>0.07</AridShrubland>
-        <Desert>0.07</Desert>
-        <ExtremeDesert>0.1</ExtremeDesert>
+        <BorealForest>0.005</BorealForest>
+        <IceSheet>0.0005</IceSheet>
+        <Tundra>0.0005</Tundra>
+        <ColdBog>0.0005</ColdBog>
+        <SeaIce>0.0005</SeaIce>
+        <TemperateSwamp>0.005</TemperateSwamp>
+        <TropicalSwamp>0.005</TropicalSwamp>
+        <TemperateForest>0.02</TemperateForest>
+        <TropicalRainforest>0.03</TropicalRainforest>
+        <AridShrubland>0.035</AridShrubland>
+        <Desert>0.035</Desert>
+        <ExtremeDesert>0.05</ExtremeDesert>
       </wildBiomes>
       <body>MM_Chimera_Body</body>
       <herdAnimal>false</herdAnimal>
@@ -182,6 +181,27 @@
 	  <li>AnimalUncommon</li>
       <li>AnimalFighter</li>
     </tradeTags>
+	<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>MM_SecondaryRole</li>
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					<li>MM_Farm</li>
+					<li>MM_DamageRanged</li>
+					<li>MM_Yes</li>					
+				</statValues>
+				<statDescriptions>
+					<li>MM_FarmMilkDesc</li>
+					<li>MM_DamageRangedDesc</li>
+					<li>MM_Ranged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">

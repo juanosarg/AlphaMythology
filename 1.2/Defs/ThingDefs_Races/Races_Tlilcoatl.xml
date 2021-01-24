@@ -47,7 +47,7 @@
 				<range>8</range>				
 				<soundCast>MM_PoisonBreathSound</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
-				<!--Commanility determines how frequent this range verb is chosen.-->
+				<label>poison breath</label>
 				<commonality>1</commonality>
 			</li>
 
@@ -55,21 +55,20 @@
 		</verbs>
 		<race>
 			<wildBiomes>
-				<BorealForest>0.04</BorealForest>
+				<BorealForest>0.02</BorealForest>
 				<IceSheet>0.01</IceSheet>
 				<Tundra>0.01</Tundra>
 				<ColdBog>0.01</ColdBog>
 				<SeaIce>0.01</SeaIce>
 				<TemperateSwamp>0.01</TemperateSwamp>
 				<TropicalSwamp>0.01</TropicalSwamp>
-				<TemperateForest>0.04</TemperateForest>
-				<TropicalRainforest>0.06</TropicalRainforest>
-				<AridShrubland>0.07</AridShrubland>
-				<Desert>0.07</Desert>
+				<TemperateForest>0.02</TemperateForest>
+				<TropicalRainforest>0.03</TropicalRainforest>
+				<AridShrubland>0.035</AridShrubland>
+				<Desert>0.035</Desert>
 				<ExtremeDesert>0.1</ExtremeDesert>
 			</wildBiomes>
-			<body>Snake</body>
-				
+			<body>Snake</body>				
 			<baseBodySize>0.5</baseBodySize>
 			<baseHungerRate>0.4</baseHungerRate>
 			<baseHealthScale>2</baseHealthScale>
@@ -110,6 +109,27 @@
 			<li>AnimalUncommon</li>
 			<li>AnimalFighter</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					
+					<li>MM_DamageRangedPoison</li>
+					<li>MM_Yes</li>					
+				</statValues>
+				<statDescriptions>
+					
+					<li>MM_DamageRangedPoisonDesc</li>
+					<li>MM_Ranged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

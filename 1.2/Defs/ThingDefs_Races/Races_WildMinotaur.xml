@@ -91,12 +91,12 @@
 				<defaultProjectile>MM_Tremor</defaultProjectile>
 				<warmupTime>1</warmupTime>				
 				<burstShotCount>1</burstShotCount>
-				<minRange>1</minRange>
+				<minRange>5</minRange>
 				<range>15</range>
 				<soundCast>MM_Tremor</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
-				<!--Commanility determines how frequent this range verb is chosen.-->
-				<commonality>1</commonality>
+				<label>tremors</label>
+				<commonality>0.6</commonality>
 			</li>
 
 
@@ -104,18 +104,18 @@
 
 		<race>
 			<wildBiomes>
-				<BorealForest>0.02</BorealForest>
-				<IceSheet>0.001</IceSheet>
-				<Tundra>0.001</Tundra>
-				<ColdBog>0.001</ColdBog>
-				<SeaIce>0.001</SeaIce>
-				<TemperateSwamp>0.02</TemperateSwamp>
-				<TropicalSwamp>0.02</TropicalSwamp>
-				<TemperateForest>0.03</TemperateForest>
-				<TropicalRainforest>0.02</TropicalRainforest>
-				<AridShrubland>0.02</AridShrubland>
-				<Desert>0.1</Desert>
-				<ExtremeDesert>0.1</ExtremeDesert>
+				<BorealForest>0.01</BorealForest>
+				<IceSheet>0.0005</IceSheet>
+				<Tundra>0.0005</Tundra>
+				<ColdBog>0.0005</ColdBog>
+				<SeaIce>0.0005</SeaIce>
+				<TemperateSwamp>0.01</TemperateSwamp>
+				<TropicalSwamp>0.01</TropicalSwamp>
+				<TemperateForest>0.015</TemperateForest>
+				<TropicalRainforest>0.01</TropicalRainforest>
+				<AridShrubland>0.01</AridShrubland>
+				<Desert>0.05</Desert>
+				<ExtremeDesert>0.05</ExtremeDesert>
 			</wildBiomes>
 			<body>MM_MinotaurBody</body>
 			<herdAnimal>false</herdAnimal>
@@ -169,6 +169,27 @@
 		<tradeTags>
 			<li>AnimalUncommon</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					
+					<li>MM_DamageRanged</li>
+					<li>MM_Yes</li>					
+				</statValues>
+				<statDescriptions>
+					
+					<li>MM_DamageRangedDesc</li>
+					<li>MM_Ranged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

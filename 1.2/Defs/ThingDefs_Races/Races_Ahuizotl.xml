@@ -94,13 +94,13 @@
 
 		<race>
 			<wildBiomes>
-				<BorealForest>0.01</BorealForest>
-				<ColdBog>0.07</ColdBog>
-				<AridShrubland>0.01</AridShrubland>
-				<TemperateSwamp>0.06</TemperateSwamp>
-				<TropicalSwamp>0.07</TropicalSwamp>
-				<TemperateForest>0.01</TemperateForest>
-				<TropicalRainforest>0.07</TropicalRainforest>
+				<BorealForest>0.005</BorealForest>
+				<ColdBog>0.035</ColdBog>
+				<AridShrubland>0.005</AridShrubland>
+				<TemperateSwamp>0.03</TemperateSwamp>
+				<TropicalSwamp>0.035</TropicalSwamp>
+				<TemperateForest>0.005</TemperateForest>
+				<TropicalRainforest>0.035</TropicalRainforest>
 			</wildBiomes>
 			<maxPreyBodySize>2.3</maxPreyBodySize>
 			<body>MM_AhuizotlBody</body>

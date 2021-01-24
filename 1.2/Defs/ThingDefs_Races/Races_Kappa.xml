@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>MM_Kappa</defName>
 		<label>kappa</label>
-		<description>The kappa is a river imp in Japanese folklore, depicted as green, human-like beings with webbed hands and feet and a turtle-like carapace on their backs. A depression on their head, their "dish", holds a tiny amount of water, and the kappa is severely weakened if this water spills or dries. Although kappa are often seen as mischievous, they are not inherently malicious. In fact, once befriended, kappa may perform any number of tasks for human beings, such as helping farmers irrigate their land.\n\nKappa aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Kappa are cowardly, fleeing combat if they lose too much health. Properly trained jappa ("Guard" skill at least) can help colonists on harvesting tasks.</description>		
+		<description>The kappa is a river imp in Japanese folklore, depicted as green, human-like beings with webbed hands and feet and a turtle-like carapace on their backs. A depression on their head, their "dish", holds a tiny amount of water, and the kappa is severely weakened if this water spills or dries. Although kappa are often seen as mischievous, they are not inherently malicious. In fact, once befriended, kappa may perform any number of tasks for human beings, such as helping farmers irrigate their land.\n\nKappa aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Kappa are cowardly, fleeing combat if they lose too much health. Properly trained kappa ("Guard" skill at least) can help colonists on harvesting tasks.</description>		
 		<statBases>
 			<MoveSpeed>4.1</MoveSpeed>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -132,7 +132,27 @@
 		<tradeTags>
 			<li>AnimalAlpha</li>
 		</tradeTags>
-		
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					
+					<li>MM_Utility</li>
+					<li>MM_No</li>					
+				</statValues>
+				<statDescriptions>
+					
+					<li>MM_UtilityWorkerDesc</li>
+					<li>MM_NoRanged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>MM_Kappa</defName>

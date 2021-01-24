@@ -25,9 +25,9 @@
 				<warmupTime>1</warmupTime>				
 				<burstShotCount>1</burstShotCount>
 				<minRange>1</minRange>
-				<range>8</range>			
+				<range>8</range>		
+				<label>petrifying gaze</label>				
 				<muzzleFlashScale>0</muzzleFlashScale>
-				<!--Commanility determines how frequent this range verb is chosen.-->
 				<commonality>1</commonality>
 			</li>
 

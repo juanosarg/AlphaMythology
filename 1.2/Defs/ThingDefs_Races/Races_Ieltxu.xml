@@ -11,6 +11,27 @@
 			<MarketValue>250</MarketValue>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>MM_FlameBreathAnimated</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>1</minRange>
+				<range>8</range>	
+				<label>fire breath</label>	  				
+				<soundCast>MM_PoisonBreathSound</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<commonality>1</commonality>
+			</li>
+
+
+		</verbs>
 		<race>
 			<body>Bird</body>
 			<leatherDef>MM_LightMagicalLeather</leatherDef>
@@ -104,6 +125,27 @@
 			<li>AnimalUncommon</li>
 			
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					
+					<li>MM_DamageRanged</li>
+					<li>MM_Yes</li>					
+				</statValues>
+				<statDescriptions>
+					
+					<li>MM_DamageRangedDesc</li>
+					<li>MM_Ranged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

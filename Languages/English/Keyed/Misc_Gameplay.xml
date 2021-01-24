@@ -25,7 +25,8 @@
 	<!-- Animal Stats -->
 	
 	<MM_PrimaryRole>Primary Role</MM_PrimaryRole>
-	<MM_RangedAttacks>Ranged Attacks</MM_RangedAttacks>
+	<MM_SecondaryRole>Secondary Role</MM_SecondaryRole>
+	<MM_RangedAttacks>Uses Ranged Attacks</MM_RangedAttacks>
 	<MM_Yes>Yes</MM_Yes>
 	<MM_No>No</MM_No>
 	<MM_NoRanged>This animal doesn't have ranged attacks. To order it to attack, it needs to be trained in Guard and Attack, then it needs to be assigned to follow a master when drafted and/or working. The "release" button on the master's commands bar will make the animal attack in melee.</MM_NoRanged>
@@ -36,12 +37,35 @@
 	<MM_Tank>Tank</MM_Tank>
 	<MM_ShockTroop>Shock Troop</MM_ShockTroop>
 	<MM_ParalizingRanged>Paralyzing Ranged</MM_ParalizingRanged>
+	<MM_DamageRanged>Ranged Attacker</MM_DamageRanged>
+	<MM_DamageRangedPoison>Poison Ranged Attacker</MM_DamageRangedPoison>
+	<MM_Farm>Farm Animal</MM_Farm>
+	<MM_MountFast>Fast Mount</MM_MountFast>
+	<MM_MountArmoured>Armoured Mount</MM_MountArmoured>
+	<MM_MountFastArmoured>Armoured and Fast Mount</MM_MountFastArmoured>
+	<MM_Utility>Utility</MM_Utility>
+	<MM_Boomer>Boomer</MM_Boomer>
 	
 	<!-- Roles Descriptions -->
 	
 	<MM_VenomousTankDesc>"Tank" animals are specialized in melee combat. These animals have high attack damage, good resistance, high health, or other abilities that allow them to survive in the front lines.\n\nThis animal also has powerful venomous attacks.</MM_VenomousTankDesc>
+	<MM_ShockTroopDesc>"Shock Troop" animals are specialized in high speed, and some ability that adds utility to melee combat. They may not be very resistant, or have high health, but if properly used they can have devastating effects.</MM_ShockTroopDesc>
+	<MM_ShockTroopDOTDesc>"Shock Troop" animals are specialized in high speed, and some ability that adds utility to melee combat. They may not be very resistant, or have high health, but if properly used they can have devastating effects.\n\nThis animal has a melee attack that causes damage over time.</MM_ShockTroopDOTDesc>
 	<MM_ParalyzingShockTroopDesc>"Shock Troop" animals are specialized in high speed, and some ability that adds utility to melee combat. They may not be very resistant, or have high health, but if properly used they can have devastating effects.\n\nThis animal also has attacks that can be used to immobilize attackers.</MM_ParalyzingShockTroopDesc>
+	<MM_FireyShockTroopDesc>"Shock Troop" animals are specialized in high speed, and some ability that adds utility to melee combat. They may not be very resistant, or have high health, but if properly used they can have devastating effects.\n\nThis animal also has attacks that set enemis on fire.</MM_FireyShockTroopDesc>
 	<MM_ParalyzingRangedDesc>"Paralyzing Ranged" animals use ranged attacks to immobilize attackers. Having them in melee might not be the best use for them.</MM_ParalyzingRangedDesc>
+	<MM_DamageRangedDesc>This animal uses ranged attacks to damage attackers. Having them in melee might not be the best use for them.</MM_DamageRangedDesc>
+	<MM_DamageRangedDOTDesc>This animal uses ranged attacks to damage attackers. These attacks cause damage over time. Having them in melee might not be the best use for them.</MM_DamageRangedDOTDesc>
+	<MM_DamageRangedPoisonDesc>This animal uses ranged attacks to damage attackers. These attacks cause toxic damage. Having them in melee might not be the best use for them.</MM_DamageRangedPoisonDesc>
+	<MM_FarmMilkDesc>This is a farm animal that produces milk.</MM_FarmMilkDesc>
+	<MM_MountFastDesc>This animal can be mounted by colonists, providing a considerable speed boost, as well as being able to attack in melee along with its rider. Bear in mind that this whole interaction is only available if you have the Giddy Up! mod installed. And if you don't, what are you waiting for?</MM_MountFastDesc>
+	<MM_MountFastArmouredDesc>This animal can be mounted by colonists, providing a considerable speed boost, a defense boost due to extra armour, as well as being able to attack in melee along with its rider. Bear in mind that this whole interaction is only available if you have the Giddy Up! mod installed. And if you don't, what are you waiting for?</MM_MountFastArmouredDesc>
+	<MM_UtilityMoodDesc>This animal is not suited for combat, being quite physically weak. It will however increase the mood of your colonists, either through nuzzling or other alternative abilities.</MM_UtilityMoodDesc>
+	<MM_UtilityWorkerDesc>This animal is not suited for combat, being quite physically weak. It will however help your colonists with certain tasks (Mining, Harvesting, etc), reducing their work load considerably.</MM_UtilityWorkerDesc>
+	<MM_UtilityHealthDesc>This animal is not suited for combat, being quite physically weak. It will however help your colonists' health, either by healing wounds or somehow strengthening them.</MM_UtilityHealthDesc>
+	<MM_UtilityTemperatureDesc>This animal is not suited for combat, being quite physically weak. It will however help you control your colony's heat.</MM_UtilityTemperatureDesc>
+	<MM_BoomerDesc>This animal explodes on death.</MM_BoomerDesc>
+
 
 
 

@@ -72,9 +72,9 @@
 
 		<race>
 			<wildBiomes>
-				<BorealForest>0.05</BorealForest>       
-				<TemperateForest>0.05</TemperateForest>
-				<TropicalRainforest>0.025</TropicalRainforest>
+				<BorealForest>0.025</BorealForest>       
+				<TemperateForest>0.025</TemperateForest>
+				<TropicalRainforest>0.0125</TropicalRainforest>
 			</wildBiomes>
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<herdAnimal>true</herdAnimal>
@@ -115,6 +115,27 @@
 		<tradeTags>
 			<li>AnimalUncommon</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					<li>MM_SecondaryRole</li>
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					<li>MM_Farm</li>
+					<li>MM_MountFast</li>
+					<li>MM_No</li>					
+				</statValues>
+				<statDescriptions>
+					<li>MM_FarmMilkDesc</li>
+					<li>MM_MountFastDesc</li>
+					<li>MM_NoRanged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

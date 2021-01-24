@@ -6,13 +6,21 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>MM_Kitsune</defName>
 		<label>kitsune</label>
-		<description>The Kitsune is a legendary creature from Japanese folklore, depicted as a quite intelligent fox-like being possessing paranormal abilities that increase with its age and wisdom. Kitsune have as many as nine tails. Generally, a greater number of tails indicates an older and more powerful Kitsune.\n\nKitsune aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.</description>
+		<description>The Kitsune is a legendary creature from Japanese folklore, depicted as a quite intelligent fox-like being possessing paranormal abilities that increase with its age and wisdom. Kitsune have as many as nine tails. Generally, a greater number of tails indicates an older and more powerful Kitsune.\n\nKitsune aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: When tamed, Kitsune slowly regenerate the wounds of nearby colonists and animals.</description>
 		<statBases>
 			<MoveSpeed>4.6</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<MarketValue>250</MarketValue>
 		</statBases>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_PassiveRegenerator">
+				<radius>5</radius>
+				<needsToBeTamed>true</needsToBeTamed>
+				<tickInterval>300</tickInterval>
+			
+			</li>
+		</comps>
 		<tools>
 			<li>
 				<label>left claw</label>
@@ -82,18 +90,18 @@
 
 		<race>
 			<wildBiomes>
-				<BorealForest>0.06</BorealForest>
-				<IceSheet>0.07</IceSheet>
-				<Tundra>0.07</Tundra>
-				<ColdBog>0.07</ColdBog>
-				<SeaIce>0.07</SeaIce>
-				<TemperateSwamp>0.06</TemperateSwamp>
-				<TropicalSwamp>0.01</TropicalSwamp>
-				<TemperateForest>0.07</TemperateForest>
-				<TropicalRainforest>0.01</TropicalRainforest>
-				<AridShrubland>0.01</AridShrubland>
-				<Desert>0.001</Desert>
-				<ExtremeDesert>0.001</ExtremeDesert>
+				<BorealForest>0.03</BorealForest>
+				<IceSheet>0.035</IceSheet>
+				<Tundra>0.035</Tundra>
+				<ColdBog>0.035</ColdBog>
+				<SeaIce>0.035</SeaIce>
+				<TemperateSwamp>0.03</TemperateSwamp>
+				<TropicalSwamp>0.005</TropicalSwamp>
+				<TemperateForest>0.035</TemperateForest>
+				<TropicalRainforest>0.005</TropicalRainforest>
+				<AridShrubland>0.005</AridShrubland>
+				<Desert>0.0005</Desert>
+				<ExtremeDesert>0.0005</ExtremeDesert>
 			</wildBiomes>
 			<maxPreyBodySize>0.80</maxPreyBodySize>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -107,7 +115,7 @@
 			<wildness>0.75</wildness>
 			<trainability>Advanced</trainability>
 			<leatherDef>MM_LightMagicalLeather</leatherDef>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
+			<nuzzleMtbHours>20</nuzzleMtbHours>
 			<gestationPeriodDays>21</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>
@@ -146,6 +154,27 @@
 		<tradeTags>
 			<li>AnimalUncommon</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				
+				<statToAdd>
+					
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					
+					<li>MM_Utility</li>
+					<li>MM_No</li>					
+				</statValues>
+				<statDescriptions>
+					
+					<li>MM_UtilityHealthDesc</li>
+					<li>MM_NoRanged</li>
+				</statDescriptions>
+					
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
