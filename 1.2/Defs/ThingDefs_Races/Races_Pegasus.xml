@@ -138,6 +138,7 @@
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>MM_Pegasus</defName>
     <label>pegasus</label>
+	<labelPlural>pegasi</labelPlural>
     <race>MM_Pegasus</race>
     <combatPower>125</combatPower>
     <ecoSystemWeight>1.1</ecoSystemWeight>

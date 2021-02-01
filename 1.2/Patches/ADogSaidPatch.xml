@@ -38,8 +38,8 @@
 						<li>MM_Ieltxu</li>
 						<li>MM_LesserWyvern</li>
 						<li>MM_Tlilcoatl</li>
-								
-									
+
+
 
 					</value>
 				</li>
@@ -253,7 +253,7 @@
 						<li>MM_Fenghuang</li>						
 						<li>MM_Ieltxu</li>
 						<li>MM_LesserWyvern</li>
-						
+
 
 					</value>
 				</li>
@@ -373,12 +373,12 @@
 						<li>MM_Catoblepas</li>
 						<li>MM_Cerberus</li>
 						<li>MM_CeryneianHind</li>
-						
+
 						<li>MM_Kappa</li>
 						<li>MM_Xiezhi</li>
-					
+
 						<li>MM_LesserWyvern</li>
-						
+
 					</value>
 				</li>
 
@@ -406,14 +406,14 @@
 						<li>MM_Cerberus</li>
 						<li>MM_CeryneianHind</li>
 						<li>MM_Phoenix</li>
-						
+
 						<li>MM_Kappa</li>
 						<li>MM_Xiezhi</li>
 						<li>MM_Fenghuang</li>
-						
+
 						<li>MM_Ieltxu</li>
 						<li>MM_LesserWyvern</li>
-						
+
 
 					</value>
 				</li>
@@ -444,6 +444,667 @@
 
 					</value>
 				</li>
+
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Alpha Animals</li>
+					</mods>
+
+					<nomatch Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd"> 
+								<success>Always</success>
+								<xpath>/Defs</xpath>
+								<value>
+									<ResearchProjectDef>
+										<defName>AA_ExoticProsthetics</defName>
+										<label>Exotic Animal Prosthetics</label>
+										<description>Learn to use and craft exotic animal prosthetics to replace such things as tentacles, wings, echolocation organs and so on</description>
+										<baseCost>500</baseCost>
+										<techLevel>Industrial</techLevel>
+										<researchViewX>2</researchViewX>
+										<researchViewY>2</researchViewY>
+										<prerequisites>
+											<li>SimpleAnimalProsthetics</li>
+										</prerequisites>
+										<tab>ADogSaid</tab>
+									</ResearchProjectDef>
+									<ResearchProjectDef>
+										<defName>AA_ExoticBionics</defName>
+										<label>Exotic Animal Bionics</label>
+										<description>Learn to use and craft exotic bionics to create bionic tentacles, wings, echolocation organs, etc</description>
+										<baseCost>1000</baseCost>
+										<techLevel>Spacer</techLevel>
+										<researchViewX>2</researchViewX>
+										<researchViewY>3</researchViewY>
+										<prerequisites>
+											<li>AnimalBionics</li>
+										</prerequisites>
+										<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+										<tab>ADogSaid</tab>
+									</ResearchProjectDef>
+									<ThingDef Name="AA_BodyPartProstheticBaseADS" ParentName="BodyPartProstheticBaseADS" Abstract="True">
+										<recipeMaker>
+											<researchPrerequisite>AA_ExoticProsthetics</researchPrerequisite>
+										</recipeMaker>
+									</ThingDef>
+									<ThingDef Name="AA_BodyPartBionicBaseADS" ParentName="BodyPartBionicBaseADS" Abstract="True">
+										<recipeMaker>
+											<researchPrerequisite>AA_ExoticBionics</researchPrerequisite>
+										</recipeMaker>
+									</ThingDef>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+					
+				</li>
+
+				<!-- Stinger -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="AA_BodyPartProstheticBaseADS">
+							<defName>MM_ProstheticStinger</defName>
+							<label>simple prosthetic stinger</label>
+							<description>Simple prosthetic stinger. Should be able to replace almost any stinger.</description>
+							<techLevel>Industrial</techLevel>
+							<costList>
+								<Steel>20</Steel>
+								<ComponentIndustrial>2</ComponentIndustrial>
+							</costList>
+							<statBases>
+								<WorkToMake>8000</WorkToMake>
+								<Mass>5</Mass>
+							</statBases>
+							<techHediffsTags>
+								<li>Simple</li>
+							</techHediffsTags>
+						</ThingDef>
+						<ThingDef ParentName="AA_BodyPartBionicBaseADS">
+							<defName>MM_BionicStinger</defName>
+							<label>bionic stinger</label>
+							<description>Improved bionic stinger for animals. Should be able to replace any type of stinger.</description>
+							<techLevel>Spacer</techLevel>
+							<costList>
+								<Plasteel>25</Plasteel>							
+								<ComponentSpacer>2</ComponentSpacer>
+							</costList>
+							<statBases>
+								<WorkToMake>12000</WorkToMake>
+								<Mass>8</Mass>
+							</statBases>
+							<techHediffsTags>
+								<li>Advanced</li>
+							</techHediffsTags>
+						</ThingDef>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<HediffDef ParentName="addedPartAnimal">
+							<defName>MM_ProstheticStinger</defName>
+							<label>simple prosthetic stinger</label>
+							<description>Simple prosthetic stinger. Should be able to replace any type of stinger.</description>
+							<defaultLabelColor>(233,129,69)</defaultLabelColor>
+							<spawnThingOnRemoved>MM_ProstheticStinger</spawnThingOnRemoved>
+							<addedPartProps>
+								<solid>true</solid>
+								<partEfficiency>0.85</partEfficiency>
+								<betterThanNatural>false</betterThanNatural>
+							</addedPartProps>
+							<stages>
+								<li>
+									<statOffsets>
+										<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+										<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+										<ArmorRating_Heat>0.02</ArmorRating_Heat>
+									</statOffsets>
+								</li>			
+							</stages>
+						</HediffDef>
+						<HediffDef ParentName="addedPartAnimal">
+							<defName>MM_BionicStinger</defName>
+							<label>bionic stinger</label>
+							<description>Improved bionic stinger for animals. Should be able to replace any type of stinger.</description>
+							<spawnThingOnRemoved>MM_BionicStinger</spawnThingOnRemoved>
+							<addedPartProps>
+								<solid>true</solid>
+								<partEfficiency>1.25</partEfficiency>
+							</addedPartProps>
+							<stages>
+								<li>
+									<capMods>
+										<li>
+											<capacity>Manipulation</capacity>
+											<offset>0.01</offset>
+										</li>
+									</capMods>
+									<statOffsets>
+										<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+										<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+										<ArmorRating_Heat>0.03</ArmorRating_Heat>
+									</statOffsets>
+								</li>	 
+							</stages>
+						</HediffDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef Abstract="True" Name="MM_StingerBaseAnimal" ParentName="SurgeryFleshAnimal">
+							<appliedOnFixedBodyParts>
+								<li>MM_ScorpionTail</li>
+							</appliedOnFixedBodyParts>
+						</RecipeDef>
+						<RecipeDef ParentName="MM_StingerBaseAnimal">
+							<defName>MM_InstallSimpleStinger</defName>
+							<label>install simple prosthetic stinger</label>
+							<description>Installs simple prosthetic stinger.</description>
+							<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+							<jobString>Installing simple prosthetic stinger.</jobString>
+							<workAmount>2000</workAmount>
+							<skillRequirements>
+								<Medicine>4</Medicine>
+							</skillRequirements>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>MM_ProstheticStinger</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>MM_ProstheticStinger</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<addsHediff>MM_ProstheticStinger</addsHediff>
+
+						</RecipeDef>
+						<RecipeDef ParentName="MM_StingerBaseAnimal">
+							<defName>MM_InstallBionicStinger</defName>
+							<label>install bionic stinger</label>
+							<description>Installs bionic stinger.</description>
+							<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+							<jobString>Installing bionic stinger.</jobString>
+							<workAmount>2000</workAmount>
+							<skillRequirements>
+								<Medicine>8</Medicine>
+							</skillRequirements>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>MM_BionicStinger</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>MM_BionicStinger</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<addsHediff>MM_BionicStinger</addsHediff>
+
+						</RecipeDef>
+					</value>
+				</li>
+				
+				
+				<!-- Magical Wing -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="AA_BodyPartProstheticBaseADS">
+							<defName>MM_ProstheticMagicalWing</defName>
+							<label>simple prosthetic magical wing</label>
+							<description>Simple prosthetic magical wing. Should be able to replace almost any wing in a magical creature.</description>
+							<techLevel>Industrial</techLevel>
+							<costList>
+								<Steel>20</Steel>
+								<ComponentIndustrial>2</ComponentIndustrial>
+							</costList>
+							<statBases>
+								<WorkToMake>8000</WorkToMake>
+								<Mass>5</Mass>
+							</statBases>
+							<techHediffsTags>
+								<li>Simple</li>
+							</techHediffsTags>
+						</ThingDef>
+						<ThingDef ParentName="AA_BodyPartBionicBaseADS">
+							<defName>MM_BionicMagicalWing</defName>
+							<label>bionic magical wing</label>
+							<description>Improved bionic magical wing for animals. Should be able to replace any type of wing in a magical creature.</description>
+							<techLevel>Spacer</techLevel>
+							<costList>
+								<Plasteel>25</Plasteel>							
+								<ComponentSpacer>2</ComponentSpacer>
+							</costList>
+							<statBases>
+								<WorkToMake>12000</WorkToMake>
+								<Mass>8</Mass>
+							</statBases>
+							<techHediffsTags>
+								<li>Advanced</li>
+							</techHediffsTags>
+						</ThingDef>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<HediffDef ParentName="addedPartAnimal">
+							<defName>MM_ProstheticMagicalWing</defName>
+							<label>simple prosthetic stinger</label>
+							<description>Simple prosthetic magical wing. Should be able to replace any type of wing in a magical creature.</description>
+							<defaultLabelColor>(233,129,69)</defaultLabelColor>
+							<spawnThingOnRemoved>MM_ProstheticStinger</spawnThingOnRemoved>
+							<addedPartProps>
+								<solid>true</solid>
+								<partEfficiency>0.85</partEfficiency>
+								<betterThanNatural>false</betterThanNatural>
+							</addedPartProps>
+							<stages>
+								<li>
+									<statOffsets>
+										<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+										<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+										<ArmorRating_Heat>0.02</ArmorRating_Heat>
+									</statOffsets>
+								</li>			
+							</stages>
+						</HediffDef>
+						<HediffDef ParentName="addedPartAnimal">
+							<defName>MM_BionicMagicalWing</defName>
+							<label>bionic magical wing</label>
+							<description>Improved bionic magical wing for animals. Should be able to replace any type of wing in a magical creature.</description>
+							<spawnThingOnRemoved>MM_BionicStinger</spawnThingOnRemoved>
+							<addedPartProps>
+								<solid>true</solid>
+								<partEfficiency>1.25</partEfficiency>
+							</addedPartProps>
+							<stages>
+								<li>
+									<capMods>
+										<li>
+											<capacity>Manipulation</capacity>
+											<offset>0.01</offset>
+										</li>
+									</capMods>
+									<statOffsets>
+										<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+										<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+										<ArmorRating_Heat>0.03</ArmorRating_Heat>
+									</statOffsets>
+								</li>	 
+							</stages>
+						</HediffDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef Abstract="True" Name="MM_MagicalWingBaseAnimal" ParentName="SurgeryFleshAnimal">
+							<appliedOnFixedBodyParts>
+								<li>MM_Wing</li>
+							</appliedOnFixedBodyParts>
+						</RecipeDef>
+						<RecipeDef ParentName="MM_MagicalWingBaseAnimal">
+							<defName>MM_InstallSimpleMagicalWing</defName>
+							<label>install simple prosthetic magical wing</label>
+							<description>Installs simple prosthetic magical wing.</description>
+							<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+							<jobString>Installing simple prosthetic magical wing.</jobString>
+							<workAmount>2000</workAmount>
+							<skillRequirements>
+								<Medicine>4</Medicine>
+							</skillRequirements>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>MM_ProstheticMagicalWing</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>MM_ProstheticMagicalWing</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<addsHediff>MM_ProstheticMagicalWing</addsHediff>
+
+						</RecipeDef>
+						<RecipeDef ParentName="MM_MagicalWingBaseAnimal">
+							<defName>MM_InstallBionicMagicalWing</defName>
+							<label>install bionic magical wing</label>
+							<description>Installs bionic magical wing.</description>
+							<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+							<jobString>Installing bionic magical wing.</jobString>
+							<workAmount>2000</workAmount>
+							<skillRequirements>
+								<Medicine>8</Medicine>
+							</skillRequirements>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>MM_BionicMagicalWing</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>MM_BionicMagicalWing</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<addsHediff>MM_BionicMagicalWing</addsHediff>
+
+						</RecipeDef>
+					</value>
+				</li>
+				
+				<!-- Horns -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="AA_BodyPartProstheticBaseADS">
+							<defName>MM_ProstheticHorns</defName>
+							<label>simple prosthetic horns</label>
+							<description>Simple prosthetic horns. Should be able to replace almost any horns or antlers.</description>
+							<techLevel>Industrial</techLevel>
+							<costList>
+								<Steel>20</Steel>
+								<ComponentIndustrial>2</ComponentIndustrial>
+							</costList>
+							<statBases>
+								<WorkToMake>8000</WorkToMake>
+								<Mass>5</Mass>
+							</statBases>
+							<techHediffsTags>
+								<li>Simple</li>
+							</techHediffsTags>
+						</ThingDef>
+						<ThingDef ParentName="AA_BodyPartBionicBaseADS">
+							<defName>MM_BionicHorns</defName>
+							<label>bionic horns</label>
+							<description>Improved bionic horns for animals. Should be able to replace any type of horns or antlers.</description>
+							<techLevel>Spacer</techLevel>
+							<costList>
+								<Plasteel>25</Plasteel>							
+								<ComponentSpacer>2</ComponentSpacer>
+							</costList>
+							<statBases>
+								<WorkToMake>12000</WorkToMake>
+								<Mass>8</Mass>
+							</statBases>
+							<techHediffsTags>
+								<li>Advanced</li>
+							</techHediffsTags>
+						</ThingDef>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<HediffDef ParentName="addedPartAnimal">
+							<defName>MM_ProstheticHorns</defName>
+							<label>simple prosthetic horns</label>
+							<description>Simple prosthetic horns. Should be able to replace any type of horns or antlers.</description>
+							<defaultLabelColor>(233,129,69)</defaultLabelColor>
+							<spawnThingOnRemoved>MM_ProstheticHorns</spawnThingOnRemoved>
+							<comps>
+								<li Class="HediffCompProperties_VerbGiver">
+									<tools>
+										<li>
+											<label>prosthetic horns</label>
+											<capacities>
+												<li>Scratch</li>
+											</capacities>
+											<power>8</power>
+											<cooldownTime>1.8</cooldownTime>
+											<alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+										</li>
+									</tools>
+								</li>
+							</comps>
+							<addedPartProps>
+								<solid>true</solid>
+								<partEfficiency>0.85</partEfficiency>
+								<betterThanNatural>false</betterThanNatural>
+							</addedPartProps>
+							<stages>
+								<li>
+									<statOffsets>
+										<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+										<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+										<ArmorRating_Heat>0.02</ArmorRating_Heat>
+									</statOffsets>
+								</li>			
+							</stages>
+						</HediffDef>
+						<HediffDef ParentName="addedPartAnimal">
+							<defName>MM_BionicHorns</defName>
+							<label>bionic horns</label>
+							<description>Improved bionic horns for animals. Should be able to replace any type of horns or antlers.</description>
+							<spawnThingOnRemoved>MM_BionicHorns</spawnThingOnRemoved>
+							<addedPartProps>
+								<solid>true</solid>
+								<partEfficiency>1.25</partEfficiency>
+							</addedPartProps>
+							<comps>
+								<li Class="HediffCompProperties_VerbGiver">
+									<tools>
+										<li>
+											<label>bionic horns</label>
+											<capacities>
+												<li>Scratch</li>
+											</capacities>
+											<power>20</power>
+											<cooldownTime>1.4</cooldownTime>
+											<alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+										</li>
+									</tools>
+								</li>
+							</comps>
+							<stages>
+								<li>
+									<capMods>
+										<li>
+											<capacity>Manipulation</capacity>
+											<offset>0.025</offset>
+										</li>
+									</capMods>
+									<statOffsets>
+										<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+										<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+										<ArmorRating_Heat>0.03</ArmorRating_Heat>
+									</statOffsets>
+								</li>	 
+							</stages>
+						</HediffDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef Abstract="True" Name="MM_HornsBaseAnimal" ParentName="SurgeryFleshAnimal">
+							<appliedOnFixedBodyParts>
+								<li>MM_Antlers</li>
+								<li>MM_Horns</li>
+							</appliedOnFixedBodyParts>
+						</RecipeDef>
+						<RecipeDef ParentName="MM_HornsBaseAnimal">
+							<defName>MM_InstallSimpleHorns</defName>
+							<label>install simple prosthetic horns</label>
+							<description>Installs simple prosthetic horns.</description>
+							<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+							<jobString>Installing simple prosthetic horns.</jobString>
+							<workAmount>2000</workAmount>
+							<skillRequirements>
+								<Medicine>4</Medicine>
+							</skillRequirements>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>MM_ProstheticHorns</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>MM_ProstheticHorns</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<addsHediff>MM_ProstheticHorns</addsHediff>
+
+						</RecipeDef>
+						<RecipeDef ParentName="MM_HornsBaseAnimal">
+							<defName>MM_InstallBionicHorns</defName>
+							<label>install bionic horns</label>
+							<description>Installs bionic horns.</description>
+							<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+							<jobString>Installing bionic horns.</jobString>
+							<workAmount>2000</workAmount>
+							<skillRequirements>
+								<Medicine>8</Medicine>
+							</skillRequirements>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>MM_BionicHorns</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>MM_BionicHorns</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<addsHediff>MM_BionicHorns</addsHediff>
+
+						</RecipeDef>
+					</value>
+				</li>
+				
+				<!-- Final patch to vanilla to ensure these operations appear in all animals when they should -->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+					<value>
+						<li>MM_InstallSimpleStinger</li>
+						<li>MM_InstallBionicStinger</li>
+						<li>MM_InstallSimpleMagicalWing</li>
+						<li>MM_InstallBionicMagicalWing</li>
+						<li>MM_InstallSimpleHorns</li>
+						<li>MM_InstallBionicHorns</li>
+
+
+
+					</value>
+				</li>
+
+
+
+
 
 
 
