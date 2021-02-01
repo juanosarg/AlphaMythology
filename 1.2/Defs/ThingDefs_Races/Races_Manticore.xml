@@ -6,7 +6,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>MM_Manticore</defName>
 		<label>manticore</label>
-		<description>The Manticore is a monstruous legendary creature in Persian mythology. It has a hybrid leonine-humanoid head, the body of a lion and a scorpion tail of venomous spines similar to porcupine quills. This manticore has also been modified to have non-functional chiropteran wings, even though historical depictions of the creature didn't include them. The manticore is a fierce predator, capable of stalking its prey and attack from range.\n\nManticores aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Manticores can throw poisoned quills from their scorpion-like tails.</description>
+		<description>The Manticore is a monstrous legendary creature in Persian mythology. It has a hybrid leonine-humanoid head, the body of a lion and a scorpion tail of venomous spines similar to porcupine quills. This manticore has also been modified to have non-functional chiropteran wings, even though historical depictions of the creature didn't include them. The manticore is a fierce predator, capable of stalking its prey and attack from range.\n\nManticores aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Manticores can throw poisoned quills from their scorpion-like tails.</description>
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
