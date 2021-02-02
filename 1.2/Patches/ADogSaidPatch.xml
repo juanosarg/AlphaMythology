@@ -1646,7 +1646,7 @@
 							<comps>
 								<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
 									<verbs>
-										<li>
+										<li> 
 											<verbClass>Verb_Shoot</verbClass>
 											<accuracyTouch>0.15</accuracyTouch>
 											<accuracyShort>0.25</accuracyShort>
