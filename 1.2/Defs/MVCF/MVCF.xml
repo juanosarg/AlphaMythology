@@ -8,6 +8,7 @@
 		<description>Adding animal ranged attacks for Magical Menagerie creatures</description>
 		<Features>
 			<RangedAnimals>true</RangedAnimals>
+			<HediffVerbs>true</HediffVerbs>
 		</Features>
 	</MVCF.ModDef>
 

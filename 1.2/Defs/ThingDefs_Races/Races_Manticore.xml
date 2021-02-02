@@ -108,7 +108,7 @@
 				<burstShotCount>1</burstShotCount>
 				<minRange>2</minRange>
 				<range>18</range>
-				<label>poisoned quills</label>
+				<label>venomous quills</label>
 				<soundCast>MM_QuillSound</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<commonality>1</commonality>

@@ -54,10 +54,10 @@
 				<accuracyMedium>0.15</accuracyMedium>
 				<accuracyLong>0.1</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>MM_PoisonBreath</defaultProjectile>
+				<defaultProjectile>MM_AcidicBreath</defaultProjectile>
 				<warmupTime>0.3</warmupTime>
 				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-				<label>poison breath</label>
+				<label>acidic breath</label>
 				<burstShotCount>120</burstShotCount>
 				<minRange>1</minRange>
 				<range>15</range>

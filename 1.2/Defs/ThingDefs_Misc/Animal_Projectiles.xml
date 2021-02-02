@@ -68,29 +68,10 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="MM_BaseAnimalProjectile">
-		<defName>MM_FlameBreath</defName>
-		<label>incendiary breath</label>
-		<graphicData>
-			<texPath>Things/Projectiles/MM_Firebreath</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
-		<projectile>
-			<speed>40</speed>
-			<damageDef>Flame</damageDef>
-			<damageAmountBase>2</damageAmountBase>
-			<explosionRadius>1.1</explosionRadius>
-			<ai_IsIncendiary>true</ai_IsIncendiary>
-			<soundExplode>Interact_Ignite</soundExplode>
-
-		</projectile>
-	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>MM_PoisonBreath</defName>
-		<label>poison breath</label>
+		<defName>MM_AcidicBreath</defName>
+		<label>acidic breath</label>
 		<graphicData>
 			<texPath>Things/Projectiles/MM_PoisonBreath</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -99,7 +80,7 @@
 				
 		<projectile>
 			<speed>20</speed>
-			<damageDef>MM_ToxicBreath</damageDef>
+			<damageDef>MM_AcidicBreath</damageDef>
 			<damageAmountBase>2</damageAmountBase>
 			<flyOverhead>false</flyOverhead>
 
@@ -162,7 +143,7 @@
 		<projectile>
 			<damageDef>MM_PetrifyingGaze</damageDef>		
 			<flyOverhead>false</flyOverhead>
-			<damageAmountBase>3</damageAmountBase>
+			<damageAmountBase>2</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
 			
 			<speed>20</speed>
@@ -190,7 +171,7 @@
 		<dealsDamageOnce>true</dealsDamageOnce>
 		<minDistanceToAffect>2</minDistanceToAffect>
 		<projectile>
-			<damageDef>MM_ToxicBreath</damageDef>		
+			<damageDef>ToxicBite</damageDef>		
 			<flyOverhead>false</flyOverhead>
 			<damageAmountBase>15</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>

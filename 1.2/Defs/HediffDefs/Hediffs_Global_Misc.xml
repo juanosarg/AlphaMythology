@@ -123,32 +123,7 @@
 		</stages>
 	</HediffDef>
 
-	<HediffDef ParentName="InjuryBase">
-		<defName>MM_AcidicBurn</defName>
-		<label>acidic burn</label>
-		<labelNoun>an acidic burn</labelNoun>
-		<description>A splash of acid that continues to cause burn wounds for quite some time after the initial attack.</description>
-		<comps>
-			<li Class="HediffCompProperties_TendDuration">
-				<labelTendedWell>bandaged</labelTendedWell>
-				<labelTendedWellInner>sutured</labelTendedWellInner>
-				<labelSolidTendedWell>set</labelSolidTendedWell>
-			</li>
-			<li Class="HediffCompProperties_Infecter">
-				<infectionChance>0.1</infectionChance>
-			</li>
-			<li Class="HediffCompProperties_GetsPermanent">
-				<permanentLabel>acidic burn scar</permanentLabel>
-			</li>
-		</comps>
-		<injuryProps>
-			<painPerSeverity>0.01875</painPerSeverity>
-			<averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
-			<canMerge>true</canMerge>
-			<destroyedLabel>Burned off</destroyedLabel>
-			<destroyedOutLabel>Burned out</destroyedOutLabel>
-		</injuryProps>
-	</HediffDef>
+
 
 	<HediffDef ParentName="DiseaseBase">
 		<defName>MM_Grabbed</defName>

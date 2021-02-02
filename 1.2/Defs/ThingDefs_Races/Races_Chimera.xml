@@ -103,13 +103,12 @@
 				<accuracyMedium>0.95</accuracyMedium>
 				<accuracyLong>0.8</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>MM_FlameBreath</defaultProjectile>
+				<defaultProjectile>MM_FlameBreathAnimated</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
 				<burstShotCount>2</burstShotCount>
 				<label>fire breath</label>	       
 				<minRange>2</minRange>
 				<range>15</range>
-				<forcedMissRadius>2</forcedMissRadius>
 				<soundCast>MM_FireBreathSound</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>			
 				<commonality>0.8</commonality>

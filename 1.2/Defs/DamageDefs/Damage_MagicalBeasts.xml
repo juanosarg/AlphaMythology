@@ -161,18 +161,18 @@
 	</DamageDef>
 
 	<DamageDef>
-		<defName>MM_ToxicBreath</defName>
-		<label>toxic breath</label>
+		<defName>MM_AcidicBreath</defName>
+		<label>acidic breath</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
-		<hediff>MM_AcidicBurn</hediff>
+		<hediff>VEF_AcidBurn</hediff>
 		<defaultDamage>1</defaultDamage>
 
 		<deathMessage>{0} has been poisoned to death.</deathMessage>
 		<additionalHediffs>
 			<li>
-				<hediff>MM_ToxicBite</hediff>
-				<severityPerDamageDealt>0.02</severityPerDamageDealt>
+				<hediff>VEF_AcidBuildup</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
 			</li>
 		</additionalHediffs>
