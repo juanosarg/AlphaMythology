@@ -47,7 +47,7 @@
 	<MM_Boomer>Boomer</MM_Boomer>
 	
 	<!-- Roles Descriptions -->
-	
+	 
 	<MM_VenomousTankDesc>"Tank" animals are specialized in melee combat. These animals have high attack damage, good resistance, high health, or other abilities that allow them to survive in the front lines.\n\nThis animal also has powerful venomous attacks.</MM_VenomousTankDesc>
 	<MM_ShockTroopDesc>"Shock Troop" animals are specialized in high speed, and some ability that adds utility to melee combat. They may not be very resistant, or have high health, but if properly used they can have devastating effects.</MM_ShockTroopDesc>
 	<MM_ShockTroopDOTDesc>"Shock Troop" animals are specialized in high speed, and some ability that adds utility to melee combat. They may not be very resistant, or have high health, but if properly used they can have devastating effects.\n\nThis animal has a melee attack that causes damage over time.</MM_ShockTroopDOTDesc>
