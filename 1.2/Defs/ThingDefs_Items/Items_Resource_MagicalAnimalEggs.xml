@@ -80,10 +80,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>10</hatcherDaystoHatch>
-				<hatcherPawn>MM_Salamander</hatcherPawn>
-			</li>
+			
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusher</compClass>
 				<heatPerSecond>30</heatPerSecond>
