@@ -12,7 +12,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ToxicSensitivity>0</ToxicSensitivity>
 			<Flammability>0</Flammability>
-			<MarketValue>350</MarketValue>
+			<MarketValue>1250</MarketValue>
 			<ArmorRating_Blunt>.75</ArmorRating_Blunt>
 			<ArmorRating_Sharp>.55</ArmorRating_Sharp>
 		</statBases>
@@ -117,9 +117,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>2</minAge>
-					<soundWounded>Pawn_Cougar_Injured</soundWounded>
-					<soundDeath>MM_Chimera_Death</soundDeath>
-					<soundAngry>MM_Chimera_Angry</soundAngry>
+					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
+					<soundDeath>Pawn_Cobra_Death</soundDeath>
+					<soundCall>Pawn_Cobra_Call</soundCall>
+					<soundAngry>Pawn_Cobra_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>

@@ -64,8 +64,41 @@
 
 	<!-- =============== Salamander Egg =============== -->
 
+	<ThingDef Abstract="True" Name="MM_EggBase" ParentName="OrganicProductBase" >
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
 
-	<ThingDef ParentName="EggFertBase">
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<Mass>0.15</Mass>
+			<MaxHitPoints>20</MaxHitPoints>
+			<DeteriorationRate>0.1</DeteriorationRate>
+			<Flammability>0.7</Flammability>
+
+		</statBases>
+
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="MM_EggFertBaseHot" ParentName="MM_EggBase" >
+		<tickerType>Normal</tickerType>
+
+		<thingCategories>
+			<li>EggsFertilized</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>0</minSafeTemperature>
+				<maxSafeTemperature>150</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="MM_EggFertBaseHot">
 		<defName>MM_EggSalamanderFertilized</defName>
 		<label>salamander egg (fert.)</label>
 		<description>Fertilized salamander egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a salamander.</description>
