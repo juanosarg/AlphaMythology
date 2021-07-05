@@ -230,12 +230,7 @@
 							<points>10</points>
 						</AchievementsExpanded.AchievementDef>
 						
-						<AchievementsExpanded.Reward_MapIncident>
-							<defName>MM_SummonMechataur</defName>
-							<label>Summon the Mechataur</label>
-							<cost>100</cost>
-							<incident>MM_SummonMechataur</incident>
-						</AchievementsExpanded.Reward_MapIncident>
+						
 
 						
 					</value>
