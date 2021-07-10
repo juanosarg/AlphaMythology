@@ -5,7 +5,7 @@ using Verse;
 using RimWorld;
 
 namespace AchievementsExpanded
-{
+{/*
     public class ItemCraftTrackerWithIngredientsMagicalMenagerie : Tracker<Thing>
     {
 
@@ -75,6 +75,6 @@ namespace AchievementsExpanded
         public int count;
 
         private int triggeredCount;
-    }
+    }*/
 }
 

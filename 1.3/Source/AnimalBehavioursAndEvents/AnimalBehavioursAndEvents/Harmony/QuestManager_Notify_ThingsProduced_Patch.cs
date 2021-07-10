@@ -8,7 +8,7 @@ using RimWorld;
 using RimWorld.Planet;
 
 namespace AchievementsExpanded
-{
+{/*
     public class MagicalMenagerie_QuestManager_Notify_ThingsProduced_Patch
     {
 
@@ -34,5 +34,5 @@ namespace AchievementsExpanded
             }
 
         }
-    }
+    }*/
 }
