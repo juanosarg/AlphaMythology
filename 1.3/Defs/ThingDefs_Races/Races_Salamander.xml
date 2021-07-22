@@ -82,6 +82,7 @@
 			<leatherDef>MM_LightMagicalLeather</leatherDef>
 			<useMeatFrom>Cobra</useMeatFrom>
 			<wildness>0.75</wildness>
+			<trainability>None</trainability>
 			<petness>0.05</petness>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>

@@ -80,6 +80,7 @@
 			<useMeatFrom>Cobra</useMeatFrom>
 			<wildness>0.75</wildness>
 			<petness>0.05</petness>
+			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<gestationPeriodDays>6.66</gestationPeriodDays>		

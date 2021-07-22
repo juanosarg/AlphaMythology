@@ -98,7 +98,7 @@
 			<baseHealthScale>3</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.975</wildness>
-			<trainability>None</trainability>
+			<trainability>Intermediate</trainability>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<lifeExpectancy>450</lifeExpectancy>
 			<lifeStageAges>
