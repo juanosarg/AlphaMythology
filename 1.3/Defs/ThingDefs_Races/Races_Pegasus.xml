@@ -78,7 +78,7 @@
 			<wildness>0.80</wildness>
 			<useMeatFrom>Horse</useMeatFrom>
 			<trainability>Advanced</trainability>
-			<roamMtbDays>5</roamMtbDays>
+		
 			<leatherDef>MM_LightMagicalLeather</leatherDef>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
 			<manhunterOnDamageChance>0.1</manhunterOnDamageChance>
