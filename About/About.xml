@@ -34,7 +34,7 @@
 
 &lt;size=24&gt;Features&lt;/size&gt;
 
-Adds 24 new creatures to the diverse biomes of your Rimworlds, all of them based on mythological and magical creatures from different ancient cultures and sources. Similar to Alpha Animals, the philosophy of this mod is that every new creature tries to bring some new mechanic into the game, whether it be fire breathing cattle, acid and poison spewing behemoth, or faster than average steed. Some of the mechanics are simple, others much more complex.
+Adds 25 new creatures to the diverse biomes of your Rimworlds, all of them based on mythological and magical creatures from different ancient cultures and sources. Similar to Alpha Animals, the philosophy of this mod is that every new creature tries to bring some new mechanic into the game, whether it be fire breathing cattle, acid and poison spewing behemoth, or faster than average steed. Some of the mechanics are simple, others much more complex.
 
 Animals will spawn with different rates in different biomes, and should appear at about half the rate as vanilla animals (wolves have been taken as a benchmark, not rats).
 
@@ -50,9 +50,8 @@ Obviously, more animals!
 
 &lt;size=24&gt;Compatibility&lt;/size&gt;
 Compatible with A Dog Said...
-Compatible with the implants from Genetic Rim and gene extraction 
+Compatible with the implants from Vanilla Genetics Expanded and gene extraction 
 Compatible with Alpha Biomes
-Compatible with Nature's Pretty Sweet
 Compatible with Advanced Biomes
 Compatible with Lords of the Rims - Elves (mallorn biome)
 Compatible with A RimWorld of Magic (animals drop Raw Magicyte)
@@ -67,6 +66,7 @@ Horse sounds by soundslikewillem https://freesound.org/people/soundslikewillem/s
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
+v3.2: Added the Stymphalian bird. Bugfixes (17/09/22)
 v3.1: RimWorld 1.3 update. (05/07/21)
 v3.01: Added 9 new animals. Complete overhaul of the ranged animal system (04/02/21)
 v2.301: Added 8 new achievements for Vanilla Achievements Expanded (15/11/20) 

@@ -657,5 +657,46 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+	
+	<SoundDef>
+		<defName>MM_CutGrass</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>MM_CutGrass</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9652174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>MM_Feathers</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>MM_Feathers</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9652174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
 
 </Defs>

@@ -38,6 +38,7 @@
 						<li>MM_Ieltxu</li>
 						<li>MM_LesserWyvern</li>
 						<li>MM_Tlilcoatl</li>
+						<li>MM_StymphalianBird</li>
 
 
 
@@ -73,6 +74,7 @@
 						<li>MM_Ieltxu</li>
 						<li>MM_LesserWyvern</li>
 						<li>MM_Tlilcoatl</li>
+						<li>MM_StymphalianBird</li>
 
 					</value>
 				</li>
@@ -104,6 +106,7 @@
 						<li>MM_Ieltxu</li>
 						<li>MM_LesserWyvern</li>
 						<li>MM_Tlilcoatl</li>
+						<li>MM_StymphalianBird</li>
 					</value>
 				</li>
 
@@ -134,6 +137,7 @@
 						<li>MM_Ieltxu</li>
 						<li>MM_LesserWyvern</li>
 						<li>MM_Tlilcoatl</li>
+						<li>MM_StymphalianBird</li>
 					</value>
 				</li>
 
@@ -164,6 +168,7 @@
 						<li>MM_Ieltxu</li>
 						<li>MM_LesserWyvern</li>
 						<li>MM_Tlilcoatl</li>
+						<li>MM_StymphalianBird</li>
 					</value>
 				</li>
 
@@ -194,6 +199,7 @@
 						<li>MM_Ieltxu</li>
 						<li>MM_LesserWyvern</li>
 						<li>MM_Tlilcoatl</li>
+						<li>MM_StymphalianBird</li>
 					</value>
 				</li>
 
@@ -225,6 +231,7 @@
 						<li>MM_Ieltxu</li>
 						<li>MM_LesserWyvern</li>
 						<li>MM_Tlilcoatl</li>
+						<li>MM_StymphalianBird</li>
 					</value>
 				</li>
 
@@ -253,6 +260,7 @@
 						<li>MM_Fenghuang</li>						
 						<li>MM_Ieltxu</li>
 						<li>MM_LesserWyvern</li>
+						<li>MM_StymphalianBird</li>
 
 
 					</value>
@@ -287,6 +295,7 @@
 						<li>MM_Ieltxu</li>
 						<li>MM_LesserWyvern</li>
 						<li>MM_Tlilcoatl</li>
+						<li>MM_StymphalianBird</li>
 					</value>
 				</li>
 
@@ -321,6 +330,7 @@
 						<li>MM_Ieltxu</li>
 						<li>MM_LesserWyvern</li>
 						<li>MM_Tlilcoatl</li>
+						<li>MM_StymphalianBird</li>
 					</value>
 				</li>
 
@@ -351,6 +361,7 @@
 						<li>MM_Ieltxu</li>
 						<li>MM_LesserWyvern</li>
 						<li>MM_Tlilcoatl</li>
+						<li>MM_StymphalianBird</li>
 					</value>
 				</li>
 
@@ -413,6 +424,7 @@
 
 						<li>MM_Ieltxu</li>
 						<li>MM_LesserWyvern</li>
+						<li>MM_StymphalianBird</li>
 
 
 					</value>
@@ -438,6 +450,7 @@
 						<li>MM_Manticore</li>
 
 						<li>MM_Cerberus</li>
+						<li>MM_StymphalianBird</li>
 
 
 
@@ -918,10 +931,10 @@
 					<value>
 						<HediffDef ParentName="addedPartAnimal">
 							<defName>MM_ProstheticMagicalWing</defName>
-							<label>simple prosthetic stinger</label>
+							<label>simple prosthetic magical wing</label>
 							<description>Simple prosthetic magical wing. Should be able to replace any type of wing in a magical creature.</description>
 							<defaultLabelColor>(233,129,69)</defaultLabelColor>
-							<spawnThingOnRemoved>MM_ProstheticStinger</spawnThingOnRemoved>
+							<spawnThingOnRemoved>MM_ProstheticMagicalWing</spawnThingOnRemoved>
 							<addedPartProps>
 								<solid>true</solid>
 								<partEfficiency>0.85</partEfficiency>
@@ -941,7 +954,7 @@
 							<defName>MM_BionicMagicalWing</defName>
 							<label>bionic magical wing</label>
 							<description>Improved bionic magical wing for animals. Should be able to replace any type of wing in a magical creature.</description>
-							<spawnThingOnRemoved>MM_BionicStinger</spawnThingOnRemoved>
+							<spawnThingOnRemoved>MM_BionicMagicalWing</spawnThingOnRemoved>
 							<addedPartProps>
 								<solid>true</solid>
 								<partEfficiency>1.25</partEfficiency>
