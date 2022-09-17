@@ -96,6 +96,9 @@
 					<max>2</max>
 				</eggCountRange>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Floating">
+
+			</li>
 
 		</comps>
 
