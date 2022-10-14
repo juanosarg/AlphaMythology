@@ -20,7 +20,7 @@ namespace AnimalBehaviours
         {
             settings = GetSettings<MagicalMenagerie_Settings>();
         }
-        public override string SettingsCategory() => "Magical Menagerie";
+        public override string SettingsCategory() => "Alpha Mythology";
 
         public override void DoSettingsWindowContents(Rect inRect)
         {
