@@ -29,6 +29,7 @@
 			<li>MM_Unicorn</li>
 			<li>MM_WildMinotaur</li>
 			<li>MM_Xiezhi</li>
+			<li>MM_WillOWisp</li>
 
 		</toggleablePawns>							
 	</AnimalBehaviours.MMToggleableSpawnDef>

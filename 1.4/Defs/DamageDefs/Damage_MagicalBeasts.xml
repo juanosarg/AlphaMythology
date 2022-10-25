@@ -14,6 +14,7 @@
 				<hediff>MM_ToxicBite</hediff>
 				<severityPerDamageDealt>0.004</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
 			</li>
 		</additionalHediffs>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -34,6 +35,7 @@
 				<hediff>MM_ToxicBite</hediff>
 				<severityPerDamageDealt>0.03</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
 			</li>
 		</additionalHediffs>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -77,6 +79,7 @@
 				<hediff>MM_ToxicBite</hediff>
 				<severityPerDamageDealt>0.005</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
 			</li>
 		</additionalHediffs>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -174,6 +177,7 @@
 				<hediff>VEF_AcidBuildup</hediff>
 				<severityPerDamageDealt>0.01</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
 			</li>
 		</additionalHediffs>
 
