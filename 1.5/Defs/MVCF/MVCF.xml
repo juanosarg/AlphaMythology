@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<MVCF.ModDef>
+		<defName>MM_MagicalMenagerie</defName>
+		<label>Alpha Mythology</label>
+		<description>Adding animal ranged attacks for Alpha Mythology creatures</description>
+		<ActivateFeatures>
+			<li>RangedAnimals</li>
+			<li>HediffVerbs</li>
+			<li>IntegratedToggle</li>
+		</ActivateFeatures>
+	</MVCF.ModDef>
+
+
+
+
+
+
+</Defs>

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ============================================================ -->
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>MM_LesserWyvern</defName>
+		<label>lesser wyvern</label>
+		<description>In Medieval European heraldry, the wyvern is a winged bipedal dragon, appearing in numerous standards and coats of arms. The wyvern in heraldry and folklore is rarely fire-breathing, unlike the four-legged dragon. Instead, wyverns are usually associated with poison, either in the form of venomous fangs or their dangerous barbed tail.\n\nLesser Wyverns aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Lesser Wyverns are extremely venomous, resistant to damage, and almost indifferent to extreme pain. Luckily, they are very rare. Contrary to Greater Wyverns, they can't spit poison (to see Greater Wyverns, download our RimWorld - Witcher Monster Hunt mod!).</description>
+		<statBases>
+			<MoveSpeed>2.50</MoveSpeed>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ToxicResistance>1</ToxicResistance>
+			<Flammability>0</Flammability>
+			<MarketValue>1250</MarketValue>
+			<ArmorRating_Blunt>.75</ArmorRating_Blunt>
+			<ArmorRating_Sharp>.55</ArmorRating_Sharp>
+			<FilthRate>8</FilthRate>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+
+			</li>
+			<li>
+
+				<capacities>
+					<li>MM_VeryToxicBite</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+
+			</li>
+			<li>
+				<label>tail</label>
+				<capacities>
+					<li>MM_ToxicSting</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>MM_AttackTail</linkedBodyPartsGroup>
+				<chanceFactor>0.75</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>25</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>MM_NoPain</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+		</comps>
+
+		<race>
+			<wildBiomes>
+				<BorealForest>0.001</BorealForest>
+				<IceSheet>0.001</IceSheet>
+				<Tundra>0.001</Tundra>
+				<ColdBog>0.001</ColdBog>
+				<SeaIce>0.001</SeaIce>
+				<TemperateSwamp>0.002</TemperateSwamp>
+				<TropicalSwamp>0.001</TropicalSwamp>
+				<TemperateForest>0.003</TemperateForest>
+				<TropicalRainforest>0.006</TropicalRainforest>
+				<AridShrubland>0.001</AridShrubland>
+				<Desert>0.001</Desert>
+				<ExtremeDesert>0.001</ExtremeDesert>
+			</wildBiomes>
+			<body>MM_WyvernBody</body>
+			<herdAnimal>false</herdAnimal>
+			<predator>true</predator>
+			<baseBodySize>3</baseBodySize>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>15</baseHealthScale>
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<wildness>0.80</wildness>
+			<useMeatFrom>Iguana</useMeatFrom>
+			<trainability>Advanced</trainability>
+			<leatherDef>MM_HeavyMagicalLeather</leatherDef>
+			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<gestationPeriodDays>15</gestationPeriodDays>
+			<lifeExpectancy>130</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.25</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
+					<soundDeath>Pawn_Cobra_Death</soundDeath>
+					<soundCall>Pawn_Cobra_Call</soundCall>
+					<soundAngry>Pawn_Cobra_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+
+
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>MM_PrimaryRole</li>
+					<li>MM_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+					<li>MM_Tank</li>
+					<li>MM_No</li>					
+				</statValues>
+				<statDescriptions>
+					<li>MM_VenomousTankDesc</li>
+					<li>MM_NoRanged</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>MM_LesserWyvern</defName>
+		<label>lesser wyvern</label>
+		<race>MM_LesserWyvern</race>
+		<combatPower>950</combatPower>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<canArriveManhunter>false</canArriveManhunter>
+		<lifeStages>
+			<li>
+
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MM_LesserWyvern/MM_LesserWyvern</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MM_LesserWyvern/MM_Dessicated_LesserWyvern</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+				
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MM_LesserWyvern/MM_LesserWyvern</texPath>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MM_LesserWyvern/MM_Dessicated_LesserWyvern</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+				
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/MM_LesserWyvern/MM_LesserWyvern</texPath>
+					<drawSize>4</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/MM_LesserWyvern/MM_Dessicated_LesserWyvern</texPath>
+					<drawSize>4</drawSize>
+				</dessicatedBodyGraphicData>
+				
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+
+</Defs>
