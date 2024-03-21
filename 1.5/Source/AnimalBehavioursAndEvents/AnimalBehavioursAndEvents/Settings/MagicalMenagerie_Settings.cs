@@ -4,6 +4,7 @@ using Verse;
 using System.Collections.Generic;
 using System.Linq;
 using System;
+using static System.Collections.Specialized.BitVector32;
 
 
 namespace AnimalBehaviours
@@ -38,19 +39,23 @@ namespace AnimalBehaviours
             searchKey = Widgets.TextField(searchRect, searchKey);
             Verse.Text.Anchor = TextAnchor.UpperLeft;
 
-            List<string> keys = pawnSpawnStates.Keys.ToList().OrderBy(x => DefDatabase<ThingDef>.GetNamedSilentFail(x)?.label)?.Where(x => DefDatabase<ThingDef>.GetNamedSilentFail(x)?.label.ToLower().
-            Contains(searchKey.ToLower()) == true)?.ToList();
-            Listing_Standard ls = new Listing_Standard();
-           
-            ls.Label("MM_MythAnimalSpawnMultiplier".Translate() + ": " + mythAnimalSpawnMultiplier, -1, "MM_MythAnimalSpawnMultiplierTooltip".Translate());
-            mythAnimalSpawnMultiplier = (float)Math.Round(ls.Slider(mythAnimalSpawnMultiplier, 0.1f, 5f), 2);
 
-            if (ls.Settings_Button("MM_Reset".Translate(), new Rect(0f, searchRect.yMax + 50, 180f, 29f)))
+            Widgets.Label(new Rect(rect.x + 5, rect.y + 40, inRect.width, 24), "MM_MythAnimalSpawnMultiplier".Translate() + ": " + mythAnimalSpawnMultiplier);
+            TooltipHandler.TipRegion(new Rect(rect.x + 5, rect.y + 40, inRect.width, 24), "MM_MythAnimalSpawnMultiplierTooltip".Translate());
+            mythAnimalSpawnMultiplier = (float)Math.Round(Widgets.HorizontalSlider(new Rect(rect.x + 5, rect.y + 64, inRect.width, 24),mythAnimalSpawnMultiplier, 0.1f, 5f), 2);
+
+            if (Widgets.ButtonText(new Rect(rect.x + 5, rect.y + 88, 90f, 29f), "MM_Reset".Translate(), true, true, true))
             {
                 mythAnimalSpawnMultiplier = mythAnimalSpawnMultiplierBase;
             }
 
-            Rect outRect = new Rect(inRect.x, searchRect.yMax + 100, inRect.width, inRect.height-50);
+            List<string> keys = pawnSpawnStates.Keys.ToList().OrderBy(x => DefDatabase<ThingDef>.GetNamedSilentFail(x)?.label)?.Where(x => DefDatabase<ThingDef>.GetNamedSilentFail(x)?.label.ToLower().
+            Contains(searchKey.ToLower()) == true)?.ToList();
+
+            Listing_Standard ls = new Listing_Standard();
+
+          
+            Rect outRect = new Rect(inRect.x, searchRect.yMax + 100, inRect.width, inRect.height-150);
             Rect viewRect = new Rect(0f, 0f, inRect.width - 30f, keys.Count * 24 + 24);
             Widgets.BeginScrollView(outRect, ref scrollPosition, viewRect, true);
             ls.Begin(viewRect);

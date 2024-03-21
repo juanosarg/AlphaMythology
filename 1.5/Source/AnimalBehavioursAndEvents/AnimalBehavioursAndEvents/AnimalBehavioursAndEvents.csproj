@@ -306,7 +306,6 @@
     <Compile Include="Recipes\Recipe_ShutDown.cs" />
     <Compile Include="Settings\MagicalMenagerie_Settings.cs" />
     <Compile Include="Settings\MagicalMenagerie_SettingsController.cs" />
-    <Compile Include="Settings\SettingsHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
