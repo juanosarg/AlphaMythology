@@ -24,6 +24,9 @@
 	<!-- Mod Settings, animal toggles -->
 	
 	<MM_DisableAnimal>Disable {0}</MM_DisableAnimal>
+	<MM_MythAnimalSpawnMultiplier>Alpha Mythology spawn commonality multiplier</MM_MythAnimalSpawnMultiplier>
+	<MM_MythAnimalSpawnMultiplierTooltip>This multiplier will affect the spawn changes (commonalities) of ALL animals in this mod. For example, if set to 0.5 animals from the mod will spawn half as much as default (which is 1). If set to 2, you'll get twice as many as default, and so on. This only affects wild spawns.</MM_MythAnimalSpawnMultiplierTooltip>
+	<MM_Reset>Reset</MM_Reset>
 	
 	<!-- Animal Stats -->
 	

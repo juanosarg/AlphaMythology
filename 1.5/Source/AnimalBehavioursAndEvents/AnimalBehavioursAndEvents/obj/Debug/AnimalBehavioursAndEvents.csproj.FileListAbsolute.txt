@@ -41,3 +41,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMythology\1.5\S
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMythology\1.5\Source\AnimalBehavioursAndEvents\AnimalBehavioursAndEvents\obj\Debug\AnimalBehavioursAndEvents.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMythology\1.5\Source\AnimalBehavioursAndEvents\AnimalBehavioursAndEvents\obj\Debug\MagicalAnimalBehavioursAndEvents.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaMythology\1.5\Assemblies\MagicalAnimalBehavioursAndEvents.dll
+E:\Steam\steamapps\common\RimWorld\Mods\AlphaMythology\1.5\Assemblies\MagicalAnimalBehavioursAndEvents.dll
+E:\Steam\steamapps\common\RimWorld\Mods\AlphaMythology\1.5\Source\AnimalBehavioursAndEvents\AnimalBehavioursAndEvents\obj\Debug\AnimalBehavioursAndEvents.csproj.AssemblyReference.cache
+E:\Steam\steamapps\common\RimWorld\Mods\AlphaMythology\1.5\Source\AnimalBehavioursAndEvents\AnimalBehavioursAndEvents\obj\Debug\AnimalBehavioursAndEvents.csproj.CoreCompileInputs.cache
+E:\Steam\steamapps\common\RimWorld\Mods\AlphaMythology\1.5\Source\AnimalBehavioursAndEvents\AnimalBehavioursAndEvents\obj\Debug\MagicalAnimalBehavioursAndEvents.dll

@@ -298,6 +298,7 @@
     <Compile Include="Achievements\KillTrackerWithOr.cs" />
     <Compile Include="DeathActionWorkers\DeathActionWorker_ExplodeAndSpawnEggs.cs" />
     <Compile Include="Defs\MMToggleableSpawnDef.cs" />
+    <Compile Include="Harmony\BiomeDef_CommonalityOfAnimal_Patch.cs" />
     <Compile Include="Harmony\MapTemperature_SeasonAcceptableFor_Patch.cs" />
     <Compile Include="Harmony\QuestManager_Notify_ThingsProduced_Patch.cs" />
     <Compile Include="Hediffs\Hediff_BleedingWound.cs" />
@@ -305,6 +306,7 @@
     <Compile Include="Recipes\Recipe_ShutDown.cs" />
     <Compile Include="Settings\MagicalMenagerie_Settings.cs" />
     <Compile Include="Settings\MagicalMenagerie_SettingsController.cs" />
+    <Compile Include="Settings\SettingsHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

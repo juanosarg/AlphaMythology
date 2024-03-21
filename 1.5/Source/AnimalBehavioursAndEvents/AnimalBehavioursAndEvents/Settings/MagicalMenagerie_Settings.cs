@@ -3,6 +3,7 @@ using UnityEngine;
 using Verse;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 
 namespace AnimalBehaviours
@@ -21,6 +22,9 @@ namespace AnimalBehaviours
         private List<bool> boolValues;
         private string searchKey;
 
+        public const float mythAnimalSpawnMultiplierBase = 1;
+        public float mythAnimalSpawnMultiplier = mythAnimalSpawnMultiplierBase;
+
         public void DoWindowContents(Rect inRect)
         {
 
@@ -37,11 +41,20 @@ namespace AnimalBehaviours
             List<string> keys = pawnSpawnStates.Keys.ToList().OrderBy(x => DefDatabase<ThingDef>.GetNamedSilentFail(x)?.label)?.Where(x => DefDatabase<ThingDef>.GetNamedSilentFail(x)?.label.ToLower().
             Contains(searchKey.ToLower()) == true)?.ToList();
             Listing_Standard ls = new Listing_Standard();
-            Rect rectExt = new Rect(inRect.x, searchRect.yMax + 35, inRect.width, inRect.height - 170);
-            Rect rect2 = new Rect(0f, 0f, inRect.width - 30f, keys.Count * 24 + 24);
-            Widgets.BeginScrollView(rectExt, ref scrollPosition, rect2, true);
-
            
+            ls.Label("MM_MythAnimalSpawnMultiplier".Translate() + ": " + mythAnimalSpawnMultiplier, -1, "MM_MythAnimalSpawnMultiplierTooltip".Translate());
+            mythAnimalSpawnMultiplier = (float)Math.Round(ls.Slider(mythAnimalSpawnMultiplier, 0.1f, 5f), 2);
+
+            if (ls.Settings_Button("MM_Reset".Translate(), new Rect(0f, searchRect.yMax + 50, 180f, 29f)))
+            {
+                mythAnimalSpawnMultiplier = mythAnimalSpawnMultiplierBase;
+            }
+
+            Rect outRect = new Rect(inRect.x, searchRect.yMax + 100, inRect.width, inRect.height-50);
+            Rect viewRect = new Rect(0f, 0f, inRect.width - 30f, keys.Count * 24 + 24);
+            Widgets.BeginScrollView(outRect, ref scrollPosition, viewRect, true);
+            ls.Begin(viewRect);
+
             if (keys.Count > 0)
             {
                 for (int num = 0; num < keys.Count; num++)
@@ -55,7 +68,7 @@ namespace AnimalBehaviours
                     else
                     {
                         var iconRect = new Rect(0, (num + 1) * 24, 24, 24);
-                        var labelRect = new Rect(30, (num + 1) * 24, inRect.width - 100f, 24);
+                        var labelRect = new Rect(30, (num + 1) * 24, outRect.width - 100f, 24);
                         Widgets.ThingIcon(iconRect, PawnKindDef.Named(keys[num]).race);
                         Widgets.CheckboxLabeled(labelRect, "MM_DisableAnimal".Translate(PawnKindDef.Named(keys[num]).LabelCap), ref test);
 
@@ -65,11 +78,12 @@ namespace AnimalBehaviours
                 }
 
             }
+            Widgets.EndScrollView();
 
-
+            
 
             ls.End();
-            Widgets.EndScrollView();
+            
             base.Write();
 
 
