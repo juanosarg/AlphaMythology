@@ -18,6 +18,7 @@ namespace AnimalBehaviours
         {
             base.ExposeData();
             Scribe_Collections.Look(ref pawnSpawnStates, "pawnSpawnStates", LookMode.Value, LookMode.Value, ref pawnKeys, ref boolValues);
+            Scribe_Values.Look(ref mythAnimalSpawnMultiplier, "mythAnimalSpawnMultiplier", mythAnimalSpawnMultiplierBase, true);
         }
         private List<string> pawnKeys;
         private List<bool> boolValues;
