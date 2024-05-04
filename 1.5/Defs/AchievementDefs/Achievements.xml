@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch>
-
-
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Achievements Expanded</li>
-		</mods>
-
-		<match Class="PatchOperationSequence">
-			<operations>
-
-
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs</xpath>
-					<value>
+<Defs>
 
 						<AchievementsExpanded.AchievementTabDef>
 							<defName>MM_Achievements</defName>
@@ -224,7 +210,7 @@
 							<label>Forbidden Poultry</label>
 							<description>Use a Fertilized griffin egg to create a Lavish Meal</description>
 							
-							<tracker Class="AchievementsExpanded.ItemCraftTrackerWithIngredientsMagicalMenagerie">
+							<tracker Class="AchievementsExpanded.ItemCraftTracker">
 								<def>MealLavish</def>
 								<includeingredient>MM_EggGriffinFertilized</includeingredient>
 								<count>1</count>
@@ -234,17 +220,5 @@
 							<points>10</points>
 						</AchievementsExpanded.AchievementDef>
 						
-						
-
-						
-					</value>
-				</li>
-
-
-			</operations>
-		</match>
-	</Operation>
-
-
-</Patch>
+</Defs>
 
