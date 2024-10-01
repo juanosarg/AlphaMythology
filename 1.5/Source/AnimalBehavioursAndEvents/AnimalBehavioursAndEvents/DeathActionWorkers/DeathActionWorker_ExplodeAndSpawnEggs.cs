@@ -9,8 +9,6 @@ namespace AnimalBehaviours
     public class DeathActionWorker_ExplodeAndSpawnEggs : DeathActionWorker
     {
 
-        System.Random rand = new System.Random();
-
 
         public override void PawnDied(Corpse corpse, Lord prevLord)
     
@@ -31,7 +29,7 @@ namespace AnimalBehaviours
                     radius = 5.9f;
                 }
                 int numberOfEggs = 1;
-                if (rand.NextDouble() <= 0.3)
+                if (Rand.Value <= 0.3)
                 {
                     numberOfEggs = 2;
                 }
