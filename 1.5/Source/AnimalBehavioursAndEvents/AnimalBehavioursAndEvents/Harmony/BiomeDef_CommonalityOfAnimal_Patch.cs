@@ -26,7 +26,7 @@ namespace AnimalBehaviours
             {
                 float TotalMultiplier = MagicalMenagerie_Mod.settings.mythAnimalSpawnMultiplier;
                 __result *= TotalMultiplier;
-
+                 
             }
 
 
