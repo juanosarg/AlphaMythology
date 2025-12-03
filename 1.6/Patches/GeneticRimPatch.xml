@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Genetics Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesFeline"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MM_Chimera</li>
+						<li>Corpse_MM_Griffin</li>
+						<li>Corpse_MM_Manticore</li>
+						<li>Corpse_MM_Xiezhi</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesFeline"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MM_Chimera</li>
+						<li>Corpse_MM_Griffin</li>
+						<li>Corpse_MM_Manticore</li>
+						<li>Corpse_MM_Xiezhi</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBird"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MM_Fenghuang</li>
+						<li>Corpse_MM_Griffin</li>
+						<li>Corpse_MM_Ieltxu</li>
+						<li>Corpse_MM_Phoenix</li>
+						<li>Corpse_MM_StymphalianBird</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBird"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MM_Fenghuang</li>
+						<li>Corpse_MM_Griffin</li>
+						<li>Corpse_MM_Ieltxu</li>
+						<li>Corpse_MM_Phoenix</li>
+						<li>Corpse_MM_StymphalianBird</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesCanine"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MM_Ahuizotl</li>
+						<li>Corpse_MM_Cerberus</li>
+						<li>Corpse_MM_Kitsune</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesCanine"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MM_Ahuizotl</li>
+						<li>Corpse_MM_Cerberus</li>
+						<li>Corpse_MM_Kitsune</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMuffalo"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MM_Catoblepas</li>
+						<li>Corpse_MM_WildMinotaur</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMuffalo"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MM_Catoblepas</li>
+						<li>Corpse_MM_WildMinotaur</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsFelineAlphaMythology</defName>
+							<tier>1</tier>
+							<itemProduced>GR_FelineGenetic</itemProduced>
+							<extractableAnimals>
+								<li>MM_Chimera</li>
+								<li>MM_Griffin</li>
+								<li>MM_Manticore</li>
+								<li>MM_Xiezhi</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsAvianAlphaMythology</defName>
+							<tier>1</tier>
+							<itemProduced>GR_AvianGenetic</itemProduced>
+							<extractableAnimals>
+								<li>MM_Fenghuang</li>
+								<li>MM_Griffin</li>
+								<li>MM_Ieltxu</li>
+								<li>MM_Phoenix</li>
+								<li>MM_StymphalianBird</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsCanineAlphaMythology</defName>
+							<tier>1</tier>
+							<itemProduced>GR_CanineGenetic</itemProduced>
+							<extractableAnimals>
+								<li>MM_Ahuizotl</li>
+								<li>MM_Cerberus</li>
+								<li>MM_Kitsune</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsMuffaloAlphaMythology</defName>
+							<tier>1</tier>
+							<itemProduced>GR_MuffaloGenetic</itemProduced>
+							<extractableAnimals>
+								<li>MM_Catoblepas</li>
+								<li>MM_WildMinotaur</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierTwoAnimalsReptilesAlphaMythology</defName>
+							<tier>2</tier>
+							<itemProduced>GR_ReptileGenetic</itemProduced>
+							<extractableAnimals>
+								<li>MM_Basilisk</li>
+								<li>MM_Chimera</li>
+								<li>MM_LernaeanHydra</li>
+								<li>MM_LesserWyvern</li>
+								<li>MM_Salamander</li>
+								<li>MM_Tlilcoatl</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierTwoAnimalsHorsesAlphaMythology</defName>
+							<tier>2</tier>
+							<itemProduced>GR_EquineGenetic</itemProduced>
+							<extractableAnimals>
+								<li>MM_Pegasus</li>
+								<li>MM_Qilin</li>
+								<li>MM_Unicorn</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+
