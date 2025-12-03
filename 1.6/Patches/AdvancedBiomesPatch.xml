@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Advanced Biomes (Continued)</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Ahuizotl"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.01</PoisonForest>
+						<Volcano>0.0</Volcano>
+						<Wetland>0.07</Wetland>					
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Chimera"]/race/wildBiomes</xpath>
+					<value>					
+						<PoisonForest>0.05</PoisonForest>
+						<Savanna>0.07</Savanna>
+						<Volcano>0.01</Volcano>
+						<Wasteland>0.07</Wasteland>
+						<Wetland>0.01</Wetland>	
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_ErymanthianBoar"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.07</PoisonForest>
+						<Savanna>0.07</Savanna>
+						<Volcano>0.005</Volcano>
+						<Wetland>0.01</Wetland>	
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Griffin"]/race/wildBiomes</xpath>
+					<value>										
+						<Savanna>0.07</Savanna>
+						<Wetland>0.07</Wetland>	
+					</value>
+				</li>		
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Kitsune"]/race/wildBiomes</xpath>
+					<value>
+						<Savanna>0.07</Savanna>
+						<Wetland>0.07</Wetland>	
+					</value>
+				</li>			
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_LernaeanHydra"]/race/wildBiomes</xpath>
+					<value>
+						<PoisonForest>0.1</PoisonForest>
+						<Wasteland>0.07</Wasteland>
+						<Wetland>0.01</Wetland>	
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Manticore"]/race/wildBiomes</xpath>
+					<value>					
+						<Savanna>0.07</Savanna>
+						<Wasteland>0.1</Wasteland>
+					</value>
+				</li>				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Pegasus"]/race/wildBiomes</xpath>
+					<value>
+						<Savanna>0.07</Savanna>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Qilin"]/race/wildBiomes</xpath>
+					<value>					
+						<PoisonForest>0.07</PoisonForest>
+						<Savanna>0.02</Savanna>
+						<Wetland>0.05</Wetland>	
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Unicorn"]/race/wildBiomes</xpath>
+					<value>
+
+						<Savanna>0.07</Savanna>
+
+					</value>
+				</li>				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_WildMinotaur"]/race/wildBiomes</xpath>
+					<value>
+						<Savanna>0.07</Savanna>
+						<Wetland>0.07</Wetland>	
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_WillOWisp"]/race/wildBiomes</xpath>
+					<value>					
+
+						<Wetland>0.07</Wetland>	
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Catoblepas"]/race/wildBiomes</xpath>
+					<value>
+						<Savanna>0.07</Savanna>
+						<Wetland>0.07</Wetland>	
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_CeryneianHind"]/race/wildBiomes</xpath>
+					<value>
+
+						<Savanna>0.07</Savanna>
+
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Cerberus"]/race/wildBiomes</xpath>
+					<value>
+						<Savanna>0.07</Savanna>
+						<Wetland>0.07</Wetland>	
+					</value>
+				</li>		
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Basilisk"]/race/wildBiomes</xpath>
+					<value>					
+						<PoisonForest>0.01</PoisonForest>
+						<Savanna>0.005</Savanna>					
+						<Wasteland>0.005</Wasteland>
+						<Wetland>0.01</Wetland>	
+					</value>
+				</li>		
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Fenghuang"]/race/wildBiomes</xpath>
+					<value>					
+						<PoisonForest>0.01</PoisonForest>
+						<Savanna>0.01</Savanna>
+						<Volcano>0.05</Volcano>
+						<Wasteland>0.005</Wasteland>
+						<Wetland>0.01</Wetland>	
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Ieltxu"]/race/wildBiomes</xpath>
+					<value>					
+						<PoisonForest>0.01</PoisonForest>						
+						<Wetland>0.01</Wetland>	
+					</value>
+				</li>		
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Kappa"]/race/wildBiomes</xpath>
+					<value>										
+						<Wetland>0.05</Wetland>	
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_LesserWyvern"]/race/wildBiomes</xpath>
+					<value>										
+						<Savanna>0.005</Savanna>					
+						<Wasteland>0.007</Wasteland>
+						<Wetland>0.001</Wetland>	
+					</value>
+				</li>		
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Phoenix"]/race/wildBiomes</xpath>
+					<value>					
+						
+						<Volcano>0.07</Volcano>
+						
+					</value>
+				</li>		
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Salamander"]/race/wildBiomes</xpath>
+					<value>					
+						
+						<Volcano>0.1</Volcano>
+						
+					</value>
+				</li>		
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Tlilcoatl"]/race/wildBiomes</xpath>
+					<value>					
+						<PoisonForest>0.05</PoisonForest>
+						<Savanna>0.01</Savanna>						
+						<Wetland>0.01</Wetland>	
+					</value>
+				</li>		
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MM_Xiezhi"]/race/wildBiomes</xpath>
+					<value>					
+					
+						<Savanna>0.07</Savanna>
+					
+					</value>
+				</li>						
+				
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+
