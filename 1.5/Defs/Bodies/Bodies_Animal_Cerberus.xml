@@ -12,7 +12,7 @@
 
 	<BodyDef>
 		<defName>MM_ThreeHeadedDog</defName>
-		<label>three headed dog</label>
+		<label>three-headed dog</label>
 		<corePart>
 			<def>Body</def>
 			<height>Middle</height>
