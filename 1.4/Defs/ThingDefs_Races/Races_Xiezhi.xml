@@ -6,7 +6,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>MM_Xiezhi</defName>
 		<label>xiezhi</label>
-		<description>The xiezhi is a legendary creature in Chinese mythology, as well as in Korean mythology where it is known as haetae. The xiezhi is usually represented as a cross between a lion and a goat, with a single horn on its forehead. Xiezhi are innately attuned to good and evil, being able to instinctively know the innocent from the guilty.\n\nXiezhi aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Xiezhi will viciously attack pirates, goring them with their justice-seeking horn.</description>
+		<description>The xiezhi is a legendary creature in Chinese mythology, as well as in Korean mythology, where it is known as haetae. The xiezhi is usually represented as a cross between a lion and a goat, with a single horn on its forehead. Xiezhi are innately attuned to good and evil, being able to instinctively know the innocent from the guilty.\n\nXiezhi aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Xiezhi will viciously attack pirates, goring them with their justice-seeking horn.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
