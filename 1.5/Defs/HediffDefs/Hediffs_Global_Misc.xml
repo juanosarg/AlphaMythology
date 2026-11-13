@@ -9,7 +9,7 @@
 		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
 		<description>Toxins in the bloodstream. This can come from various sources, including environmental toxins, venomous bites, or poisoned weapons.
 \nAt high doses, toxic buildup is lethal. Even at low doses, it can generate cancers.
-\nContrary to base game toxic buildup, creatures who die with this toxic damage can be eaten.</description>
+\nUnlike toxic buildup in the base game, creatures that die from this toxic damage can still be eaten.</description>
 		<label>toxic buildup</label>
 		<lethalSeverity>1</lethalSeverity>
 		<makesSickThought>true</makesSickThought>
