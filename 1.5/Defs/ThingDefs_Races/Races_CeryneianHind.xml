@@ -6,7 +6,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>MM_CeryneianHind</defName>
 		<label>ceryneian hind</label>
-		<description>In Greek mythology, the Ceryneian Hind was a mythical creature that lived in Ceryneia, Greece, and took the form of an enormous deer, larger than a bull, with golden antlers like a stag. To bring it back alive to Eurystheus in Mycenae was the third labour of Heracles.\n\nCeryneian Hinds aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Both Ceryneian Hinds and Harts are very fast creatures. They cannot be trained as mounts as effectively as Unicorns or Pegasi. Ceryneian Hinds produce milk.</description>
+		<description>In Greek mythology, the Ceryneian Hind was a mythical creature that lived in Ceryneia, Greece, and took the form of an enormous deer, larger than a bull, with golden antlers like a stag. To bring it back alive to Eurystheus in Mycenae was the third labour of Heracles.\n\nCeryneian Hinds aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: Both Ceryneian Hinds and Harts are very fast creatures. They cannot be trained as mounts as effectively as unicorns or pegasi. Ceryneian Hinds produce milk.</description>
 		<statBases>
 			<MoveSpeed>8</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
